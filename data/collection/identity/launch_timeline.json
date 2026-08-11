@@ -1,0 +1,179 @@
+{
+  "collected_at": "2026-08-11T17:23:06Z",
+  "rows": [
+    {
+      "key": "mint_created",
+      "title": "Mint created; deployer buys in the same transaction",
+      "sig": "2euGYRDe9hTKArVFESQLkrvMV3gq3wtFHsZUPFmxGobUx4RRsCQoByVTqSCY3zgY79V22v1Wzae4ru5ye7xmmR3x",
+      "expect": {
+        "time": "2026-08-08T13:59:13Z",
+        "deployer_raw": 200963210657135,
+        "sol": 6.91358
+      },
+      "explorer": "https://solscan.io/tx/2euGYRDe9hTKArVFESQLkrvMV3gq3wtFHsZUPFmxGobUx4RRsCQoByVTqSCY3zgY79V22v1Wzae4ru5ye7xmmR3x",
+      "block_time": 1786197553,
+      "time": "2026-08-08T13:59:13Z",
+      "fee_payer": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "success": true,
+      "toad_deltas": [
+        {
+          "owner": "9oi3zoTqd1T8T3CVuSDfSNwjeWaj6zZLdYMLWNyayaeA",
+          "raw": 799036789342865,
+          "amount": "799036789.342865"
+        },
+        {
+          "owner": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+          "raw": 200963210657135,
+          "amount": "200963210.657135"
+        }
+      ],
+      "deployer_bought_raw": 200963210657135,
+      "deployer_bought": "200963210.657135",
+      "deployer_sol_delta": -7.011580672,
+      "sol_credited_to_curve": 6.915271525,
+      "curve_rent_exempt_sol": 0.00194184,
+      "sol_spent_on_buy": 6.913329685,
+      "same_transaction_as_mint_creation": true,
+      "amount_matches": true,
+      "verified": true,
+      "note": "The deployer is the fee payer of the mint-creation transaction AND the buyer inside it -- a same-block snipe of his own launch.",
+      "sol_figure_caveat": "Cite sol_credited_to_curve (directly measured lamport delta). sol_spent_on_buy subtracts the curve account's rent-exemption from that credit and is therefore an ESTIMATE -- it lands ~0.00025 SOL below the commonly quoted 6.913580 because the rent figure is computed from the account's current size. Do not present it as exact.",
+      "pct_of_initial_supply": 20.0963,
+      "time_matches_expected": true
+    },
+    {
+      "key": "pool_created",
+      "title": "PumpSwap pool created (canonical pricing pool)",
+      "pool": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+      "expect": {
+        "time": "2026-08-08T13:59:17Z"
+      },
+      "time": "2026-08-08T13:59:17Z",
+      "dex": "pumpswap",
+      "quote_token": "SOL",
+      "verified": true,
+      "verification_source": "dexscreener pairCreatedAt",
+      "caveat": "Timestamp attested by DexScreener, not by an on-chain walk: reaching this pool's first signature requires paginating its entire (very large) history. Constant-product PumpSwap pool -- this is the canonical pricing venue. Never price off the Meteora DLMM pool.",
+      "error": null,
+      "time_matches_expected": true
+    },
+    {
+      "key": "campaign_buy",
+      "title": "Campaign wallet buys TOAD with USDC",
+      "sig": "2VZz8dFP2C2R8FfwrintY5u1FuvNWbyCvx1SqJd5VtTqQxA5bzQknkBDDQH4UZgoUFuSQxfTuXvXa2ePSVo8a4k6",
+      "expect": {
+        "time": "2026-08-08T14:16:56Z",
+        "toad_raw": 4618714619783,
+        "usdc": 217.323479,
+        "fee_payer": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT"
+      },
+      "explorer": "https://solscan.io/tx/2VZz8dFP2C2R8FfwrintY5u1FuvNWbyCvx1SqJd5VtTqQxA5bzQknkBDDQH4UZgoUFuSQxfTuXvXa2ePSVo8a4k6",
+      "block_time": 1786198616,
+      "time": "2026-08-08T14:16:56Z",
+      "fee_payer": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "success": true,
+      "toad_deltas": [
+        {
+          "owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+          "raw": 4618714619783,
+          "amount": "4618714.619783"
+        },
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": -4618714619783,
+          "amount": "-4618714.619783"
+        }
+      ],
+      "toad_received_raw": 4618714619783,
+      "toad_received": "4618714.619783",
+      "usdc_spent": "217.323479",
+      "fee_payer_is_paymaster": true,
+      "amount_matches": true,
+      "verified": true,
+      "note": "Gas paid by relayer FHpcNSe6... (pump.fun mobile paymaster), so the buyer's wallet never needed SOL -- consistent with a mobile-app buy.",
+      "time_matches_expected": true
+    },
+    {
+      "key": "slingoor_tweet",
+      "title": "slingoor (deployer) tweets about the launch",
+      "expect": {
+        "time": "2026-08-08T15:03:39Z"
+      },
+      "tweet_id": null,
+      "verified": false,
+      "caveat": "No tweet id was supplied for this event and tweet SEARCH requires an authorised X API credential (the configured bearer returns 401 on every endpoint). Supply the tweet id to make this row citable, or omit the row."
+    },
+    {
+      "key": "eltoadpepe_created",
+      "title": "@eltoadpepe X account created",
+      "expect": {
+        "time": "2026-08-08T15:13:30Z"
+      },
+      "handle": "eltoadpepe",
+      "verified": false,
+      "caveat": "Account creation date requires GET /2/users/by/username with user.fields=created_at. The configured bearer token returns 401. The keyless syndication profile endpoint returns an empty body. Unverified."
+    },
+    {
+      "key": "deployer_transfer",
+      "title": "Deployer sends the bag to the campaign wallet, keeping exactly 20,000,000",
+      "sig": "DNe3AoKREpRnX9WqAD913Phx7SS9hJmtV3JCnyza9bZbZmukeaTbrrmjFQrDxv9sTMW2zrAGEq5tgxafrrvNjCc",
+      "expect": {
+        "time": "2026-08-08T15:27:19Z",
+        "sent_raw": 180963210657135,
+        "deployer_keeps_raw": 20000000000000
+      },
+      "explorer": "https://solscan.io/tx/DNe3AoKREpRnX9WqAD913Phx7SS9hJmtV3JCnyza9bZbZmukeaTbrrmjFQrDxv9sTMW2zrAGEq5tgxafrrvNjCc",
+      "block_time": 1786202839,
+      "time": "2026-08-08T15:27:19Z",
+      "fee_payer": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "success": true,
+      "toad_deltas": [
+        {
+          "owner": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+          "raw": -180963210657135,
+          "amount": "-180963210.657135"
+        },
+        {
+          "owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+          "raw": 180963210657135,
+          "amount": "180963210.657135"
+        }
+      ],
+      "sent_raw": 180963210657135,
+      "sent": "180963210.657135",
+      "received_by_campaign": "180963210.657135",
+      "deployer_keeps_raw": 20000000000000,
+      "deployer_keeps": "20000000.000000",
+      "keeps_round_20m": true,
+      "amount_matches": true,
+      "verified": true,
+      "note": "Bought 200,963,210.657135 and forwarded 180,963,210.657135, leaving exactly 20,000,000.000000 -- a deliberate round number, not a residue.",
+      "time_matches_expected": true
+    },
+    {
+      "key": "first_airdrop",
+      "title": "First airdrop leaves the campaign wallet",
+      "sig": "2TM3MNcqaTzZgUcTekysJMMh5By7yQpLhdUjJYzCZwPVy5bcaQZHsbuAEACMNGVge2i6ikUwummF6c3Zuy5bykRh",
+      "expect": {
+        "time": "2026-08-08T17:20:43Z"
+      },
+      "time": "2026-08-08T17:20:43Z",
+      "block_time": 1786209643,
+      "amount": "700000.000000",
+      "recipients": [
+        {
+          "owner": "9ggkEFf3PK56dvP2yjm1N7X8Bxzty1BYfk3Rp68TyvQP",
+          "raw": 700000000000
+        }
+      ],
+      "verified": true,
+      "verification_source": "full ATA outbound scan, oldest row",
+      "explorer": "https://solscan.io/tx/2TM3MNcqaTzZgUcTekysJMMh5By7yQpLhdUjJYzCZwPVy5bcaQZHsbuAEACMNGVge2i6ikUwummF6c3Zuy5bykRh",
+      "note": "Identified by scanning the ATA's COMPLETE signature history and taking the earliest outbound row -- not by reading the first page.",
+      "time_matches_expected": true
+    }
+  ],
+  "verified_count": 5,
+  "total_count": 7,
+  "errors": []
+}

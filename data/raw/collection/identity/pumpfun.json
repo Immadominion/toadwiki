@@ -1,0 +1,212 @@
+{
+  "collected_at": "2026-08-11T17:22:41Z",
+  "wallets": {
+    "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD": {
+      "role": "campaign_wallet",
+      "raw": {
+        "address": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+        "likes_received": 0,
+        "mentions_received": 0,
+        "username": "mdudas",
+        "profile_image": "https://ipfs.io/ipfs/bafkreiakgnjgmfxm57zwxfr2nqu2vuqyzbs4puu5h7iypgjahdrdiggjti",
+        "last_username_update_timestamp": 1785696400783,
+        "following": 43,
+        "followers": 11877,
+        "bio": "venture capital enthusiast",
+        "x_username": null,
+        "x_id": null
+      },
+      "username": "mdudas",
+      "followers": 11877,
+      "bio": "venture capital enthusiast",
+      "profile_image": "https://ipfs.io/ipfs/bafkreiakgnjgmfxm57zwxfr2nqu2vuqyzbs4puu5h7iypgjahdrdiggjti",
+      "x_username": {
+        "value": null,
+        "source": "pumpfun_api",
+        "method": "GET /users/{address} .x_username",
+        "verified": true,
+        "note": "null: pump.fun has NO verified X link for this wallet. The X identity is established by the wallet-proof exhibit instead."
+      },
+      "x_id": {
+        "value": null,
+        "source": "pumpfun_api",
+        "method": "GET /users/{address} .x_id",
+        "verified": true,
+        "note": "null: no pump.fun-verified X account id."
+      }
+    },
+    "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij": {
+      "role": "deployer",
+      "raw": {
+        "address": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+        "likes_received": 0,
+        "mentions_received": 0,
+        "username": "slingoor",
+        "profile_image": "https://ipfs.io/ipfs/bafybeieahlzeonacqyswfna7rxoonqoeloxuptgf3k6nykhlpofenici5y",
+        "last_username_update_timestamp": 1782397039827,
+        "following": 8,
+        "followers": 38700,
+        "bio": "🫵😂 // tune into streams on X or Kick ",
+        "x_username": null,
+        "x_id": null
+      },
+      "username": "slingoor",
+      "followers": 38700,
+      "bio": "🫵😂 // tune into streams on X or Kick ",
+      "profile_image": "https://ipfs.io/ipfs/bafybeieahlzeonacqyswfna7rxoonqoeloxuptgf3k6nykhlpofenici5y",
+      "x_username": {
+        "value": null,
+        "source": "pumpfun_api",
+        "method": "GET /users/{address} .x_username",
+        "verified": true,
+        "note": "null: pump.fun has NO verified X link for this wallet. The X identity is established by the wallet-proof exhibit instead."
+      },
+      "x_id": {
+        "value": null,
+        "source": "pumpfun_api",
+        "method": "GET /users/{address} .x_id",
+        "verified": true,
+        "note": "null: no pump.fun-verified X account id."
+      }
+    }
+  },
+  "handles": {
+    "mdudas": {
+      "raw": {
+        "address": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+        "likes_received": 0,
+        "mentions_received": 0,
+        "username": "mdudas",
+        "profile_image": "https://ipfs.io/ipfs/bafkreiakgnjgmfxm57zwxfr2nqu2vuqyzbs4puu5h7iypgjahdrdiggjti",
+        "last_username_update_timestamp": 1785696400783,
+        "following": 43,
+        "followers": 11878,
+        "bio": "venture capital enthusiast",
+        "x_username": null,
+        "x_id": null
+      },
+      "resolves_to": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+      "round_trip_ok": true
+    },
+    "slingoor": {
+      "raw": {
+        "address": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+        "likes_received": 0,
+        "mentions_received": 0,
+        "username": "slingoor",
+        "profile_image": "https://ipfs.io/ipfs/bafybeieahlzeonacqyswfna7rxoonqoeloxuptgf3k6nykhlpofenici5y",
+        "last_username_update_timestamp": 1782397039827,
+        "following": 8,
+        "followers": 38700,
+        "bio": "🫵😂 // tune into streams on X or Kick ",
+        "x_username": null,
+        "x_id": null
+      },
+      "resolves_to": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "round_trip_ok": true
+    }
+  },
+  "errors": [],
+  "coin": {
+    "raw": {
+      "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+      "initialized": true,
+      "name": "The Toad Pepe",
+      "symbol": "TOAD",
+      "description": "I will not run this coin. You are more than welcome to CTO it. The real first Pepe appeared in 1988 on Argentine TV in the children’s show of Carlitos Balá, as El Sapo Pepe. Decades later, Matt Furie would present his own frog, sharing the same name PEPE was born",
+      "image_uri": "https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq",
+      "metadata_uri": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+      "bonding_curve": "9oi3zoTqd1T8T3CVuSDfSNwjeWaj6zZLdYMLWNyayaeA",
+      "associated_bonding_curve": "GDRv8K1mhPwRUEF3JtzD7FM64C6kAFaU6njdnzaD9Xwt",
+      "creator": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "created_timestamp": 1786197553000,
+      "complete": true,
+      "virtual_sol_reserves": 114544338344,
+      "virtual_token_reserves": 281026548114417,
+      "total_supply": 1000000000000000,
+      "website": "https://elreinoinfantil.fandom.com/wiki/El_Sapo_Pepe",
+      "show_name": true,
+      "last_trade_timestamp": 1786468959000,
+      "market_cap": 216264.6234766235,
+      "nsfw": false,
+      "inverted": true,
+      "is_banned": false,
+      "pump_swap_pool": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+      "real_sol_reserves": 0,
+      "real_token_reserves": 0,
+      "updated_at": 1786468962,
+      "livestream_ban_expiry": 0,
+      "reply_count": 0,
+      "is_currently_live": false,
+      "ath_market_cap": 24702219.266357154,
+      "ath_market_cap_timestamp": 1786411342000,
+      "hide_banner": false,
+      "program": "pump",
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "quote_mint": "11111111111111111111111111111111",
+      "base_decimals": 6,
+      "quote_decimals": 9,
+      "pool_address": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+      "is_cashback_enabled": false,
+      "chain_id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "multichain_family": 1,
+      "protocol": "pump",
+      "total_supply_str": "1000000000000000",
+      "market_cap_usd": 16206870.883338165,
+      "virtual_quote_reserves": 114544338344,
+      "real_quote_reserves": 0,
+      "market_cap_quote": 216264.6234766235,
+      "boost_mode": "COMPLETED",
+      "verified": false,
+      "usd_market_cap": 16209276.376749936
+    },
+    "creator": {
+      "value": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "source": "pumpfun_api",
+      "method": "GET /coins/{mint} .creator",
+      "verified": true
+    },
+    "created_timestamp": {
+      "value": 1786197553000,
+      "source": "pumpfun_api",
+      "method": "GET /coins/{mint} .created_timestamp",
+      "verified": true,
+      "note": "2026-08-08T13:59:13Z"
+    },
+    "created_at_iso": "2026-08-08T13:59:13Z",
+    "ath_market_cap": {
+      "value": 24702219.266357154,
+      "source": "pumpfun_api",
+      "method": "GET /coins/{mint} .ath_market_cap",
+      "verified": true
+    },
+    "ath_market_cap_timestamp": {
+      "value": 1786411342000,
+      "source": "pumpfun_api",
+      "method": "GET /coins/{mint} .ath_market_cap_timestamp",
+      "verified": true,
+      "note": "2026-08-11T01:22:22Z"
+    },
+    "ath_market_cap_at_iso": "2026-08-11T01:22:22Z",
+    "metadata_uri": {
+      "value": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+      "source": "pumpfun_api",
+      "method": "GET /coins/{mint} .metadata_uri",
+      "verified": true
+    },
+    "bonding_curve": "9oi3zoTqd1T8T3CVuSDfSNwjeWaj6zZLdYMLWNyayaeA",
+    "pump_swap_pool": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+    "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "description_note": "pump.fun collapses the newlines in the description. Cite metadata.json / IPFS for the verbatim text, not this field."
+  },
+  "bidirectional_verified": {
+    "value": {
+      "mdudas": true,
+      "slingoor": true
+    },
+    "source": "pumpfun_api",
+    "method": "wallet -> /users/{address} -> username -> /users/{username} -> address, compared",
+    "verified": true
+  },
+  "caveat_x_link": "pump.fun returns x_username=null and x_id=null for BOTH wallets. The pump.fun username is a self-chosen display name and is NOT by itself proof of X identity. Render this caveat; do not hide it."
+}

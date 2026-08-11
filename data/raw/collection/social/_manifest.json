@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-08-11T17:57:47Z",
+  "completed_at": "2026-08-11T17:58:16Z",
+  "x_api": {
+    "probe": {
+      "checked_at": "2026-08-11T17:57:47Z",
+      "endpoints": {
+        "users_by_username": {
+          "http": 200,
+          "ok": true
+        },
+        "search_recent": {
+          "http": 200,
+          "ok": true
+        },
+        "search_all": {
+          "http": 200,
+          "ok": true
+        }
+      },
+      "status": "ok",
+      "detail": "search endpoints authorized"
+    },
+    "status": "ok",
+    "detail": "search endpoints authorized",
+    "calls_made": 7,
+    "token_present": true
+  },
+  "keyless": {
+    "hydration_source": "api.fxtwitter.com",
+    "text_validator": "api.vxtwitter.com",
+    "entity_source": "cdn.syndication.twimg.com",
+    "views_available_keylessly": true,
+    "note": "fxtwitter exposes `views`, so impression counts do NOT require paid API quota. Engagement can be refreshed forever at zero cost."
+  },
+  "collected": {
+    "key_moments_requested": 10,
+    "key_moments_resolved": 10,
+    "key_moments_unresolved": [],
+    "text_cross_verified": 3,
+    "text_mismatches": [],
+    "author_mismatches": [],
+    "profiles": 3
+  },
+  "refused": {
+    "timelines": {},
+    "search": null,
+    "impact": null
+  },
+  "files": [
+    "_manifest.json",
+    "graph.json",
+    "key_moments.json",
+    "profiles.json",
+    "search_toad.json",
+    "timelines.json"
+  ]
+}

@@ -1,0 +1,510 @@
+{
+ "generated_at": "2026-08-11T17:57:47Z",
+ "method": "keyless hydration: fxtwitter (text+metrics incl. views), vxtwitter (text cross-validation), syndication (entities/media/note flag)",
+ "resolved": 10,
+ "requested": 10,
+ "note_tweets": 3,
+ "text_cross_verified": 3,
+ "text_mismatches": 0,
+ "moments": [
+  {
+   "id": "2086595256208748852",
+   "captured_at": "2026-08-11T17:57:51Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication",
+    "vxtwitter"
+   ],
+   "sources_failed": {},
+   "label": "origin story + \"never sell\" pledge",
+   "note": "1,193-char NOTE TWEET. The repo previously shipped a 265-char fabricated splice of this. Must be stored in full.",
+   "author": {
+    "handle": "mdudas",
+    "name": "Mike Dudas",
+    "id": "7184612",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2086970388097970176/fYi8HUbl_200x200.jpg",
+    "followers_at_capture": 1697726
+   },
+   "text": "super fun weekend meeting the @eltoadpepe cto team and @slingoorio; had a serendipitous moment on the exercise bike yesterday morning\n\n@sapijiju and @a1lon9 had asked me for feedback on the updated @pumpfun mobile app, i told them i was going to give the social feed a try\n\nbought the first coin i saw 3-4 people mention that looked like it had a good narrative, threw in ~ $200, wanted to see if the feed could lead to some motion\n\nsolana:A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump started moving immediately, i went out with the family for a bit, @slingoorio sent me a good chunk of supply (thank you sir \ud83e\udee1), i looked at my wallet a few hours later and said \"whoaaaaa\"\n\nnow we're off to the races - fully transitioning this into a community coin with the @eltoadpepe team, highlighting the unique attributes of pump as a social platform and the awesome traders and people commenting and having fun together with memes and trends\n\ni obviously will never sell any of the tokens in my possession, so it's a matter of getting them out to the community, people who love trading and having a good time; spreading the love, paying it forward\n\na bunch of folks will be helping me with this, lfg\n\n\ud83d\udc38",
+   "text_len": 1193,
+   "text_sha256": "03e5060d63398f0bff9e68c3c519b786ee4dda0bb24267009b6271acae304e9f",
+   "text_source": "fxtwitter",
+   "text_integrity": "verified_identical",
+   "is_note_tweet": true,
+   "syndication_truncated_len": 280,
+   "truncation_avoided_chars": 913,
+   "created_at": "2026-08-09T23:27:30Z",
+   "metrics": {
+    "likes": 1445,
+    "retweets": 269,
+    "replies": 518,
+    "quotes": 92,
+    "bookmarks": 66,
+    "views": 255047,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 1445,
+    "replies": 518,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/mdudas/status/2086595256208748852",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": true,
+   "status": "ok"
+  },
+  {
+   "id": "2086882992010440789",
+   "captured_at": "2026-08-11T17:57:51Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "\"welcome, sent you some\" + 70K screenshot (wallet-proof exhibit)",
+   "author": {
+    "handle": "mdudas",
+    "name": "Mike Dudas",
+    "id": "7184612",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2086970388097970176/fYi8HUbl_200x200.jpg",
+    "followers_at_capture": 1697726
+   },
+   "text": "@lbexplorer welcome, sent you some \ud83d\udc38",
+   "text_len": 36,
+   "text_sha256": "29b0c86611cad82b55f1f21a0f0722570f6fd74ff3dcc8b33d95d8f6acd254dd",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-10T18:30:52Z",
+   "metrics": {
+    "likes": 100,
+    "retweets": 6,
+    "replies": 52,
+    "quotes": 5,
+    "bookmarks": 2,
+    "views": 27098,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 100,
+    "replies": 52,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPYZBaXW0AAv-w7.jpg?name=orig",
+     "thumbnail_url": null,
+     "width": 1290,
+     "height": 1180
+    }
+   ],
+   "has_media": true,
+   "url": "https://x.com/mdudas/status/2086882992010440789",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086106068636127279",
+   "captured_at": "2026-08-11T17:57:51Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication",
+    "vxtwitter"
+   ],
+   "sources_failed": {},
+   "label": "\"Might have to send the supply to Mike Dudas...\"",
+   "author": {
+    "handle": "slingoorio",
+    "name": "sling",
+    "id": "1509239489021030405",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2087011272080375809/XcVop0GX_200x200.jpg",
+    "followers_at_capture": 94821
+   },
+   "text": "Might have to send the supply to Mike Dudas but only after confirmation from multiple sources that I have the RIGHT wallet addresses. \n\nFirst I need confirmation that he ACCEPTS this. \n\nSecond I obviously need to triple check it\u2019s his wallet. \n\nThird see if he wants it streamflowed and locked for X amount of time to please all parties. \n\nTalk soon.\n\nCan yall tag him???\n\nDidn\u2019t expect this to blow up and I am not going to do anything to jeopardize a genny runner for yall.",
+   "text_len": 475,
+   "text_sha256": "e286c77d04846d0129e71f979cfc5041842e3fbd2d3fc91c98a8972891ba709f",
+   "text_source": "fxtwitter",
+   "text_integrity": "verified_identical",
+   "is_note_tweet": true,
+   "syndication_truncated_len": 269,
+   "truncation_avoided_chars": 206,
+   "created_at": "2026-08-08T15:03:39Z",
+   "metrics": {
+    "likes": 194,
+    "retweets": 12,
+    "replies": 52,
+    "quotes": 1,
+    "bookmarks": 8,
+    "views": 30518,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 194,
+    "replies": 52,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/slingoorio/status/2086106068636127279",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086921237855719848",
+   "captured_at": "2026-08-11T17:57:51Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "art contest",
+   "author": {
+    "handle": "eltoadpepe",
+    "name": "el \"TOAD\" pepe",
+    "id": "2086108195693719552",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2086109640182661120/dt1PCNQf_200x200.jpg",
+    "followers_at_capture": 4639
+   },
+   "text": "the toad art contest is officially live!\n\neveryone from /biz/ is submitting their best artwork(s)\n\nfaq below:",
+   "text_len": 109,
+   "text_sha256": "eee9b3677f4c8ee4a351856ca10a8fa067bced259603a2dd005cfb6028d9a47c",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-10T21:02:50Z",
+   "metrics": {
+    "likes": 497,
+    "retweets": 106,
+    "replies": 121,
+    "quotes": 38,
+    "bookmarks": 104,
+    "views": 41468,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 497,
+    "replies": 121,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video.twimg.com/amplify_video/2086920925778444288/vid/avc1/848x848/g6xo_MBM45fs9oWi.mp4?tag=29",
+     "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2086920925778444288/img/M5yHSKof7fPZYg6-.jpg",
+     "width": 848,
+     "height": 848
+    }
+   ],
+   "has_media": true,
+   "url": "https://x.com/eltoadpepe/status/2086921237855719848",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086922779023008095",
+   "captured_at": "2026-08-11T17:57:51Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "slingoor on dumping",
+   "author": {
+    "handle": "slingoorio",
+    "name": "sling",
+    "id": "1509239489021030405",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2087011272080375809/XcVop0GX_200x200.jpg",
+    "followers_at_capture": 94821
+   },
+   "text": "about 5-10 communities are dumping on me as we speak. \n\npls stop. \n\n\ud83e\udd23",
+   "text_len": 69,
+   "text_sha256": "83ea8bcc89d15b35d0529c4fd6dc5d825ac2bb09c742a82deaabda5497b67c38",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-10T21:08:58Z",
+   "metrics": {
+    "likes": 212,
+    "retweets": 5,
+    "replies": 121,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 16360,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 212,
+    "replies": 121,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/slingoorio/status/2086922779023008095",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086956264542687581",
+   "captured_at": "2026-08-11T17:57:51Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "conflict-of-interest thread (1/3)",
+   "thread": "conflict_of_interest",
+   "author": {
+    "handle": "ZeusRWA",
+    "name": "Zeus \ud83c\uddec\ud83c\udde7",
+    "id": "1292566836098236419",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2043699058498297856/-m4dSz4O_200x200.jpg",
+    "followers_at_capture": 26348
+   },
+   "text": "@mdudas @eltoadpepe @slingoorio @sapijiju @a1lon9 @Pumpfun Not at all, I totally believe In power of communities but were you really surprised that with your influence you bought a coin on a social tracking coin buying app that people aped in after you?",
+   "text_len": 253,
+   "text_sha256": "047ff7c0da24c7c5c6d4fb811a146eb4ad80a7f3d94104a019d67941c30a7d7b",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-10T23:22:01Z",
+   "metrics": {
+    "likes": 9,
+    "retweets": 0,
+    "replies": 2,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 639,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 9,
+    "replies": 2,
+    "captured_at": "2026-08-11T17:57:51Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/ZeusRWA/status/2086956264542687581",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086953360914031090",
+   "captured_at": "2026-08-11T17:57:53Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "conflict-of-interest thread (2/3)",
+   "thread": "conflict_of_interest",
+   "author": {
+    "handle": "mdudas",
+    "name": "Mike Dudas",
+    "id": "7184612",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2086970388097970176/fYi8HUbl_200x200.jpg",
+    "followers_at_capture": 1697728
+   },
+   "text": "@ZeusRWA @eltoadpepe @slingoorio @sapijiju @a1lon9 @Pumpfun i feel very sad for folks like you who think life is a big conspiracy they\u2019re not a part of\n\n\ud83d\udc38",
+   "text_len": 154,
+   "text_sha256": "c4ef33d58b0d9d98b3649d5f9660e8b5182a77ae09c732fcfefb5569efbeb0a4",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-10T23:10:29Z",
+   "metrics": {
+    "likes": 27,
+    "retweets": 0,
+    "replies": 30,
+    "quotes": 1,
+    "bookmarks": 0,
+    "views": 1627,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 27,
+    "replies": 30,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/mdudas/status/2086953360914031090",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086962659555950741",
+   "captured_at": "2026-08-11T17:57:53Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "conflict-of-interest thread (3/3)",
+   "thread": "conflict_of_interest",
+   "author": {
+    "handle": "mdudas",
+    "name": "Mike Dudas",
+    "id": "7184612",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2086970388097970176/fYi8HUbl_200x200.jpg",
+    "followers_at_capture": 1697728
+   },
+   "text": "@ZeusRWA @eltoadpepe @slingoorio @sapijiju @a1lon9 @Pumpfun dude, i bought rasmr coin and it went down fml\n\nso yes, i was surprised",
+   "text_len": 131,
+   "text_sha256": "69766a6df453a7c8c4693a5b0dc43d8ebab347fab0c2344eb7c58e94d7ec097c",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-10T23:47:26Z",
+   "metrics": {
+    "likes": 13,
+    "retweets": 0,
+    "replies": 24,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 978,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 13,
+    "replies": 24,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/mdudas/status/2086962659555950741",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  },
+  {
+   "id": "2086927633011331359",
+   "captured_at": "2026-08-11T17:57:53Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication",
+    "vxtwitter"
+   ],
+   "sources_failed": {},
+   "label": "CTO transfer + multisig intent",
+   "author": {
+    "handle": "slingoorio",
+    "name": "sling",
+    "id": "1509239489021030405",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2087011272080375809/XcVop0GX_200x200.jpg",
+    "followers_at_capture": 94821
+   },
+   "text": "btw i do intend to completely transfer over toad to a cto team in which fees can be pointed towards a multi sig (or at least prefer this transition) in the coming days. \n\nobviously will take coordination and some meetings when the bulk of us are online at the same time but this is my preference as solana:A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump emerges as a top coin on Solana. \n\nive mentioned some things are so obviously programmed that it\u2019s key to just cut the noise and have some fun. \n\nRibbit \ud83d\udc38",
+   "text_len": 505,
+   "text_sha256": "42cad5cc9701b8b43669b16781f48a31498e43c3fcb382be02599dda391a8a6e",
+   "text_source": "fxtwitter",
+   "text_integrity": "verified_identical",
+   "is_note_tweet": true,
+   "syndication_truncated_len": 278,
+   "truncation_avoided_chars": 227,
+   "created_at": "2026-08-10T21:28:15Z",
+   "metrics": {
+    "likes": 308,
+    "retweets": 32,
+    "replies": 59,
+    "quotes": 2,
+    "bookmarks": 6,
+    "views": 25352,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 308,
+    "replies": 59,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/slingoorio/status/2086927633011331359",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": true,
+   "status": "ok"
+  },
+  {
+   "id": "2086404728359915929",
+   "captured_at": "2026-08-11T17:57:53Z",
+   "sources_ok": [
+    "fxtwitter",
+    "syndication"
+   ],
+   "sources_failed": {},
+   "label": "first public nod to the toad",
+   "author": {
+    "handle": "mdudas",
+    "name": "Mike Dudas",
+    "id": "7184612",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2086970388097970176/fYi8HUbl_200x200.jpg",
+    "followers_at_capture": 1697728
+   },
+   "text": "@slingoorio the toad pepe is my favorite kind of pepe.",
+   "text_len": 54,
+   "text_sha256": "3ff22ca6ef31b57f1a6c5e923ba3e9eb473e52b74e7757ab4cf4b07bcba3da5b",
+   "text_source": "fxtwitter",
+   "text_integrity": "single_source",
+   "is_note_tweet": false,
+   "created_at": "2026-08-09T10:50:25Z",
+   "metrics": {
+    "likes": 290,
+    "retweets": 35,
+    "replies": 70,
+    "quotes": 6,
+    "bookmarks": 6,
+    "views": 17546,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "fxtwitter"
+   },
+   "metrics_syndication": {
+    "likes": 290,
+    "replies": 70,
+    "captured_at": "2026-08-11T17:57:53Z",
+    "source": "cdn.syndication.twimg.com"
+   },
+   "media": [],
+   "has_media": false,
+   "url": "https://x.com/mdudas/status/2086404728359915929",
+   "lang": "en",
+   "conversation_id": null,
+   "mentions_mint": false,
+   "status": "ok"
+  }
+ ]
+}

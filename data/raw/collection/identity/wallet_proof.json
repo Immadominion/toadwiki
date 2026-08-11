@@ -1,0 +1,110 @@
+{
+  "collected_at": "2026-08-11T17:22:58Z",
+  "steps": [],
+  "errors": [],
+  "transfer": {
+    "value": {
+      "sig": "4Syi2mXentmGLSTZva2DXSimP4hVwv5Yp4ktyi2K4rRArAyyasTDiovUhGLXb4Zr4uXrDqq9RLVkKSsAoqrfoiPU",
+      "block_time": 1786386589,
+      "time": "2026-08-10T18:29:49Z",
+      "fee_payer": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+      "err": null,
+      "from_owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+      "to_owner": "64w4qRu9VGio7U1Asc6B68QDpS8L1McmSn2yyExC6Fii",
+      "sent_raw": -70000000000,
+      "received_raw": 70000000000,
+      "amount": "70000.000000",
+      "amount_matches_expected": true,
+      "explorer": "https://solscan.io/tx/4Syi2mXentmGLSTZva2DXSimP4hVwv5Yp4ktyi2K4rRArAyyasTDiovUhGLXb4Zr4uXrDqq9RLVkKSsAoqrfoiPU"
+    },
+    "source": "helius_rpc",
+    "method": "getTransaction jsonParsed, pre/postTokenBalances delta",
+    "verified": true
+  },
+  "recipient_token_account": {
+    "value": {
+      "address": "6eZa3oFQ1a3zqVkVpVjmhVJ7iWh1eYaa1i9c75kzz6x8",
+      "owner": "64w4qRu9VGio7U1Asc6B68QDpS8L1McmSn2yyExC6Fii",
+      "signature_count_ever": 1,
+      "signatures": [
+        {
+          "sig": "4Syi2mXentmGLSTZva2DXSimP4hVwv5Yp4ktyi2K4rRArAyyasTDiovUhGLXb4Zr4uXrDqq9RLVkKSsAoqrfoiPU",
+          "time": "2026-08-10T18:29:49Z",
+          "err": null
+        }
+      ],
+      "created_in_proof_tx": true,
+      "creating_instruction": {
+        "type": "createIdempotent",
+        "program": "spl-associated-token-account"
+      },
+      "sole_signature_is_proof_tx": true
+    },
+    "source": "helius_rpc",
+    "method": "getSignaturesForAddress walked to the END of history (no cap)",
+    "verified": true,
+    "note": "Exactly ONE signature ever, and it is the transfer tx. The account was created in that transaction, so its balance cannot have come from anywhere else. This is what makes the screenshot uncounterfeitable."
+  },
+  "tweet_route": "syndication_keyless",
+  "tweet_note": "x_api unavailable (HTTP 402: {\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}); impression_count NOT available on this route",
+  "tweet": {
+    "value": {
+      "id": "2086882992010440789",
+      "text": "@lbexplorer welcome, sent you some 🐸 https://t.co/d41RUmSGSm",
+      "created_at": "2026-08-10T18:30:52.000Z",
+      "author_handle": "mdudas",
+      "author_name": "Mike Dudas",
+      "author_id": "7184612",
+      "author_verified": true,
+      "in_reply_to_screen_name": "lbexplorer",
+      "in_reply_to_status_id": "2086859983287910701",
+      "favorite_count": 100,
+      "impression_count": null,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPYZBaXW0AAv-w7.jpg"
+        }
+      ],
+      "url": "https://x.com/mdudas/status/2086882992010440789"
+    },
+    "source": "syndication_keyless",
+    "method": "tweet lookup by id",
+    "verified": true,
+    "note": "Keyless route: impression_count is NOT available. Do not display an impressions figure."
+  },
+  "gap_seconds": {
+    "value": 63,
+    "source": "derived",
+    "method": "tweet.created_at - tx.blockTime",
+    "verified": true,
+    "note": "Seconds between the on-chain transfer and the tweet showing it."
+  },
+  "recipient_identity": {
+    "value": {
+      "wallet": "64w4qRu9VGio7U1Asc6B68QDpS8L1McmSn2yyExC6Fii",
+      "pumpfun_username": "lbexplorer",
+      "pumpfun_raw": {
+        "address": "64w4qRu9VGio7U1Asc6B68QDpS8L1McmSn2yyExC6Fii",
+        "likes_received": 0,
+        "mentions_received": 0,
+        "username": "lbexplorer",
+        "profile_image": "https://ipfs.io/ipfs/bafkreid5cv4h7nzh5lgi5dxmom4lsamyjxpkotp3arakalne7exmdzsdcu",
+        "last_username_update_timestamp": 1786377953244,
+        "following": 0,
+        "followers": 253,
+        "bio": "Running a pump position up to 8 figs",
+        "x_username": null,
+        "x_id": null
+      },
+      "tweet_in_reply_to_screen_name": "lbexplorer",
+      "handles_match": true
+    },
+    "source": "pumpfun_api + x",
+    "method": "recipient wallet's pump.fun username compared to the handle the tweet replies to",
+    "verified": true,
+    "note": "Two independent sources name the same person for the receiving wallet."
+  },
+  "exhibit_complete": true,
+  "claim": "The campaign wallet sent 70,000 TOAD to a brand-new token account that has exactly one transaction in its entire history, and 63 seconds later the X account @mdudas posted a screenshot of that balance while replying to the recipient. The receiving wallet's pump.fun username matches the handle replied to. The wallet and the X account are the same operator."
+}

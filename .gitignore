@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------------------
+# SECRETS -- the whole reason this file exists.
+# The Helius API key is the RPC hostname's subdomain, so a leaked .env is a
+# leaked credential with no query string to scrub. Keep .env.example (a
+# template with no values) and nothing else.
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# collector caches: large, regenerable, and full of raw transaction bodies.
+# The committed evidence lives in data/raw/ instead, with sha256 in MANIFEST.json.
+data/collection/**/.cache/
+scratchpad/
+*.tmp
+*.json.tmp
+
+# internal planning docs -- kept locally, not published. These carry product
+# strategy, competitive notes and design rationale that have no business in a
+# public repo.
+PRD.md
+DESIGN.md
+NOTES.md
+notes/
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# logs
+*.log
+npm-debug.log*
+yarn-error.log*

@@ -1,0 +1,195 @@
+{
+  "collected_at": "2026-08-11T17:22:36Z",
+  "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+  "das_asset_raw": {
+    "last_indexed_slot": 438648247,
+    "interface": "FungibleToken",
+    "id": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+    "content": {
+      "$schema": "https://schema.metaplex.com/nft1.0.json",
+      "json_uri": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+      "files": [
+        {
+          "uri": "https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq",
+          "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq",
+          "mime": "image/png"
+        }
+      ],
+      "metadata": {
+        "description": "I will not run this coin. You are more than welcome to CTO it.\n\nThe real first Pepe appeared in 1988 on Argentine TV in the children’s show of Carlitos Balá, as El Sapo Pepe.\n\nDecades later, Matt Furie would present his own frog, sharing the same name\n\nPEPE was born",
+        "json_name": "The Toad Pepe",
+        "name": "The Toad Pepe",
+        "symbol": "TOAD"
+      },
+      "links": {
+        "image": "https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq"
+      }
+    },
+    "authorities": [],
+    "compression": {
+      "eligible": false,
+      "compressed": false,
+      "data_hash": "",
+      "creator_hash": "",
+      "asset_hash": "",
+      "tree": "",
+      "seq": 0,
+      "leaf_id": 0
+    },
+    "grouping": [],
+    "royalty": {
+      "royalty_model": "creators",
+      "target": null,
+      "percent": 0.0,
+      "basis_points": 0,
+      "primary_sale_happened": false,
+      "locked": false
+    },
+    "creators": [],
+    "ownership": {
+      "frozen": false,
+      "delegated": false,
+      "delegate": null,
+      "ownership_model": "token",
+      "owner": ""
+    },
+    "supply": null,
+    "mutable": true,
+    "burnt": false,
+    "mint_extensions": {
+      "metadata": {
+        "uri": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+        "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+        "name": "The Toad Pepe",
+        "symbol": "TOAD",
+        "update_authority": null,
+        "additional_metadata": []
+      },
+      "metadata_pointer": {
+        "authority": null,
+        "metadata_address": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump"
+      }
+    },
+    "token_info": {
+      "symbol": "TOAD",
+      "supply": 960572843750785,
+      "decimals": 6,
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "price_info": {
+        "price_per_token": 0.015633758,
+        "currency": "USDC"
+      }
+    }
+  },
+  "token_program": {
+    "value": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "source": "helius_rpc",
+    "method": "getAccountInfo(mint).owner",
+    "verified": true,
+    "note": "Token-2022. An SPL-only parser reads this mint as empty, silently."
+  },
+  "onchain_name": {
+    "value": "The Toad Pepe",
+    "source": "helius_rpc",
+    "method": "getAccountInfo extensions[tokenMetadata].state.name",
+    "verified": true
+  },
+  "onchain_symbol": {
+    "value": "TOAD",
+    "source": "helius_rpc",
+    "method": "getAccountInfo extensions[tokenMetadata].state.symbol",
+    "verified": true
+  },
+  "onchain_uri": {
+    "value": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+    "source": "helius_rpc",
+    "method": "getAccountInfo extensions[tokenMetadata].state.uri",
+    "verified": true
+  },
+  "das_description": {
+    "value": "I will not run this coin. You are more than welcome to CTO it.\n\nThe real first Pepe appeared in 1988 on Argentine TV in the children’s show of Carlitos Balá, as El Sapo Pepe.\n\nDecades later, Matt Furie would present his own frog, sharing the same name\n\nPEPE was born",
+    "source": "helius_das",
+    "method": "getAsset content.metadata.description (indexer's copy of the IPFS doc)",
+    "verified": true,
+    "note": "Cross-check only. The authoritative text is ipfs_metadata.raw_text."
+  },
+  "image": {
+    "value": "https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq",
+    "source": "helius_das",
+    "method": "getAsset content.links.image",
+    "verified": true
+  },
+  "decimals": {
+    "value": 6,
+    "source": "helius_das",
+    "method": "getAsset token_info.decimals",
+    "verified": true
+  },
+  "das_mutable_flag": {
+    "value": true,
+    "source": "helius_das",
+    "method": "getAsset mutable",
+    "verified": true,
+    "note": "DO NOT RENDER. This Metaplex-oriented flag reads true even though the Token-2022 metadata updateAuthority is null. authorities.json is the authoritative immutability source."
+  },
+  "supply": {
+    "value": {
+      "raw": 960572843750785,
+      "ui": "960572843.750785",
+      "decimals": 6
+    },
+    "source": "helius_rpc",
+    "method": "getTokenSupply (live, never hardcoded -- burns are ongoing)",
+    "verified": true
+  },
+  "ipfs_metadata": {
+    "cid": "bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+    "fetched": true,
+    "gateway": "https://ipfs.io/ipfs",
+    "raw_text": "{\"name\":\"The Toad Pepe\",\"symbol\":\"TOAD\",\"description\":\"I will not run this coin. You are more than welcome to CTO it.\\n\\nThe real first Pepe appeared in 1988 on Argentine TV in the children’s show of Carlitos Balá, as El Sapo Pepe.\\n\\nDecades later, Matt Furie would present his own frog, sharing the same name\\n\\nPEPE was born\",\"image\":\"https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq\",\"showName\":true,\"createdOn\":\"https://pump.fun\",\"website\":\"https://elreinoinfantil.fandom.com/wiki/El_Sapo_Pepe\",\"coin_community\":\"https://coincommunities.org/communities/A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump\"}",
+    "parsed": {
+      "name": "The Toad Pepe",
+      "symbol": "TOAD",
+      "description": "I will not run this coin. You are more than welcome to CTO it.\n\nThe real first Pepe appeared in 1988 on Argentine TV in the children’s show of Carlitos Balá, as El Sapo Pepe.\n\nDecades later, Matt Furie would present his own frog, sharing the same name\n\nPEPE was born",
+      "image": "https://ipfs.io/ipfs/bafybeieqj4yflnjsrld7flroapyq6pixzi4qyifiotnqddq7edoa2hn4sq",
+      "showName": true,
+      "createdOn": "https://pump.fun",
+      "website": "https://elreinoinfantil.fandom.com/wiki/El_Sapo_Pepe",
+      "coin_community": "https://coincommunities.org/communities/A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump"
+    },
+    "sha256_note": "raw_text is the unmodified gateway response body"
+  },
+  "description": {
+    "value": "I will not run this coin. You are more than welcome to CTO it.\n\nThe real first Pepe appeared in 1988 on Argentine TV in the children’s show of Carlitos Balá, as El Sapo Pepe.\n\nDecades later, Matt Furie would present his own frog, sharing the same name\n\nPEPE was born",
+    "source": "ipfs",
+    "method": "verbatim body of the IPFS document at CID bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za, which is the target of the mint's on-chain tokenMetadata.uri",
+    "verified": true,
+    "note": "This is the citable origin of the 'I will not run this coin' line: it is the token's own metadata document, NOT a tweet. It replaces any attribution of this quote to a slingoor post."
+  },
+  "description_starts_with_expected": true,
+  "immutability_chain": {
+    "value": {
+      "link_1_uri_cannot_change": {
+        "onchain_uri": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+        "update_authority_is_null": true,
+        "source": "getAccountInfo extensions[tokenMetadata]"
+      },
+      "link_2_content_cannot_change": {
+        "cid": "bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za",
+        "cid_present_in_onchain_uri": true,
+        "why": "A CIDv1 is a content hash. Different bytes would produce a different CID, so this CID can only ever resolve to this document."
+      },
+      "das_indexer_agrees": true
+    },
+    "source": "derived",
+    "method": "on-chain uri (null update authority) + content-addressed CID",
+    "verified": true,
+    "note": "Correct framing: the DESCRIPTION IS NOT ON CHAIN. Only name, symbol and uri are. Do not render 'the description is stored on-chain'. Render: the on-chain pointer is frozen and the document it points at is content-addressed."
+  },
+  "ipfs_matches_das_indexer": {
+    "value": true,
+    "source": "cross_check",
+    "method": "IPFS document description vs Helius DAS indexed description, exact compare",
+    "verified": true
+  }
+}

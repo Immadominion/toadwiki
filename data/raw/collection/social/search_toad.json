@@ -1,0 +1,17 @@
+{
+  "status": "skipped",
+  "reason": "--no-search",
+  "unique_tweets": 0,
+  "tweets": [],
+  "top_by_views": [],
+  "per_day_returned": [],
+  "days_errored": [],
+  "days_complete": [],
+  "truncation_suspected": false,
+  "window": {
+    "start": "2026-08-04T00:00:00Z",
+    "end": "2026-08-11T17:57:47Z"
+  },
+  "captured_at": "2026-08-11T17:57:47Z",
+  "note": "Not collected this run. Empty means unsearched, not inactive."
+}

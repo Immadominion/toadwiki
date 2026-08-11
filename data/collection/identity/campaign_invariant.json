@@ -1,0 +1,3212 @@
+{
+  "token_account": "AuA2VRui5JNWNWF79iyaSKpW7zMQLfzFZBjd2uS3YW2H",
+  "owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+  "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+  "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+  "signature_count": 183,
+  "failed_signature_count": 0,
+  "failed_pct": 0.0,
+  "successful_signature_count": 183,
+  "unfetchable_signatures": [],
+  "inbound_tx_count": 6,
+  "outbound_tx_count": 177,
+  "outbound_transfer_count": 177,
+  "unique_recipient_count": 159,
+  "inbound_raw": 185582162674358,
+  "outbound_raw": 21588555000000,
+  "balance_raw": 163993607674358,
+  "inbound": "185582162.674358",
+  "outbound": "21588555.000000",
+  "balance": "163993607.674358",
+  "residual_raw": 0,
+  "invariant_holds": true,
+  "complete": true,
+  "inbound_rows": [
+    {
+      "sig": "2VZz8dFP2C2R8FfwrintY5u1FuvNWbyCvx1SqJd5VtTqQxA5bzQknkBDDQH4UZgoUFuSQxfTuXvXa2ePSVo8a4k6",
+      "ts": 1786198616,
+      "time": "2026-08-08T14:16:56Z",
+      "raw": 4618714619783,
+      "amount": "4618714.619783",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4618714619783
+        }
+      ]
+    },
+    {
+      "sig": "DNe3AoKREpRnX9WqAD913Phx7SS9hJmtV3JCnyza9bZbZmukeaTbrrmjFQrDxv9sTMW2zrAGEq5tgxafrrvNjCc",
+      "ts": 1786202839,
+      "time": "2026-08-08T15:27:19Z",
+      "raw": 180963210657135,
+      "amount": "180963210.657135",
+      "counterparties": [
+        {
+          "owner": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+          "raw": 180963210657135
+        }
+      ]
+    },
+    {
+      "sig": "3G8dGirHJgGn9jZeaZJWvvJv7VS7GtGJ8qNYLn1P1irtQoYajaCf99ZiH3NZBnYwEwPejqQsuYKepoXs4YLWkouU",
+      "ts": 1786236646,
+      "time": "2026-08-09T00:50:46Z",
+      "raw": 100000,
+      "amount": "0.100000",
+      "counterparties": [
+        {
+          "owner": "7JfKhy9n72zdLGNiapVsVTn5YB6YQsTrdjpb3Hxwj5Jh",
+          "raw": 100000
+        }
+      ]
+    },
+    {
+      "sig": "2ZQPbJo4pAX7EFQt61xU4WGYPSKPq9TFw3XZwwVGYUzpYHvgjXHXWLHFnsDSfEFMoSk3v35P71gCo9m66SqMXCNE",
+      "ts": 1786427153,
+      "time": "2026-08-11T05:45:53Z",
+      "raw": 72000000,
+      "amount": "72.000000",
+      "counterparties": [
+        {
+          "owner": "4mBB5wq2jorJYC3Caj8o7kRP5vixy4jqPzSXEMve8gNK",
+          "raw": 72000000
+        }
+      ]
+    },
+    {
+      "sig": "3xV7sbq9MZggcm15tNTBDvL3zPX2xBdcfRamXsQCgkrJjUxYm7qv8FqkVHoP1UaW9G48tL8GTdMDtgSDnRXwzabh",
+      "ts": 1786446575,
+      "time": "2026-08-11T11:09:35Z",
+      "raw": 60000000,
+      "amount": "60.000000",
+      "counterparties": [
+        {
+          "owner": "mYCTvnp4LALNBuGDKPdgp4PywX2pqDj7tP65PfxaxUi",
+          "raw": 60000000
+        }
+      ]
+    },
+    {
+      "sig": "3LMzAT5yHjfqB9tSNTev2ek183wFDtQ9Fz9GHLqP8JUHNWWKSjdE1AASqQoYsEHfYhpAVGUNiFsgrWJVSfuw7SD3",
+      "ts": 1786451755,
+      "time": "2026-08-11T12:35:55Z",
+      "raw": 105297440,
+      "amount": "105.297440",
+      "counterparties": [
+        {
+          "owner": "2k5N7Ugv5AZKH3Q3781AR16WQ4CFaHRR9ppkupkPwPV7",
+          "raw": 105297440
+        }
+      ]
+    }
+  ],
+  "outbound_rows": [
+    {
+      "sig": "2TM3MNcqaTzZgUcTekysJMMh5By7yQpLhdUjJYzCZwPVy5bcaQZHsbuAEACMNGVge2i6ikUwummF6c3Zuy5bykRh",
+      "ts": 1786209643,
+      "time": "2026-08-08T17:20:43Z",
+      "raw": -700000000000,
+      "amount": "700000.000000",
+      "counterparties": [
+        {
+          "owner": "9ggkEFf3PK56dvP2yjm1N7X8Bxzty1BYfk3Rp68TyvQP",
+          "raw": 700000000000
+        }
+      ]
+    },
+    {
+      "sig": "4s6xhiKm99HCTkKvUbfwYc9TpjdfJUx6vPgYgYDNeEAG5SN28eSLDAku1m1Cfk3c5Kzj2mQrZHjfh22doL3QGk21",
+      "ts": 1786210454,
+      "time": "2026-08-08T17:34:14Z",
+      "raw": -670000000000,
+      "amount": "670000.000000",
+      "counterparties": [
+        {
+          "owner": "8Sid38QZK7K1BHmPbPdcTbiSt2f6XYhFSKF6EPUguaky",
+          "raw": 670000000000
+        }
+      ]
+    },
+    {
+      "sig": "2L7TQCU8booGToASyFEynC1hhemmboayDnQZRyU3f4aVGtnzqppDemMrTqjX9cYX7YcUWfH4JjWthu79f71Kdykq",
+      "ts": 1786210501,
+      "time": "2026-08-08T17:35:01Z",
+      "raw": -620000000000,
+      "amount": "620000.000000",
+      "counterparties": [
+        {
+          "owner": "CALZBwUeN9yRFXLSZwqoWAR45BBKyZhZBsPM7YeSSsP2",
+          "raw": 620000000000
+        }
+      ]
+    },
+    {
+      "sig": "329fdBypJVdMrcyQJEC1ZBRyHbrGbiDaSCF6AyCsFcskSFbaYQFCyViYPcpxPyK7qwfYyhjEiTBr3ymgVPUYpPKs",
+      "ts": 1786215171,
+      "time": "2026-08-08T18:52:51Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "HmUt3Jn46j7c7ANdURmEyjSRj8i3Em6MhjQUi37PZ219",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "NLPWj7NXR1dJYDBkNj1FFkBaPh3UJqrYQUspzSFvHbbi8afg8v5bLYRPuJ557CsXfm9XKRraxcxtwQhxFpuedaT",
+      "ts": 1786215380,
+      "time": "2026-08-08T18:56:20Z",
+      "raw": -550000000000,
+      "amount": "550000.000000",
+      "counterparties": [
+        {
+          "owner": "52houUTLXsy3a26PtkwShmUUoDBjyVmQCZkZ7syjjMS",
+          "raw": 550000000000
+        }
+      ]
+    },
+    {
+      "sig": "3sh8oxriTkDbhdFdy72D1R4abEoT1jvqW366DZCwLkckqzPqD6NqBnEBcYeKzXSLqRvg2XsBSxkEu6RE9raN2LTa",
+      "ts": 1786216354,
+      "time": "2026-08-08T19:12:34Z",
+      "raw": -60000000000,
+      "amount": "60000.000000",
+      "counterparties": [
+        {
+          "owner": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+          "raw": 60000000000
+        }
+      ]
+    },
+    {
+      "sig": "ArKLZ5qTcpFGXs3HPkKbnKU8NksfYUEjMUt4tJbzdRpahSeAx2BcpVtsRrKznHN1g4ZLAeca5w3yZhoos5jFGqv",
+      "ts": 1786216491,
+      "time": "2026-08-08T19:14:51Z",
+      "raw": -150000000000,
+      "amount": "150000.000000",
+      "counterparties": [
+        {
+          "owner": "741TyxhtrGgdtHJDmygqtjXyxmSLYGEucu42Bguj1tbg",
+          "raw": 150000000000
+        }
+      ]
+    },
+    {
+      "sig": "4yygsJjafTMV4pWLtdm6Shs8Wq7VdBTHS926ZdzVGM1CVXVKrbJdRUWzf341TudNSNs6ghk4N7zuBrgUDqDiqhHx",
+      "ts": 1786217110,
+      "time": "2026-08-08T19:25:10Z",
+      "raw": -170000000000,
+      "amount": "170000.000000",
+      "counterparties": [
+        {
+          "owner": "Eh38pfuTRERvv6AcTZFeQsZZZLEtFBwvVhrD342phCTy",
+          "raw": 170000000000
+        }
+      ]
+    },
+    {
+      "sig": "3yH4CBazUTStV5BNddxqqveJCXDu3EVkqdSzfCvpypgCMqAC99Mi7geAbbnsbeoGC396hLk574nX3WdZniJJmBiA",
+      "ts": 1786217193,
+      "time": "2026-08-08T19:26:33Z",
+      "raw": -160000000000,
+      "amount": "160000.000000",
+      "counterparties": [
+        {
+          "owner": "8Xn3iQXNEnmgdzuTv16RYGYQntXwhUdzSKht5rgm9TMJ",
+          "raw": 160000000000
+        }
+      ]
+    },
+    {
+      "sig": "RyD4eg6SStyjJUYHYjiqhbybnxQey1fHoHuchEZPMFqTQ4VxHb4Wka6Sihq6JLaiA7pyQsbZEG56hcLJ9Am4W83",
+      "ts": 1786217255,
+      "time": "2026-08-08T19:27:35Z",
+      "raw": -165000000000,
+      "amount": "165000.000000",
+      "counterparties": [
+        {
+          "owner": "7ANtxJEnojrw1bebwH9dYEDM9yad9L3wab2PkD4qkLP9",
+          "raw": 165000000000
+        }
+      ]
+    },
+    {
+      "sig": "5JJn3P9bLBEPP9kkys7EezMa6WoyWdrW4pXsq1mYuGaZoWb5BxfXXLAxHYQCdAFYSyCsKFncDtRhyCoo5YZZX5ET",
+      "ts": 1786217418,
+      "time": "2026-08-08T19:30:18Z",
+      "raw": -160000000000,
+      "amount": "160000.000000",
+      "counterparties": [
+        {
+          "owner": "7WGjeHZpnbCyiZn28W9uNxbi6xq7K8QXecNZk7a6FzQa",
+          "raw": 160000000000
+        }
+      ]
+    },
+    {
+      "sig": "63haiGF4Uq5BycEVwuHGtDckUNiq7Sk5646oy7VKPMoCBHes8cUKvuRh8kQYo5vcovaY9wN7JeGsZ8T6jj9BHsBa",
+      "ts": 1786217750,
+      "time": "2026-08-08T19:35:50Z",
+      "raw": -33000000000,
+      "amount": "33000.000000",
+      "counterparties": [
+        {
+          "owner": "5AhbfS3SQ3CbhPsozY4v9RxHqhkL2D716cErLkog4cBD",
+          "raw": 33000000000
+        }
+      ]
+    },
+    {
+      "sig": "5xvK6Bex4ZZViqiCVRG4BTkgVMSwQsMAVq6Q55sfTmioRUqFW6gwaV7NSt4treqnYih23Ec9wQ1NHnRN5zvpwm5o",
+      "ts": 1786217904,
+      "time": "2026-08-08T19:38:24Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "2fuwm8KXGsf71fTRPqe4QgZ6SJ4eDqZzNfwfx5j4ftM1",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "4QBYmgw4HbLWWq8WJm3xtMXD7vrySqTDzQNEDDhDxPQjDHcxi3BNnuSZ8AiXw9eBm1RNLJtTx3fapB7o9DBXqBJZ",
+      "ts": 1786219687,
+      "time": "2026-08-08T20:08:07Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "Hhr9ENKwvrp9JYktWRLuMKsG1dWcoSqW4Cd6Vyafv1nS",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "5CKCdwqCCxmZpBmPtkQBJ4mQtxLUQeLG6P3JArnsGZkj24TBAWLffgPG2LdRncCRP9zBTwX8sYtjvuedsT45PPkX",
+      "ts": 1786219786,
+      "time": "2026-08-08T20:09:46Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "5iZvwfoMdnxXpPGw9hBKEz3tHv2jYG3TgExHDsWrpTyV",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "3bBjV8uCD9zJG3d5ncjEJQf2rzbXk1G4tfXAnDGrya3d3iYR34aqEnZJ9bhEEoFwkJRSaSLGDEKNbWHE2bSqp1mR",
+      "ts": 1786219846,
+      "time": "2026-08-08T20:10:46Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "Em2t5Le7VRu52atyQpWm8h88xXDw4tEE9GAeQiSGvNVA",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "2sqrWaXe2QWWtRSRtRFg6nfz6JSmViquZTKksr1UjQUGVZbx3zGikevr15wHf81Ee4WzPZjYxompSZaqbsBgUK1Q",
+      "ts": 1786219884,
+      "time": "2026-08-08T20:11:24Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "3GSBHsbqzNXtsA3H78bWFppqarQvXQgswZLQouuxLMY77oATWUngJS78vT2L9jTPGi1aZmdV1yST2BW9AZ6MPxm4",
+      "ts": 1786219911,
+      "time": "2026-08-08T20:11:51Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "E7pskdV9xCCMXtsu747tjjFEMq9Fwwnvwo6fApQWBwxP",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "5ywGVvpmKqAdsGW6ZtNJNxXU19VFnS38r3gvhQZVgVFie5Sni9fd5RWYQivGqFCY6fij2WLFXhmaZUfrMt3UPbhH",
+      "ts": 1786219936,
+      "time": "2026-08-08T20:12:16Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "Cpsj1hcaz5XEFb3uGBDnTAHKNr6Pg2pY3fJPkHiMJaFz",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "2THiCxU1coiweetZDvyQQqePySfijbaWtdQBT82tcBL6EjENiLCm76tSRfJ3Bmz1umXK2tF2kKFrkd8LwF9FCNJa",
+      "ts": 1786219993,
+      "time": "2026-08-08T20:13:13Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "9zvu8poieSXgzEjgAmbVus3bQEYWVYiJB9vKAPqx5vjH",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "2aA6UsZYCeVj47AVHhpqnjcLAEVwwJHB3wb6MG9v7tH7XwAtJ55sKHb4EJYH5ufcKJq9cMn6Vtw8kfR7jC6BE9Fv",
+      "ts": 1786220020,
+      "time": "2026-08-08T20:13:40Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "HGpvad3VEVHATweTEm8FYheKTtLriZEiYXHZEzdQHpL4",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "2tFmh4MFYjd7P9udpTWt21h7uKKUHSZSAAYFcxjVjm1TgkXL7PRmkqzdZsua35myWMi4xmjz7TFENaMH1kbmMV6",
+      "ts": 1786220041,
+      "time": "2026-08-08T20:14:01Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "8Wj51LtKKsCvjamGJnUXB281uvqm5PhwwmUS4ztdPdyh",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "2Km9zhfrWzKD26KHzHV281QSupPfHuSpznKyUmRhSaTa6TGrE8N9yJoGpXLAuXETzs6hhNHKUzLhtvz6a5Jr6538",
+      "ts": 1786220068,
+      "time": "2026-08-08T20:14:28Z",
+      "raw": -72000000000,
+      "amount": "72000.000000",
+      "counterparties": [
+        {
+          "owner": "7FBJEubxFDAJdDWrGwTAF6BcT7N7aB6NFTkdm5bhDxd2",
+          "raw": 72000000000
+        }
+      ]
+    },
+    {
+      "sig": "3RYsThEfuk7mQnFkSNVevSwGfitnGpWGb9F31Sz4q9wSbwGaG2Lf3uPop8Qy9tStKwWAm38YjrrSGKT2ubWnEE4N",
+      "ts": 1786220088,
+      "time": "2026-08-08T20:14:48Z",
+      "raw": -72000000000,
+      "amount": "72000.000000",
+      "counterparties": [
+        {
+          "owner": "6HJGj5h4nHshYs3frVq9MjrGxX385kj3YkaTThTJsjsq",
+          "raw": 72000000000
+        }
+      ]
+    },
+    {
+      "sig": "61WXJxNy3hJwwQkDGkDXSkSchFAF4TdbWut5EySQQLCH8wxbu3e8TwSjnMdMdxUDrbt7Pb3aLPGTwKRzh85aCQpW",
+      "ts": 1786220111,
+      "time": "2026-08-08T20:15:11Z",
+      "raw": -72000000000,
+      "amount": "72000.000000",
+      "counterparties": [
+        {
+          "owner": "HNozKLoXu3UL41ekFavzuSoLu7KEjj5wTYj3khwMifyd",
+          "raw": 72000000000
+        }
+      ]
+    },
+    {
+      "sig": "FReqpMN1quRKzhm97UrvGoZSzpnq3R2YDT7sZcCFCR9pgnmTGHXstiZm88mEgJzhnWRjjDk6Pxayu1iqGSb7nKh",
+      "ts": 1786220192,
+      "time": "2026-08-08T20:16:32Z",
+      "raw": -185000000000,
+      "amount": "185000.000000",
+      "counterparties": [
+        {
+          "owner": "Ch9eVziW4PhVm5ginYCbKR1pZzVaCwe4ZczUnRsJvJDg",
+          "raw": 185000000000
+        }
+      ]
+    },
+    {
+      "sig": "YbsAcw1n26TkRYih8zGErkaRXsxBJQzpne3YRqdSb9n8dcP3YMRgDvzPeYCGmdsmUDLKYsgDEMf89PQjE6LetaE",
+      "ts": 1786220510,
+      "time": "2026-08-08T20:21:50Z",
+      "raw": -170000000000,
+      "amount": "170000.000000",
+      "counterparties": [
+        {
+          "owner": "Hrg6CgABraxLaoxcyZafddHdJymTQkQbyVaqBipq3rzU",
+          "raw": 170000000000
+        }
+      ]
+    },
+    {
+      "sig": "3o2jUeUgxc3uHvM7zt7b7QCp3JrEsHm38bkXSDH9cTHzRakA5tpKLAxTpm35bkgQLi9s3WY8k8udDrCZM5hi925j",
+      "ts": 1786223280,
+      "time": "2026-08-08T21:08:00Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "GfRPp2sNRJioNvCJm7zQLCa3TjGkVgSkeAubWkxizdiB",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "d7viri37K35Ctf4aCaDNMjRZU5nR4xKUQQ222xQjojV83mqkMK39MGxu1XzUt75ATZDbPTUauFhag7eo85hPMA2",
+      "ts": 1786223380,
+      "time": "2026-08-08T21:09:40Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "Dp2kvpj47C8jdfL99uFhspfp7BGH3CFKgNZDdYeHiDh",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "4XYZcG5qHng8kqW36JQVr4HAPJ5fKNk6V2u4H12ZCpYXEe427VZTXhFLpm2iFdBLE8anSiwdufBdpit5jHEtTbSt",
+      "ts": 1786223444,
+      "time": "2026-08-08T21:10:44Z",
+      "raw": -220000000000,
+      "amount": "220000.000000",
+      "counterparties": [
+        {
+          "owner": "2LZ3idLfsxKyaE9MhgFPS9pkqUrEreg744wNLK1eUSxf",
+          "raw": 220000000000
+        }
+      ]
+    },
+    {
+      "sig": "nhHkbKh2Zd1WXq5qnc6TEqk8QXrGKLpDB7PS9xvqjCrx53bXLr9jWYrzfby7qheyXjYzGgRARjpJuKiWoMfz72p",
+      "ts": 1786223491,
+      "time": "2026-08-08T21:11:31Z",
+      "raw": -220000000000,
+      "amount": "220000.000000",
+      "counterparties": [
+        {
+          "owner": "F3Ffty2Lv3QisQE6QrziecKPB8KmBBveLC4VnfYNHPep",
+          "raw": 220000000000
+        }
+      ]
+    },
+    {
+      "sig": "3ovzY4WNmtaRe5Hkih8VKYCiPJDMTsFRfNJMwSfMTJuAvFXx461JMFzPnJFgU4Gb481exFkFAX7CDPjCy2TQvP8d",
+      "ts": 1786223631,
+      "time": "2026-08-08T21:13:51Z",
+      "raw": -250000000000,
+      "amount": "250000.000000",
+      "counterparties": [
+        {
+          "owner": "CwzXrbvJ7KNR2UHWx5mHS8h51byX4Yo142xoCCPUV56T",
+          "raw": 250000000000
+        }
+      ]
+    },
+    {
+      "sig": "4sxYmDDJzgDrkXAGGXdvAoxMtLT1D1jRjmarjo2aEiEYnffFmXuKGLaaHpygmHzk56fU4uGAjJTkDjfXJUCAprK4",
+      "ts": 1786223718,
+      "time": "2026-08-08T21:15:18Z",
+      "raw": -555555000000,
+      "amount": "555555.000000",
+      "counterparties": [
+        {
+          "owner": "2UWD64c9gtGc2RyrALfUebcVrcDm3A3RqLhaGJXKZHBr",
+          "raw": 555555000000
+        }
+      ]
+    },
+    {
+      "sig": "49G2dRxxnFUyq8vetgcmMvgDUPgfagtKgbqYxDz9LwNc7dQoSskX1SshMcMtYSTNjnKmySxY4B1VudGrTSd4NmjV",
+      "ts": 1786223748,
+      "time": "2026-08-08T21:15:48Z",
+      "raw": -300000000000,
+      "amount": "300000.000000",
+      "counterparties": [
+        {
+          "owner": "8gGvvEsv5Ct7pCX5N231USpbBHmH3kZ6r6VZYTJQRcwB",
+          "raw": 300000000000
+        }
+      ]
+    },
+    {
+      "sig": "3nFV6aSPpLqdYbR1B8t8xj1aLqzrtK4H5SsxgCL9HJvWD4gZ3QoM9hqE5uAHFhNqxXpXkECq1JN5z7xwAvakFP8X",
+      "ts": 1786224096,
+      "time": "2026-08-08T21:21:36Z",
+      "raw": -230000000000,
+      "amount": "230000.000000",
+      "counterparties": [
+        {
+          "owner": "F9AngKEoAdmL2XxREwcD9BC9H7FhPyafQVuJPrTvg6Z",
+          "raw": 230000000000
+        }
+      ]
+    },
+    {
+      "sig": "3ixfypRT9TgZsyKCrAhZe2jzwWXhaYeg285XYGNxRVZyCsY7gJz1gTbL9kdi5r6RuyPBqKGJC48AY5TpyfANv1B9",
+      "ts": 1786224140,
+      "time": "2026-08-08T21:22:20Z",
+      "raw": -270000000000,
+      "amount": "270000.000000",
+      "counterparties": [
+        {
+          "owner": "3Biv41TvD1P2agAsLfUWW7Kd8WGKmu5CkKMq4frcf96f",
+          "raw": 270000000000
+        }
+      ]
+    },
+    {
+      "sig": "2Pi7AycBFy4GbZtXJBE333QMnHp9cyUwsLD8EFcaSbSyVD85RgRmy3gi3UsZKo2xWRY4Qqw4HoMbGuovBiu98sWV",
+      "ts": 1786224177,
+      "time": "2026-08-08T21:22:57Z",
+      "raw": -300000000000,
+      "amount": "300000.000000",
+      "counterparties": [
+        {
+          "owner": "4uNfdSDH8syyp5BLp9gnrZEnsZjA7q68B95SnbmokT8F",
+          "raw": 300000000000
+        }
+      ]
+    },
+    {
+      "sig": "3vHQSZAJeL81MecWxP34EECGyw5c8TK1bM54zmwJkLBFvJxQZuZYNGDvJA93f8eV8JFTWgnm7Do1npVvEeTxR6ct",
+      "ts": 1786228397,
+      "time": "2026-08-08T22:33:17Z",
+      "raw": -300000000000,
+      "amount": "300000.000000",
+      "counterparties": [
+        {
+          "owner": "GjEFh87khycTvL2b1Vt9wSju4bFodpfLLeWU1MQwwy1B",
+          "raw": 300000000000
+        }
+      ]
+    },
+    {
+      "sig": "5PANnBygBn3h8BuQxXWdpoZCYUE9YnhTCafRwdrqyQhGY1qinJG1pzUinsxCVy7YDJ8UTWPLTbyxRV64nJdg3rd3",
+      "ts": 1786230122,
+      "time": "2026-08-08T23:02:02Z",
+      "raw": -250000000000,
+      "amount": "250000.000000",
+      "counterparties": [
+        {
+          "owner": "DgKeRrDYYSvhfG8FjgSPGpwGgw4YkaDzyByJGDPNhbQm",
+          "raw": 250000000000
+        }
+      ]
+    },
+    {
+      "sig": "4PMxQKUMhEhgSSTpxAgusBHJHqW5Sx2SdeQ29iC6eiXN822fMWHsiXdLwVQzYsaTURU62KJVudzBTQkvZxdLef2w",
+      "ts": 1786230210,
+      "time": "2026-08-08T23:03:30Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "BBH7jwRdKyrSAefmRUheiZicQG1EBKofFaDoUrUVjXHz",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "3Mug9b8hw6AyqvDPN6PxPSGNm2P8bTdbaHEwVwSZaCtwLqyY39KxmbXT5ne2LWUiBsL3vd9FF22Q6EbqPrsf1b2m",
+      "ts": 1786232797,
+      "time": "2026-08-08T23:46:37Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "59VpVyro5goqxkvbo6HqDShBdsuk1yLxCgJJPhYguUQv",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "2wdHDQR32yzS7ETkXgBWQ4RUDt6tdYEt6Zp9YxdQ5u3PFjkJaGshN1TkbTdevUZYP8yG15fjXXSacQgjXzMK5HZF",
+      "ts": 1786232904,
+      "time": "2026-08-08T23:48:24Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "EKFdYEYXJSsB4qTLuBLYhDftabP56M2r3sdvoqKiV7CW",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "2G4rnEbZw6ocRyKYXDQhgs7dmFSZjPE6ZPX7ZJKUfvFBB2CiGhYLHS4LwWvNjZvhYRQBMaDnd9n1gPqnChbhqdKg",
+      "ts": 1786232962,
+      "time": "2026-08-08T23:49:22Z",
+      "raw": -175000000000,
+      "amount": "175000.000000",
+      "counterparties": [
+        {
+          "owner": "4Sxux1VrSnTViwoTVCan6zk3P4XZY83Asht8jiaXqqHw",
+          "raw": 175000000000
+        }
+      ]
+    },
+    {
+      "sig": "43rGMw3mt3drZkVDm6J9vDGXj3cZR83mhEU7Wu8YRpbcQnAQfWqmHaFTXP9wr5kPhFE2bkFBTnf2yLe4QTnPQMmi",
+      "ts": 1786232996,
+      "time": "2026-08-08T23:49:56Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "EppTis6BBUNH3kvPSAyeRxhPVTzzahUPijd8c5L3tfca",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "4oTsZ5eGYSj3oHiHaD26TnP7ay4kLUu6GakrKAqKEN881wMQVMFFMNkdUncUGRwWFUqQhfkbxVpqmz1iw8jvybAi",
+      "ts": 1786233625,
+      "time": "2026-08-09T00:00:25Z",
+      "raw": -300000000000,
+      "amount": "300000.000000",
+      "counterparties": [
+        {
+          "owner": "5CYEcx88NhdRaFw3pc5YNBXoiKa3EseD8BM7Bvs8NkaU",
+          "raw": 300000000000
+        }
+      ]
+    },
+    {
+      "sig": "2qQR7tQEdGrq4Yo2VAyscDe8ZWn644DEBefqqDGWgNJ3LxJdQRVkXhgnRCMCaYMdMAmmtTyucKk25xsYqQPxrLbJ",
+      "ts": 1786233679,
+      "time": "2026-08-09T00:01:19Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "5CYEcx88NhdRaFw3pc5YNBXoiKa3EseD8BM7Bvs8NkaU",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "UTzqHLyzurihngssi7dpAYFZeAffue3aVSrAmNuLonrDE2k8anFRGTNRvyTBSdtnjZfoKPGPASbQYvtV2sXaR1Z",
+      "ts": 1786233917,
+      "time": "2026-08-09T00:05:17Z",
+      "raw": -18000000000,
+      "amount": "18000.000000",
+      "counterparties": [
+        {
+          "owner": "8iyReQez8ED5ptzJ3rPAs3MAvEJNTa8ko4gW2t9ND2TW",
+          "raw": 18000000000
+        }
+      ]
+    },
+    {
+      "sig": "2vULrKzE8MoZJtDXr4K9qminNRLCf4DQZUXUZDbRwegbBLyvrnoAxPdie64erJaq9LVEWCFKforSobmDQQwxpzri",
+      "ts": 1786234041,
+      "time": "2026-08-09T00:07:21Z",
+      "raw": -17500000000,
+      "amount": "17500.000000",
+      "counterparties": [
+        {
+          "owner": "GoJAqhWNrzhAbUqpXb9jfMtZysA2AEskdKFPq841r6At",
+          "raw": 17500000000
+        }
+      ]
+    },
+    {
+      "sig": "PkhV7EUEhhBx1tY2AHWs3amUFqxoCE8xH67e1hMjqqUm7aGEWqbsPm2KPqtHhPNQMJcLDosxu99z4oQ3iecjbPb",
+      "ts": 1786234131,
+      "time": "2026-08-09T00:08:51Z",
+      "raw": -19000000000,
+      "amount": "19000.000000",
+      "counterparties": [
+        {
+          "owner": "9hP8zmchAnooafCR9KmK2fepkUXTvtQyWGtSjpsmpvZF",
+          "raw": 19000000000
+        }
+      ]
+    },
+    {
+      "sig": "5XpXKrnKXhoPLSLPgWL9CR8C2V3NoLHBuwhgu6A5vvHGVAxd9yK6jWNZv1wGD5y2TeMGmEV57X9o2exnNqSqfpdt",
+      "ts": 1786234186,
+      "time": "2026-08-09T00:09:46Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "2K6VhA5xF9hqQEg76gJSZQgNYTH5oBh8ZMvvBHzsNTrS",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "3484yB2NFtFn2K2bD9SicpLfksfgR8LpcsNS3mfyzSbh9SYyUpXQzkt7tg1RsBAuNv8zVHmq7e5v4WEvnTaWCJR8",
+      "ts": 1786234251,
+      "time": "2026-08-09T00:10:51Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "AzQSc6nb9sB3SFsMtkcMpLtN2sqRWqFwJxH1makv68i4",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "4YANtgmKsKnK4oMp1UAhcceFNUFK2fVjCJ6uTkZDn5Ar3tijNEYR3JXAvo4jZNMGbhnnAu4W7RTCUjXztDVEimxm",
+      "ts": 1786234564,
+      "time": "2026-08-09T00:16:04Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "FNAREy7yVYc9sUzmS4xdCFpoa34p8ZEgrdCtqw3gkQn9",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "Gk3y27sp1qo1EEG4ToyXLWznnw9qVn34YQhTpo6q32CERrbGrwdVifnBdVUsWgGKzd2dmSmbxSj5TAfssAzScxA",
+      "ts": 1786234808,
+      "time": "2026-08-09T00:20:08Z",
+      "raw": -400000000000,
+      "amount": "400000.000000",
+      "counterparties": [
+        {
+          "owner": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+          "raw": 400000000000
+        }
+      ]
+    },
+    {
+      "sig": "4dYRBtJjRC3sJvuwsGGpTNSDNTAEsCh76Ba2DRMzCHXJXDEcCLCAoLHRrTQB57Pm2BdVr2hnBh8fwekoPpnYNZLa",
+      "ts": 1786234900,
+      "time": "2026-08-09T00:21:40Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "7pVL5RU5wDe7G4aRALtv6kqftYLr46VY4eZudwXrnvcG",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "46azG1kjphLAJTMjc3ng5LxqxSb3hzUmmKevSfvQ4N8zDmnt7j3fzzdVomZkZaVXxfqnuPeTEtyjCLQwKLeonLoZ",
+      "ts": 1786235836,
+      "time": "2026-08-09T00:37:16Z",
+      "raw": -250000000000,
+      "amount": "250000.000000",
+      "counterparties": [
+        {
+          "owner": "DZxhGs7uycXudBrLf8o1bQ9FVxXkrF6kGK2B5gmuY2CD",
+          "raw": 250000000000
+        }
+      ]
+    },
+    {
+      "sig": "5QytUoZUtEbushkxoCh4fXsKwrmpBVEprib1jsfaSRCbkiwBeXpZrpk7iJfGDdL6GsAarqsTj9rFscz2bKg93DCr",
+      "ts": 1786235972,
+      "time": "2026-08-09T00:39:32Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "AMqGTSDRn51DcQcLW6YUkPUcEPyf9nMCVKTZ3ezVxDdW",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "4YcWq4FSTXsnzEyQVFmKKKctph39sCabCvyhrmLvdddKAiaD6KhGmASFXHhZ2h9CG9PcUNn6P6VVCYuRXZ53aU2v",
+      "ts": 1786272982,
+      "time": "2026-08-09T10:56:22Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "H26JfMMi7eRRjoSA69Jx3QKbvx8mpqbLg5WBB4wLCa9V",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "4piTBDhWxTvH1RzACan9hVqReJcUPVws4zGMTFHdkvNKJuKdWB564ttuoQjuwSujpS6JPCXihxeztvhB8PWsFjHK",
+      "ts": 1786273053,
+      "time": "2026-08-09T10:57:33Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "4rAYJ5wanB6w8pFrfwjEZo6zxGGYrNSUF84VxjffKNuh",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "4x7rzeLYdsh53TpbpjbusowxBNGRsCwW31oeUCkwjFU4db4xbq2DpuhyxjQPGCS2zpuocUZFMDZwCxi8VyGtrC6c",
+      "ts": 1786273113,
+      "time": "2026-08-09T10:58:33Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "Cpsj1hcaz5XEFb3uGBDnTAHKNr6Pg2pY3fJPkHiMJaFz",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "3G15b8qWn9bQrsCQRkFxUYiYoNbKDSbksqzy4YBSQ6du3zBo1zXkfP6NEYfUbPcopvffHb8MmE2hvVhWdvhmkSyc",
+      "ts": 1786273162,
+      "time": "2026-08-09T10:59:22Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "9TGd518ifTja3SfKffjbbsREb3Cv3tnWzZXevH3DCNnZ",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "4rzHNfCwFPwW3UgfC9mfuvxguDcqsGGP93hRgn5eqQBbh5M6BpJJbqacjXpEr4tX1p9b4HRKTRhH9v5vzRYL6UZV",
+      "ts": 1786273188,
+      "time": "2026-08-09T10:59:48Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "9TGd518ifTja3SfKffjbbsREb3Cv3tnWzZXevH3DCNnZ",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "5UQnehZXko7qPLbaASMWpft4GaCQoy7u6KrWMHvqEp5nvusGzGqQ3hVoFSnVBm8kmdS15heAbs5GdsHiKAgLC5gL",
+      "ts": 1786273358,
+      "time": "2026-08-09T11:02:38Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "3yHq9S9xd8GePLqi5VmbJfffN7Bo9vRQtDNQN1UD8RSP",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "Q5tLnJhozbuAJ3D2T9om8RtM1d5rE5QJEw8Qzg3xRfYkE8WsakUpRWsZfmyMN3WM8Wut6CNwrYBhSq6ucAhoU1r",
+      "ts": 1786273442,
+      "time": "2026-08-09T11:04:02Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "J2Ni61di8g38bPAhuncuCvgw5Z7rr5k1ZU68s3XwRaZe",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "7wk6deAaPwBkA3MJz5HX8ngSvoWDtR1iStmJvcV2v4x2tb9eea1uDBRhYLZzzZqb3eS3CLwuHDJAtdFvp1tyXxq",
+      "ts": 1786273604,
+      "time": "2026-08-09T11:06:44Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "GvrPz54rxxMLixnBNAFjVYkBzBpCVkACpEqDnwcibPac",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "3Yb6nZVtF67KR3zqY3wrVXzYcT5LauG8sjNA7UF5Q7ENsxrLv8GmndfY8z95Y3ttjnA1oZU9kzCFyiec91CHzN2B",
+      "ts": 1786273906,
+      "time": "2026-08-09T11:11:46Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "H6CeM19X1mc4t6CduUXXKGCyt6NeE3NvEKz6Tm4dLTmc",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "4AXD7MojskWkkRvxzPvGeQYtWjyvg7YjrQdGoPQk5NA7rujjw14a5yzVA53cPzCEe5bmWge4Vu6FvRQceMjuWVjB",
+      "ts": 1786273941,
+      "time": "2026-08-09T11:12:21Z",
+      "raw": -300000000000,
+      "amount": "300000.000000",
+      "counterparties": [
+        {
+          "owner": "AjmmrnMkd4FHe7HZULcof2WZaR7x2ivdvNJwGcLJz2YS",
+          "raw": 300000000000
+        }
+      ]
+    },
+    {
+      "sig": "3AqmieVecpSHxXEKfemiqyWkzNJsXs1oaiC2aCkTCnHeG5nbckZsfXh5m6NtfZXJn8esT2qnDhnxx2oKDW6DWiCW",
+      "ts": 1786274034,
+      "time": "2026-08-09T11:13:54Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "7MFNzuU2GkBykJzg6sNNQHApAFEG7FPLr5yRazqNvT1n",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "4hAdYgEzAbAhJUUiwh1SPFu4phw6qcJwSG52vjPMXBHCAUGwDVVJdBi1dJZKkWWsPpn6CDGu3LgtPt9KSeh85Rym",
+      "ts": 1786275654,
+      "time": "2026-08-09T11:40:54Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "79t56uz97mX6TZb8cZT8SZ5yZhTtWXbmY9CJDbuiGzox",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "TdSCmnAhpY6uA48J1wpsenfPBovHLGqzkJNPs9Kq3ewv39PzYnkniEUTDTSw8A925Wa7AP8cnA46KvXpaTgtGeT",
+      "ts": 1786275784,
+      "time": "2026-08-09T11:43:04Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "3w7rx9LsYS5J5YNNKcpeYMR3rKNnWHhE92xu8vfQfrdv",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "4kE9yPgacWedg4hSewwPZVxyoMwkFtYW8uh2eNGnqwJT2E6akBj8csv51Y5TBs29BXc9HuKAAwvBXaMHEei4rNg7",
+      "ts": 1786275828,
+      "time": "2026-08-09T11:43:48Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "BPDC4ugGmG4bbG6k1eJSrGjw2bwreRjRuxp2ixi2Nnyw",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "3Y23F7sxwxqTFPMdTuLWAZFpFU8uh4vC7a6uGo2N2xSjEzEWc2BMApt6jk3B4L4YCLuzizAS5D1eahnLhMwRX3Sn",
+      "ts": 1786275883,
+      "time": "2026-08-09T11:44:43Z",
+      "raw": -60000000000,
+      "amount": "60000.000000",
+      "counterparties": [
+        {
+          "owner": "4nBfdKEykGrmbxbFHu7tRmDqPUnP1LJcLeXJe7tcF6t3",
+          "raw": 60000000000
+        }
+      ]
+    },
+    {
+      "sig": "4uippg5uSGgaKBZmkuta1XaLVx7RjWRMvTLCLRSkZiaqoxu5DYVU6pEGaGuirLy2eMinmoCB62xjJhrFUBTmgbvd",
+      "ts": 1786275918,
+      "time": "2026-08-09T11:45:18Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "7mjiedwGbxCjUH3sn1jEcj8vTLiergrPZYmjKrAKubiC",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "4pMnCgG7hahwnpNJMoDJ9YBYbALavfKypYtbwdFmsid4c1QZox8ew5jY54JC6EvehN33KjBmudgJ5rPctnD2Arnw",
+      "ts": 1786275948,
+      "time": "2026-08-09T11:45:48Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "FNzQhXqumRTWn3S5pLSxpnw8VDM1eWACUy6ejmsbNxbq",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "4m5KfhYgSrYyzQ4AZ7LMUosMMmhYfaBh7RjUCBzUbnTq3wPpJcb232TYbbE5KCgY1oot9yqFg6KfT7K3fHRgBHHo",
+      "ts": 1786275978,
+      "time": "2026-08-09T11:46:18Z",
+      "raw": -20000000000,
+      "amount": "20000.000000",
+      "counterparties": [
+        {
+          "owner": "FNzQhXqumRTWn3S5pLSxpnw8VDM1eWACUy6ejmsbNxbq",
+          "raw": 20000000000
+        }
+      ]
+    },
+    {
+      "sig": "2USD9zwbDjyK3SCAQ5BBEcfWUGSX3u1N4mLFzB1FAF2mwFxanznEoZhxbS7VDiEJQhJwULgmAiJzUyxMY83J4NcQ",
+      "ts": 1786276987,
+      "time": "2026-08-09T12:03:07Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "31GuvCAugnRcaBsvdwYJ3z2nyiwHcf32trUoqwrozp69",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "r1gJsL8cphpCRfELguDJFStXRxyZD9WiQUrRzFraLMMGykz3Qg97FUenK8fmY6q9LmgM766wHHypKdtfEVBpYTK",
+      "ts": 1786277018,
+      "time": "2026-08-09T12:03:38Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "7kv9yetHjrsmnmfAZfH8UUq6cLV9xV5wegn67DMxrwJB",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "2PVh5nC1BGpNyxeAmdKzHkbwXUScBBFCL1r72FL5iNMvrYyvHy6J3wzSL685V2UuUSHRYy4BXwn39ByEe56JvAbN",
+      "ts": 1786277051,
+      "time": "2026-08-09T12:04:11Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "27Cm2ai2x7VdX5Hcg7zfU4oS2AFziWrwwj5weSWwGzKs",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "4SvdkafYxQDXeyof4VbhqKKRZdWW8aYfQdJ5TddFbniD1cG2LRZohnmR7b8xSfSzuidjqLMDRgBpk8SwSiBZwNH1",
+      "ts": 1786277189,
+      "time": "2026-08-09T12:06:29Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "C4mDzBE1tU1JgkE53srVSEqqMcxNp3SnasCFqPD4h1Ds",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "52rBPxpH1sxofvjTZ7MWmipSgBHPi4Ca7Dh3girzqw97MiiRNUGyN7s3jxERoFnS9T9GRGLeokekM4vJY88UfXaM",
+      "ts": 1786277240,
+      "time": "2026-08-09T12:07:20Z",
+      "raw": -85000000000,
+      "amount": "85000.000000",
+      "counterparties": [
+        {
+          "owner": "BdQTaAtBBtdDggJU95Hw5Qwpb3QGqJW1iDVRVkSZYbWC",
+          "raw": 85000000000
+        }
+      ]
+    },
+    {
+      "sig": "57KpA9G5ZizgMWZJmFh1qKs3Dxsn9kF3PkywENQPYEswBHtZ35VSjP9LjNBh23ADC4h1jNjX4fKYDhXisY1wjpfd",
+      "ts": 1786277620,
+      "time": "2026-08-09T12:13:40Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "5JtTq7UXFpEJ3Je13AQVvZrxQMo44LrG54dmSHR2mpCJ",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "hLdrZV3HiuwaivsZAAAzsf455AGVV94hA4pwpUbWHNtP7UMjxBytn7ouX1ccEzpQRWgRW9sSN1ct6oMxzBioMx7",
+      "ts": 1786280063,
+      "time": "2026-08-09T12:54:23Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "BtmvjDr24SmXQMS952CFjSEnjHeLgGuvRYVpV77Q8wQJ",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "3761Cf2govxj73NZ87AQtoWjSbFcuKA96F4AG95NH2H19QPEiDvXtuEwV38MYNWbvaEcE5qCr6RuGeBsv5b1oTo1",
+      "ts": 1786280133,
+      "time": "2026-08-09T12:55:33Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "7zvDR2ijiwxwsiWa1uSxdoL5LroaK3Qy5fUAUAG87cu8",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "3pH8QgPdW9tUNHuJG77Ariv4LeX2yZErUT4YmZZaTAhxsQ4A7CP9iZSG6bPmMqyUsndazAGBbeUTo2ZKTi7yxzc1",
+      "ts": 1786281575,
+      "time": "2026-08-09T13:19:35Z",
+      "raw": -32500000000,
+      "amount": "32500.000000",
+      "counterparties": [
+        {
+          "owner": "4AD1wMsXd3toFjdT31yung8MXd6HY7xbfoMFngYHzQ34",
+          "raw": 32500000000
+        }
+      ]
+    },
+    {
+      "sig": "2JSoaW7bLPTFaXizJG5NxBc5Txkyanh1uDVkYTFjsASWH7pvWWVGQU9NfnrvXmPJY8QEp864VwZgN34vxjAm7rbf",
+      "ts": 1786287067,
+      "time": "2026-08-09T14:51:07Z",
+      "raw": -1200000000000,
+      "amount": "1200000.000000",
+      "counterparties": [
+        {
+          "owner": "CGXrfpUkN5Jfo1zxo3G2zj2tJLeJrA9siS6cDQENaGf5",
+          "raw": 1200000000000
+        }
+      ]
+    },
+    {
+      "sig": "3PnfdxycxMKEkFZBHDWd6GWBp8eP7YzHJZjfHmnDRZYPfSDyBTrBZd6Jah6vaRyiqatxr2gGqt6Z1oxNQLSMpUk6",
+      "ts": 1786287211,
+      "time": "2026-08-09T14:53:31Z",
+      "raw": -1200000000000,
+      "amount": "1200000.000000",
+      "counterparties": [
+        {
+          "owner": "zux62kQ6ygiAowHxcxyLbLE892E6rS8Tnvhsju65vYt",
+          "raw": 1200000000000
+        }
+      ]
+    },
+    {
+      "sig": "4ihduaBaNbAAmHPqbG82eZXyuwa1oh1kVGtSiqNR8oCSjwAsq8LsDibdAe2FKqDP1hF2jft1zr5CaHsRx6dvkMup",
+      "ts": 1786305709,
+      "time": "2026-08-09T20:01:49Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "oYqiaG2fBMkbj8MqnKLo6ahdy2UXnfGn4dPtWs5M7bD",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "Y9uobxWSLKFQBqciHAuQiG3ePmkVZXFAvVBh4Mh5ptqwNvQZJ46bRo5XkFm3oXUSNjXa3LWMVin1muipuZPo9X8",
+      "ts": 1786305740,
+      "time": "2026-08-09T20:02:20Z",
+      "raw": -25000000000,
+      "amount": "25000.000000",
+      "counterparties": [
+        {
+          "owner": "oYqiaG2fBMkbj8MqnKLo6ahdy2UXnfGn4dPtWs5M7bD",
+          "raw": 25000000000
+        }
+      ]
+    },
+    {
+      "sig": "2d2Za8YmhUWuRBJywvCvpcat5tPQ71k8URAGreN1YGwBFhnsCG7PumGg478e2GErJuK4wW1xUJ7qcjMjMJshmGvB",
+      "ts": 1786316605,
+      "time": "2026-08-09T23:03:25Z",
+      "raw": -60000000000,
+      "amount": "60000.000000",
+      "counterparties": [
+        {
+          "owner": "ANVFyjrxGtAKd1Kgf2MhVma9BUsNA2eKmsVMCzhAWik4",
+          "raw": 60000000000
+        }
+      ]
+    },
+    {
+      "sig": "4oFfm9nFVbjDT1EUmq8Ty2bWLvpBdGE6pZX28xmRHVzqEBYoDEMtiNcfUbghE1vgxb7hpsN7XZ1phqq1EjGsPD2h",
+      "ts": 1786316770,
+      "time": "2026-08-09T23:06:10Z",
+      "raw": -60000000000,
+      "amount": "60000.000000",
+      "counterparties": [
+        {
+          "owner": "7DoMGTsDFHNSkeeb22Zn3pji3Ne8Uh9eZLKTEkJrTyKX",
+          "raw": 60000000000
+        }
+      ]
+    },
+    {
+      "sig": "3yXN7JkFUoKELhATXatodjgDavBkv5NVpqE8s9JonaoxoSB9bCRGCWUByK2FCSFE26eS7UWZ12NHoZhac3p1oJ5f",
+      "ts": 1786316868,
+      "time": "2026-08-09T23:07:48Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "9XFxcvb3NpLxM9dpYEFZbwK9YBNLBh6DC7XyzaSYJzz7",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "5Y2FeiezR5ozg5tc2a4Xtj89cWG9fXav7kQDWuTYGpEiDTWRvsYAQ8WWyCFuzHW7ffJFYNxxdF432m1czT8SuVcW",
+      "ts": 1786317057,
+      "time": "2026-08-09T23:10:57Z",
+      "raw": -75000000000,
+      "amount": "75000.000000",
+      "counterparties": [
+        {
+          "owner": "BLUymCdbrhSP3zQgGmsc2Yez5AyjZSh2BgH2NdM1xRBd",
+          "raw": 75000000000
+        }
+      ]
+    },
+    {
+      "sig": "4Cavmgo39zuxu7mzGKtaFfgCnx1MDXUkWoVo9yCCamcfq8Rb9tFyaZFnxEcRsJCBFRo8cz4juT82zjimVnNCpG3L",
+      "ts": 1786317094,
+      "time": "2026-08-09T23:11:34Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "98hxKE8FcJZmQYZgb6ihzZy8VaGRk8rWrNZ3fYmuuWEj",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "4AwwesqkGhMQ5mDuiTXW5ztwTubuwcvDPhBiAZfDVJh4pCxMvogkQAgA89Y6H34ppb7QbZUhvk11Ksaq6GCGa1pi",
+      "ts": 1786317219,
+      "time": "2026-08-09T23:13:39Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "5CYEcx88NhdRaFw3pc5YNBXoiKa3EseD8BM7Bvs8NkaU",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "4ymS2tVRUtFanmxVWRQsRe2ZAb6f8uhLNcvrDE5Qxb57HxAYaSiJeXHE1zCCE6MFWyZSZpy6LKhavrjdZehd6uQs",
+      "ts": 1786317282,
+      "time": "2026-08-09T23:14:42Z",
+      "raw": -82500000000,
+      "amount": "82500.000000",
+      "counterparties": [
+        {
+          "owner": "GB3cedtHn4erQ8kL1GfYsXYB3D6ii7MLXBEq3DgFuwZ3",
+          "raw": 82500000000
+        }
+      ]
+    },
+    {
+      "sig": "dT7qDNP4EdCQmFS7QJ3Gvxct2kxVyRjcTb1knpVxH6uiQ2HMbYUXCwKzTeVs6fkQuyoA1EHk1Ues5fg8DSczaAg",
+      "ts": 1786317330,
+      "time": "2026-08-09T23:15:30Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "HmUt3Jn46j7c7ANdURmEyjSRj8i3Em6MhjQUi37PZ219",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "66dWDkYDpEWsnVR1Sa74azvT3czBGJHedKgndFeqYyKecnoiZdspYHgD2JVz4N2uZ2B1DfbdRqRNmLrNJJTb4n5x",
+      "ts": 1786317372,
+      "time": "2026-08-09T23:16:12Z",
+      "raw": -250000000000,
+      "amount": "250000.000000",
+      "counterparties": [
+        {
+          "owner": "f4CMmXJCRu4fzyqZPkDiFhGKAeCo1s7sxUtPKQp9SDy",
+          "raw": 250000000000
+        }
+      ]
+    },
+    {
+      "sig": "bsXj9TuXYyZ3hLu5P2ng3VKU98ypyyEbfytGcGz47jKw5KGvKroLJpDFjKG9kFp8AafHEKeALwxbsrP24xUcMoC",
+      "ts": 1786319635,
+      "time": "2026-08-09T23:53:55Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "4CYZSfiZwVsRYZBHcGZwCoXi5J3jrXckFZhWPw5Z9h2R",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "3CN8Kq4dWFmKRsANmmnJBnf3y9dg7WkiMjEV4jEfV2YGhUjEQBfD4Hwb3ixqfn3779eWLAjJYmYijqFWvVzDWoPe",
+      "ts": 1786319945,
+      "time": "2026-08-09T23:59:05Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "EvdJRiD1LrsBNQYVXRfWMdLmjYYAmaH3tkqRcRuUbrhV",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "3EqJ8zFDSrJyzGSeMx7UawLvhJT9ErwLS7dSakLiXUWVigQpRAbFdRZbiKwUKdj76hTnXYcW8coxRLqSJu5BbF1W",
+      "ts": 1786319992,
+      "time": "2026-08-09T23:59:52Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "7pVL5RU5wDe7G4aRALtv6kqftYLr46VY4eZudwXrnvcG",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "4gb8r1fg8Eu5oMwYHiR6AkfEbhD2Eri7yG2Cipi1CMrsJJRYjaRjxGywCcw4UVDpiHdkkAqkGCp7nL3zVF9ywWVj",
+      "ts": 1786320417,
+      "time": "2026-08-10T00:06:57Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "DtVJcWpuiJ8WGW8WnpnUBt3nTAXWNKaMqZ2M1Yh4ju2h",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "5nt3rxdZh6PEwDFonVExqq9DK713gr4JCvaQC8BukXzD1tGPLvbvVgwsudPx8CtzQr99x4mGsq5ZS4vzqUMFkzF3",
+      "ts": 1786321723,
+      "time": "2026-08-10T00:28:43Z",
+      "raw": -148000000000,
+      "amount": "148000.000000",
+      "counterparties": [
+        {
+          "owner": "GtbgC6AJQ2xhBoKsFCUxMcx4FHspvt475ToNfTziT6ii",
+          "raw": 148000000000
+        }
+      ]
+    },
+    {
+      "sig": "DyeZbMdv8MHArFaqh9FqKj6f697A96W6oB32q1JM34FBsWXrbe5FnhH8sjXSgtRSc2c2rCLmswLpx5KirAqAANu",
+      "ts": 1786322211,
+      "time": "2026-08-10T00:36:51Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "BKYYNoYNEmDNB4kgqQ12jHHEmGpLFK9hgjsBUjt3Cu6i",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "7DzQDGrU3naS6nqvmgGEdES1ruYYkwEFAoPkjjcnaq6kCk5NFARDVKTxEKHLX88cwSHvNCL47kVTLEWTo7Hejzp",
+      "ts": 1786360797,
+      "time": "2026-08-10T11:19:57Z",
+      "raw": -125000000000,
+      "amount": "125000.000000",
+      "counterparties": [
+        {
+          "owner": "HFisjLKfhA5UbSocq62iZLdZWnwPXMvo4Vo9S7ZzGEL2",
+          "raw": 125000000000
+        }
+      ]
+    },
+    {
+      "sig": "5FnHS5QVhnxyBQr7DSYpf2B1c8znV8edZRDszsQ1pXdCJppS7FLMxQTi8EJrYQKNUj3ke8NbN15mmbnkWFNrnRsZ",
+      "ts": 1786361810,
+      "time": "2026-08-10T11:36:50Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "H76MXffyWvTHr9KfYTsPCr2ja2KBeutUtijY2NckGr7Y",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "61yp56b3VYdzTx3sNruaYYhM6XZqzf16kWWXE3C1UypA4urhzEPbX21urTzgsX24SDdmCrtrYveBU4ZduiJfE5hS",
+      "ts": 1786361983,
+      "time": "2026-08-10T11:39:43Z",
+      "raw": -60000000000,
+      "amount": "60000.000000",
+      "counterparties": [
+        {
+          "owner": "C9kerFv2Bo5pGEw8czvRV8jGXabUTty8GggBrxWY9ESV",
+          "raw": 60000000000
+        }
+      ]
+    },
+    {
+      "sig": "588G6o68449zq7mA5vRtYjHXc2W1Ms55evnqFs34W1dCT65nURjYxJRKEAKiarYebLVgx9nnsMgTK6gPJQVkcEUr",
+      "ts": 1786362356,
+      "time": "2026-08-10T11:45:56Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "5ED73iSPRQ5w897Y4yvGg49Tby1qgzeRYNnFyD8XreTk",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "4FWnypEBootxftminh53k1ibZwvw81ABoiDemboaS1mjayaqHzXiu4J7f85Z8dJy28sDMNr7WtS6brovBCL1AkgV",
+      "ts": 1786362985,
+      "time": "2026-08-10T11:56:25Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "4gXAA393JEXnW7n9ZBv6QRLpUJPLcQfGzsqjkg73WzEYQ9nzktfJxtvJAQzPzGnkEnV68ivf27UBQ8pBNp7zDW3K",
+      "ts": 1786363299,
+      "time": "2026-08-10T12:01:39Z",
+      "raw": -38000000000,
+      "amount": "38000.000000",
+      "counterparties": [
+        {
+          "owner": "EeVi7FsTi3DBQHL3aEUrgR2CHgpuY5NvwbjrTmnfFMNM",
+          "raw": 38000000000
+        }
+      ]
+    },
+    {
+      "sig": "4sWHJeTDKkQAWUqYoPNTkoRJunTij1WLamoc9cSVgY6MvgabdNxpzqwDqS2H7JuP3PbdEL5mfvcrv6AE3TywJ2VA",
+      "ts": 1786363384,
+      "time": "2026-08-10T12:03:04Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "DKruQSdgkHviJfGKGuLM5cLmKzFoeE56tQNrsLLih8rn",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "cXX1JusG5BRX1RduLu2tXZiSGf7LBZpD2EsQtHna6iv1onnzh7G8Q6MczPApNGFY6rxRRJD2ssCsBWFXzBkkNPm",
+      "ts": 1786363802,
+      "time": "2026-08-10T12:10:02Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "BSzpGGB3AMwtW126RT3Z27STSBrVjKV5A96H4BsUKdtD",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "3ch8sWwicQVRGHkXTeupeMFXagfxezTpDTP4Qv7Dmz7CTswKHj5xNvKpbbybjyMUs37fPEgGSHW12RPqCvjcQyZ",
+      "ts": 1786365826,
+      "time": "2026-08-10T12:43:46Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "AvPoU9DqijgwBd1iJJkZpSTyoac7WogVbEHMzZDyAtX6",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "3W4tW9phDENJ9UixkzeS3Rxz9CRQygDouwDyAMwDYwt6TxfgzjzeYoP8BRR6RUcbmuTprEjETGGiWMa6XVxmCEQb",
+      "ts": 1786365875,
+      "time": "2026-08-10T12:44:35Z",
+      "raw": -110000000000,
+      "amount": "110000.000000",
+      "counterparties": [
+        {
+          "owner": "FbvnwyLq2WaXyQKTx1C3zquBbTzGU7QyBpN4TSE2UNUC",
+          "raw": 110000000000
+        }
+      ]
+    },
+    {
+      "sig": "2nviv6TmuTY5Qmj54jpEERqwYzPfRuMNRgp8Uh4srSv7gC6qmECVAdjzXWNqdJJd5fevqMkP4uFsS7MTzMntbMPa",
+      "ts": 1786365911,
+      "time": "2026-08-10T12:45:11Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "BSzpGGB3AMwtW126RT3Z27STSBrVjKV5A96H4BsUKdtD",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "5vCxc9wQpcS4zPDU6BnXkYnACL8fcEy2qzutEEpUjHZS5E4e3vnnE3YZCL17Rnfrs7KGxXi9LKsbmwEUaoatXrtQ",
+      "ts": 1786365942,
+      "time": "2026-08-10T12:45:42Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "FF7R8zxniXNJP3DmMQmBvKUcfmt7Z3SQ4PivTNVzMjzb",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "2ckh5FUECjePSwqnKziPo5eGSyHALj7unR6zPGNGHaiZxkZSHQv2aATSeydFGdEUBm2KwED6CuRAU3hXQcPd387a",
+      "ts": 1786366030,
+      "time": "2026-08-10T12:47:10Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "FnPexeZtieARisBrxMABRrBWzDva5ok2QdgBPDPw9hKR",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "WurotMD4HhWijQQpyda5zkATbG6uhawBrsmox3KUVGE4KzNY6FMfkWVY3HXeih9mJjFVHaRDwHTakcvw747ZHXu",
+      "ts": 1786366163,
+      "time": "2026-08-10T12:49:23Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "2bVXAo7Zn82t3ThyrfmTQgbY6rG7yD2WiM6eCPKgUvmi",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "3xUJ8ANWz2DKNmNFq41jywXVQCdioZWZhGS9PTSNxa6YaTBRZiC2aNfn8C4ZbMCcRVzkqrSNw1YiNDM3bhXTmjDf",
+      "ts": 1786366163,
+      "time": "2026-08-10T12:49:23Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "2bVXAo7Zn82t3ThyrfmTQgbY6rG7yD2WiM6eCPKgUvmi",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "2sykkwVyhauq4q481LFPUZPG6J5PEdeBeuD1koJg1TqVA4kj39NdqtioKJL7KkMESRYU35CggfTVUp2YE9bYzVRF",
+      "ts": 1786366193,
+      "time": "2026-08-10T12:49:53Z",
+      "raw": -25000000000,
+      "amount": "25000.000000",
+      "counterparties": [
+        {
+          "owner": "35nFeyyZa9ceGUkQDozFgrazJwiYELdGbbfqiydqV75R",
+          "raw": 25000000000
+        }
+      ]
+    },
+    {
+      "sig": "LptJqCFe7X45wG26rLySEjjkcTPyVLSndvNWfuKRUndRGJLHPG32jaxoziZdgPkCEaUSgUgUz51VW5RYfQSwEbf",
+      "ts": 1786366266,
+      "time": "2026-08-10T12:51:06Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "DdcgdmjAq1F5XBAeMdHgAqqiEXXko1GAMnsnd4RzBhSi",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "ChKGb4xyZvWYLZsPgXDVqUnhnfxsyxo9ney3hXd98oYZA16E6w9ch2uvnehfHkzkhE6s1cQbu3dqwujNiYsDy17",
+      "ts": 1786366330,
+      "time": "2026-08-10T12:52:10Z",
+      "raw": -45000000000,
+      "amount": "45000.000000",
+      "counterparties": [
+        {
+          "owner": "6oZY9xQk6podJgPCSW2fNZCNnjfU6h449PmPGgn6dBSw",
+          "raw": 45000000000
+        }
+      ]
+    },
+    {
+      "sig": "3KekVkcXfpyQAQmsqTXSMJqSk3pfdj62pmD1XpaRCfwstnFj8AmZigjzWjr3yiZGrbba4D1feZwGxxHHAHCdWfeh",
+      "ts": 1786366481,
+      "time": "2026-08-10T12:54:41Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "H6YVqfjKrQiy69AnsMfTMBCebk1F6FMmjWs7qHEpLxyF",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "5wo6BMpphAcgqL6wY3FxVd8HQuMz29vqGadnJBxKjQ6SNV6ACE3Ke2aXZRTpBmJf8aTAHb31NVcWwGD62Kj4qNU7",
+      "ts": 1786366846,
+      "time": "2026-08-10T13:00:46Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "5gNQfafEpq6Wn9FBVLpykwUvpDgjCk5xkwkUtzg6XZNC",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "67MCDABGPgsrZqhsBZWkoZ1uwzTdVqw9aCeCqu7Wg5BMdnvKXYG3qMcyVtTcsrjLxZWVw6JE8KTfBDbzd88WNShv",
+      "ts": 1786366912,
+      "time": "2026-08-10T13:01:52Z",
+      "raw": -45000000000,
+      "amount": "45000.000000",
+      "counterparties": [
+        {
+          "owner": "8K4x2JrVEahRjAbVwsyioqZ3HMVCwVpPdLWvHGkZC4SW",
+          "raw": 45000000000
+        }
+      ]
+    },
+    {
+      "sig": "5QMML8einQvuDd8bjoCPxQbJVbX1HBg1pJevZdBZqNuRwFqHieuY3Azerhoei3VSQAVoPfZPhvTmqxPmyhPF8Rui",
+      "ts": 1786366975,
+      "time": "2026-08-10T13:02:55Z",
+      "raw": -350000000000,
+      "amount": "350000.000000",
+      "counterparties": [
+        {
+          "owner": "3iNpHZrcE45FPR8pKhz7g4KXEZNHoiic7eG9bRwrBJ8b",
+          "raw": 350000000000
+        }
+      ]
+    },
+    {
+      "sig": "5cXNAAzE5Cn5DtA85dHkZkhvrJUfL8JpMMYMgoVGg3jmUQcyxuXaXLsBXdp3zZyyTjyFtDihWhBEzRTn5DtJV8D4",
+      "ts": 1786368200,
+      "time": "2026-08-10T13:23:20Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "Dts9ARn6bxxqVJ3z3EJwmqE95rVyJY9ZC5DWNn8Tdrzq",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "2r5DMTJ9cfM5qc5osKKbFSrQTqVrNPT4FWmxsFJ9vAWBJ9Ff9B7ubW8k8Knpu6BgcaCeTLb5Cgnao3q6y328wkJW",
+      "ts": 1786368435,
+      "time": "2026-08-10T13:27:15Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "Gu3eCYgXkcXugpQoGqdj7X5pi1PVStcAokbpa3MGZgLc",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "3PhaCgytQdRjiCeyUfJbgrYwBK1FQYVJPkgaJXFbNqSYMvv8WNzFNCjrrRN7GtSKuXw1yA6F42LNS3ayFy7kLvhP",
+      "ts": 1786368766,
+      "time": "2026-08-10T13:32:46Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "EYG3urvLQyKx65LYCL67tbAMnsNAfJUbBKRFWpTBbK6G",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "5YsMGJFosKYdWdypw5gu5kU4akesQxk1AQG4Ndf9yVeZmPvG2waKksHKcgF1NvMRwKkdDbZmYATYMvfDPS34XFtX",
+      "ts": 1786368807,
+      "time": "2026-08-10T13:33:27Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "6fRu1KMKr4sT8aWdbcm3GBk7sMZSEBk4a16NDSPAjzEM",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "4wM65nkqTT5cWzjKaPX2gKCwHnK36EmQDmEsaMb78jJvAL7JtuhBEHNSXTL3DCNtoAnHas4BkQBgWqj2rZhM5Z6D",
+      "ts": 1786368841,
+      "time": "2026-08-10T13:34:01Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "89SLWPMaWpRNaF1LD4fBFXgbyreyMfZ9Pjjx5hxfp7bD",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "2ZYpK7vjwsxuKKY9G7mhCncXJBSccmk8bzQNjVq2ZvHYDfXu3z2ksQBeBaZT2W6ALoimvjpNToQsVYYTqR7f7a6z",
+      "ts": 1786368880,
+      "time": "2026-08-10T13:34:40Z",
+      "raw": -80000000000,
+      "amount": "80000.000000",
+      "counterparties": [
+        {
+          "owner": "4NbvPPLLuY7ab8iUXedLZZFF8XRj8epZK1WKtm9SmZbA",
+          "raw": 80000000000
+        }
+      ]
+    },
+    {
+      "sig": "3WFuvETkGNxmigyQSBEMo74w3HXoWSEgeLR638pHwSiUdSh8ToR1a8cufm3umZ4Hfonaz59iTHDAtMd3ZJiPoAV1",
+      "ts": 1786369307,
+      "time": "2026-08-10T13:41:47Z",
+      "raw": -7500000000,
+      "amount": "7500.000000",
+      "counterparties": [
+        {
+          "owner": "8iyReQez8ED5ptzJ3rPAs3MAvEJNTa8ko4gW2t9ND2TW",
+          "raw": 7500000000
+        }
+      ]
+    },
+    {
+      "sig": "48QyWvD3GsHJXkmbZ48mECUW5CL287Qd1habrjjp57rNRDi3d8j1NyBi6AfLCNeormy9hnrguNgKqwUoBXnaaMs9",
+      "ts": 1786369735,
+      "time": "2026-08-10T13:48:55Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "CuDe51GPh5qGsmYBJDxSsufhQQhA618uDbkaXFZ4pztL",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "4ajeQ2KHLvBKza1F9b8p16QmMgRvUsPRDK1cDwMGHv57Hbh6FVo8o8MUzsCgiLaNcSYijz2NWbX2MG9fWR4DnQfF",
+      "ts": 1786369819,
+      "time": "2026-08-10T13:50:19Z",
+      "raw": -20000000000,
+      "amount": "20000.000000",
+      "counterparties": [
+        {
+          "owner": "3zAZiavbrPNkQNZuSiSc3Ct7re3VDKjYVL9hJFKiEqMK",
+          "raw": 20000000000
+        }
+      ]
+    },
+    {
+      "sig": "4FUfB4EvLsvYaMSRLs7j55g1jba9cVm1DqSeQAnSGMXTTe4KXox3zuiYaFLaTXrHHvNNxYhHiwY2Lb2gv4krGwbm",
+      "ts": 1786369858,
+      "time": "2026-08-10T13:50:58Z",
+      "raw": -25000000000,
+      "amount": "25000.000000",
+      "counterparties": [
+        {
+          "owner": "2fuwm8KXGsf71fTRPqe4QgZ6SJ4eDqZzNfwfx5j4ftM1",
+          "raw": 25000000000
+        }
+      ]
+    },
+    {
+      "sig": "5jM6fxqgAiFt3AQyfvYi5pYCkjuknd4SvcVGN3mewpNbhDTXmyK3zqqkTqfc1nMfjD2DiqgBxN87wbFFRBUngbE7",
+      "ts": 1786369921,
+      "time": "2026-08-10T13:52:01Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "6Hcp4g4BDt3c1GDw2iGS6bPT26S7U3WwG3V8aPaiyv9s",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "4hfqFCNdqTPRHwEuGVE7GZpDixUvi3Nbhj2ZNTrNfKjv3aSDjoNTV1sBXcMPnRWyoqbrzrX84Bc5QAUWE6uyxS1g",
+      "ts": 1786370109,
+      "time": "2026-08-10T13:55:09Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "CuDe51GPh5qGsmYBJDxSsufhQQhA618uDbkaXFZ4pztL",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "353jP9QRcYdQj2eju6LGh6tKJFCjbSoRKWwdPqvFopEHt8RZrhRyKFMutaFaFFsfSMtPFV4VRuRpSTfSXLmRMXXd",
+      "ts": 1786370199,
+      "time": "2026-08-10T13:56:39Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "9jDmi7iqLeAbQH5Pe3BQJWLXD9GTKyb2Vm3NkNxBGNbc",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "538FVMpdesUk94VKkFYZgbWQ5hj7dZpJpuoAAwE1SYVw398S7bYnxWfg3HGXRz3cE2Qv5vqeKT6uhKTbvB1qp3wp",
+      "ts": 1786373301,
+      "time": "2026-08-10T14:48:21Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "3w7rx9LsYS5J5YNNKcpeYMR3rKNnWHhE92xu8vfQfrdv",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "5RWQwdCairGT8pszUARDXKFw14o3ca6tsUDCH6R6nW5KnMuTeenm6LLH1h8Dw6Xvy2yNdXu4uBqKhGzCWocgeGu7",
+      "ts": 1786376666,
+      "time": "2026-08-10T15:44:26Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "GFR4VV939FsvSzfrXVJacQpwBSnjddV1xh3jfCByeBPv",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "2gtnbRcGX6Kj1hvMTpFNqTVRazDhBzLYTPMt3dPAFYicmavG5wCfVeK2ZEEUdNAjdFLmbfAz7qHanoZnupaLSzxM",
+      "ts": 1786377167,
+      "time": "2026-08-10T15:52:47Z",
+      "raw": -40000000000,
+      "amount": "40000.000000",
+      "counterparties": [
+        {
+          "owner": "862ujMXKooH8SBkovLw8Nuf3uAw4YqT6Emvxf2QZrbZH",
+          "raw": 40000000000
+        }
+      ]
+    },
+    {
+      "sig": "4Syi2mXentmGLSTZva2DXSimP4hVwv5Yp4ktyi2K4rRArAyyasTDiovUhGLXb4Zr4uXrDqq9RLVkKSsAoqrfoiPU",
+      "ts": 1786386589,
+      "time": "2026-08-10T18:29:49Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "64w4qRu9VGio7U1Asc6B68QDpS8L1McmSn2yyExC6Fii",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "mpbBoEH3YpGk75xhBmNsBrPuAWbN96cNdRh7CJSCqqFxzwvwvJiZwWfZ1XpJuLWB1wP1mzGJrZeUKwouTHBWH1e",
+      "ts": 1786389660,
+      "time": "2026-08-10T19:21:00Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "FCziEFnbjtqAPM4iiTpktqcxkQomDpwFhXTi7cQZ6Qcu",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "3WK8P5QGUQPrbevQpKgJqPB8EuV18G9gyAr1tFxRSJgCU124jS64m2rrTQ5JqYz372NhCZnbnTWPbdyx3WhAe1VJ",
+      "ts": 1786389753,
+      "time": "2026-08-10T19:22:33Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "ADWM6h8fPpjeHk6tyV4jEdRPdRbV5mdNawNiYX4Ycrds",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "tRySoPhNSPoXxharmp3WbpiwUg1eps6sUELWHQwUdRQw2T5m22J2sEYVUjVaCP6cNTYdeznEKdMpnzmvbR3cF7R",
+      "ts": 1786389870,
+      "time": "2026-08-10T19:24:30Z",
+      "raw": -80000000000,
+      "amount": "80000.000000",
+      "counterparties": [
+        {
+          "owner": "DWJVBEW6i7nSmRUfQqxCwGKi8U7NAB9WoM9YWTrECA76",
+          "raw": 80000000000
+        }
+      ]
+    },
+    {
+      "sig": "27TpJRSxqqDveHHcLVCk13QYC47rD8PjWSqh2UV2SNswcCeAWdHFmLW26MXQWUb2iuus5nw6W9RyHWTrjnoCQe3T",
+      "ts": 1786389923,
+      "time": "2026-08-10T19:25:23Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "C7Ds4FQ1H9EnQrhNayFcs9wDb5t7HS8jrCh37Me9eYVy",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "3jLdV2U9RvXpvRycwZtmrb5jf2RdpJ9vRmoiUQSqumBtQgo5cDXYCb2hCkwriyvpNmzHFWyZFfhQB8ZSgSsUCnB2",
+      "ts": 1786389972,
+      "time": "2026-08-10T19:26:12Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "B8mPU8jpaJHgjrvNv1acy1HvFc85BadY4Fxc7H1tcqMx",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "wJW6EPDUHGjA1ch8GdDqvVWnGz4SM52TAbjyYYSgEH6ZHWoSPXekqXjXmurPtMyUhWf1tGFjejUP2cKiz5DTBeh",
+      "ts": 1786390210,
+      "time": "2026-08-10T19:30:10Z",
+      "raw": -85000000000,
+      "amount": "85000.000000",
+      "counterparties": [
+        {
+          "owner": "2mvGhorGBGZ4TZgGyRQozFYvDj2xwvYjxjvfVXkyNyQM",
+          "raw": 85000000000
+        }
+      ]
+    },
+    {
+      "sig": "4hK9wizdKS3Cgm5SakhXDhhR83Pf512bsvz9SjcdKL6FhpJ45hL8cPK5ryJ1SPNociHtZwz75GeQf2ggJiFeXQUf",
+      "ts": 1786390709,
+      "time": "2026-08-10T19:38:29Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "4h3iBS4VHJewd8zjBDsdbAK8yQSKfoWWJtAHcoZVeWmq",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "5kyWLH396yerZjinyENJvRRord9RN6vBzXUQMBNmUcazTD8B4yfWz8aaxWm79ygZEjyVqGqzmqL5GKbhqRHQeNkP",
+      "ts": 1786390971,
+      "time": "2026-08-10T19:42:51Z",
+      "raw": -30000000000,
+      "amount": "30000.000000",
+      "counterparties": [
+        {
+          "owner": "6xPJ1b7Y6HEN4ALNaxurdDXQaocEhFAdrtGL4cRdtKTf",
+          "raw": 30000000000
+        }
+      ]
+    },
+    {
+      "sig": "2gY1DYaSKDBdbjC7bE7XutNV5X8xrmqQeZbEB9kkCWYt7Xer1CN5ymQBZ17YjNStCtcVXZtYLpy2YWbXYLHmwFf7",
+      "ts": 1786391219,
+      "time": "2026-08-10T19:46:59Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "CmVPg7BAP3Ly5wxkA9aWvf2XpMQPoaypEd77XriP7N2Y",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "MxuxzyhhG7GeuE35RbzHsJYSmLqR8PsuhQe2ichUe3cbR4CBMJoF4knCzaGaHo2ZVgq4Xd3kCDEZqC13F2zcb1T",
+      "ts": 1786391265,
+      "time": "2026-08-10T19:47:45Z",
+      "raw": -80000000000,
+      "amount": "80000.000000",
+      "counterparties": [
+        {
+          "owner": "BGnpsmRFLrBBYqe1RY1XqNep2d385167CpWzpwYGAoKH",
+          "raw": 80000000000
+        }
+      ]
+    },
+    {
+      "sig": "2QDtouDWT8xhDMcmsxTehj2sKfudqEX9WJJp5CKdCnaSbv8Y1T6g82PXqcq4tX8NqWT6b4jrhwWS4nouzASW2HsP",
+      "ts": 1786391396,
+      "time": "2026-08-10T19:49:56Z",
+      "raw": -90000000000,
+      "amount": "90000.000000",
+      "counterparties": [
+        {
+          "owner": "HpbGQurKZdpX4ZeWcJa8ZFmM1uSLtVutBiZ12bonxtos",
+          "raw": 90000000000
+        }
+      ]
+    },
+    {
+      "sig": "4AD9Sg4YQ77GZ4YJ3q2VRqbDaVKtsgnY4ZTfkHPnSWQTNnPeab9mSLUHoWgG4o8LhfBf5g9N2aZ2J9kKeAHu47We",
+      "ts": 1786392556,
+      "time": "2026-08-10T20:09:16Z",
+      "raw": -70000000000,
+      "amount": "70000.000000",
+      "counterparties": [
+        {
+          "owner": "CD3SpD4upBmmbZtZE5fohVN2dE3HFrmXTjT2XT1ngyLq",
+          "raw": 70000000000
+        }
+      ]
+    },
+    {
+      "sig": "3o7jCkWa1dBLgroCANwXxrwLYBRx3zyhLY7RqbNTcbU1h5YtFwTPRLetZ5p1kTXKLVGKnYkbwoKJFkBtCgx6fwoY",
+      "ts": 1786394287,
+      "time": "2026-08-10T20:38:07Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "CPnTiY3Yik6UNezffCG8bWXHMeKN5F3wHonpvYdgHU3n",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "4qNscFDbpdC73WYAKALCfZvZC3AqQoK9U3EuGUSj1Kpmvi3gQS6X4Q84KARerk1qndtk6BVbvTBZXNzsnA6anvGz",
+      "ts": 1786395430,
+      "time": "2026-08-10T20:57:10Z",
+      "raw": -20000000000,
+      "amount": "20000.000000",
+      "counterparties": [
+        {
+          "owner": "2hzBJ9ujTZUsvSaG1Duw2YZc8QKYCx3KWJCrFtwZLHUW",
+          "raw": 20000000000
+        }
+      ]
+    },
+    {
+      "sig": "Sq7KdLrBWrezL2mSksCgowHzGFRVo6fSTJZGVHwd1UjtC7zXj6ZGjZqgpkr3pPYieyqdCxZubqGdK6YCxqGpurJ",
+      "ts": 1786396805,
+      "time": "2026-08-10T21:20:05Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "GqFgMUkKMVCLQgYtLvePh2TZZv28XVDZySz1RNYdakyG",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "3Lt6FHCeoRqRDeM8rTujLwuGVMwmvpxfid5yRXhpUnyFqvMFNhsA5s2c7az3xZ3quGizDzWXEde1veYLmvGZeibm",
+      "ts": 1786396843,
+      "time": "2026-08-10T21:20:43Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "E2XpeKfuCfJ2k73ZBXF4nzWVFLHzsaU6ZChn2hTvsEuB",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "4rcVyQwKtryzLpMiC79wADch4ywdH7VMVuvSQoyY5vyGtgqJiqbdHuy2kmSrgC6Nuvaf1QFuNAhaviHyKkoR5J5N",
+      "ts": 1786400266,
+      "time": "2026-08-10T22:17:46Z",
+      "raw": -55000000000,
+      "amount": "55000.000000",
+      "counterparties": [
+        {
+          "owner": "EV3uN9nFZEUB3z4WB5pxTzhERiziZDxjkxdjzUgCqZW9",
+          "raw": 55000000000
+        }
+      ]
+    },
+    {
+      "sig": "45EKyb8PWvcyQnnuD1JF191X2tEidxxz82zikuFHyaiNbZRyzJb9NF5xoHBXYekq56ZezY7GRZDbEA8gPTGYesG7",
+      "ts": 1786406931,
+      "time": "2026-08-11T00:08:51Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "C51Q5dUtzABLxxoYyNgDWaDM9aJ21ByZYxuxDcxGAMfi",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "4cXrhm8VitcPiPpjbuHSGNavWrX8Ytngn9ajhSNtPH5DhcZPfJfASRr5s1URiYEt6tnEpPa5huewcP3PbyiJ2mv1",
+      "ts": 1786407042,
+      "time": "2026-08-11T00:10:42Z",
+      "raw": -38000000000,
+      "amount": "38000.000000",
+      "counterparties": [
+        {
+          "owner": "8N8PUnfrBKQgX4v23wGKNvkmmrYbMBkMRisaQJWMDJkX",
+          "raw": 38000000000
+        }
+      ]
+    },
+    {
+      "sig": "3pJ8RpF7BK8aGGLFhdaTrn5Zx3q9j5A6dU6kRS8rWXEXr8n4JRRH7sVT6uW4zdoCgpxc4ZGRgtapV8JDMq8feRAL",
+      "ts": 1786414706,
+      "time": "2026-08-11T02:18:26Z",
+      "raw": -100000000000,
+      "amount": "100000.000000",
+      "counterparties": [
+        {
+          "owner": "9KjaBdDUuTB81KTAvxV9fz8t7cTQLLnLrRLShJ4S8vZZ",
+          "raw": 100000000000
+        }
+      ]
+    },
+    {
+      "sig": "5qF11q7x8vguSxKHw47ekt5DmwghLEP6FwjL96ezGC9JiUov8As2t6BsYf9UyqHVPXJG62NntR4rFMqjZUJyNW4V",
+      "ts": 1786414838,
+      "time": "2026-08-11T02:20:38Z",
+      "raw": -300000000000,
+      "amount": "300000.000000",
+      "counterparties": [
+        {
+          "owner": "4rJVuXBgH94giakRzL78AJMP9i4kYojUXKNcWp5RTsTd",
+          "raw": 300000000000
+        }
+      ]
+    },
+    {
+      "sig": "4bxgXjg4DkKB2P9vKNhN4Nrs9pbPRj91xAQCV4axgcZUfbAQm9wYmRWWZ4CrgCB6XSnTWCAgwKwhikjYQja8FwhT",
+      "ts": 1786444282,
+      "time": "2026-08-11T10:31:22Z",
+      "raw": -20000000000,
+      "amount": "20000.000000",
+      "counterparties": [
+        {
+          "owner": "74iJr5at8yGJid8RrRdmfyhtNqyRt65rQ7bRQy9UrzDn",
+          "raw": 20000000000
+        }
+      ]
+    },
+    {
+      "sig": "z1h5aog2xFjh2dWP6F4bPTP2BneCR523c9GpREXEUHVm6YPHKtWgev16bWjbmvkCG7W1U4GG26CCU2JLza2Tdiu",
+      "ts": 1786444410,
+      "time": "2026-08-11T10:33:30Z",
+      "raw": -8000000000,
+      "amount": "8000.000000",
+      "counterparties": [
+        {
+          "owner": "4CYZSfiZwVsRYZBHcGZwCoXi5J3jrXckFZhWPw5Z9h2R",
+          "raw": 8000000000
+        }
+      ]
+    },
+    {
+      "sig": "3wCERC3eJhP2zDr6DnYevyjGN1EsWbGTVhEvi2xzBCG9J5DnH3LGHkx4LobSSSp3woZqxri8gw9QDXHCFdFHqsD5",
+      "ts": 1786444609,
+      "time": "2026-08-11T10:36:49Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "CVvJnDPcWdmUJN6YC4cHwBS2cJ9T8KoVh3xEwGquHYz1",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "4r9Xb1fYFKtSee4Qo9D1dvJBAZ4APCiwt6nSJ27c9sPWbyiWCrV4zsjf7hdD2Y38SCV16LYckvArKaFzHpoXsTrQ",
+      "ts": 1786444665,
+      "time": "2026-08-11T10:37:45Z",
+      "raw": -35000000000,
+      "amount": "35000.000000",
+      "counterparties": [
+        {
+          "owner": "8doXQXgP55rYHJCDvJrcSD2jbgsYMGLnt23UeJCQhsie",
+          "raw": 35000000000
+        }
+      ]
+    },
+    {
+      "sig": "3AdzXr1Ktd1hqXDdHNH9QEuXFuEjqYwQRPe6BS8sbsS5DvCi8RUSe6m8gnpQKgRawfwNPR3iHLZycoGQt9yWtxPF",
+      "ts": 1786444959,
+      "time": "2026-08-11T10:42:39Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "6oPLAyT2tQsHDhAnmtY3GGqbetwgbhutCjnEvptUSvGX",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "5Xd3ujkX4pWVV53BXJAhE94YPUwti4JcJwtEUJ19aL84Qwox3nngrP8e8d9sS4W8tAJZ8uYnCspfhUAHbUegYNgU",
+      "ts": 1786445002,
+      "time": "2026-08-11T10:43:22Z",
+      "raw": -45000000000,
+      "amount": "45000.000000",
+      "counterparties": [
+        {
+          "owner": "8K4x2JrVEahRjAbVwsyioqZ3HMVCwVpPdLWvHGkZC4SW",
+          "raw": 45000000000
+        }
+      ]
+    },
+    {
+      "sig": "61g8PugDxsJdz43msSbwy6GLjGRxgHJcs8rdTF4KH7erkFkhrCoKou8ao2LFPq2g4j4dJhHXbkHV6frhrE75AAag",
+      "ts": 1786445139,
+      "time": "2026-08-11T10:45:39Z",
+      "raw": -125000000000,
+      "amount": "125000.000000",
+      "counterparties": [
+        {
+          "owner": "3iNpHZrcE45FPR8pKhz7g4KXEZNHoiic7eG9bRwrBJ8b",
+          "raw": 125000000000
+        }
+      ]
+    },
+    {
+      "sig": "68L6VwEDFQAke4WiZ13enpqwsLVCQh6ZC3DhmGUtzPdrzMBgT19iZyntJhR3x4jiq4ZR5fqZQesqW6kx69X3CCN",
+      "ts": 1786445196,
+      "time": "2026-08-11T10:46:36Z",
+      "raw": -130000000000,
+      "amount": "130000.000000",
+      "counterparties": [
+        {
+          "owner": "CN52REwZiVsRHaDhMSs9nsyroeVukkEQ5YQku8A4t4iM",
+          "raw": 130000000000
+        }
+      ]
+    },
+    {
+      "sig": "3axKhuTGPFiBAkaNuYticwVjG9ZmuNSKwkK1mSJvjw4JJ3AEiqFgU6DB7Nsrx814qGePGmV412dw4RegNCFEvCZb",
+      "ts": 1786450052,
+      "time": "2026-08-11T12:07:32Z",
+      "raw": -50000000000,
+      "amount": "50000.000000",
+      "counterparties": [
+        {
+          "owner": "FNzQhXqumRTWn3S5pLSxpnw8VDM1eWACUy6ejmsbNxbq",
+          "raw": 50000000000
+        }
+      ]
+    },
+    {
+      "sig": "4dAGbNfYLk78ZReidp8pn99yBTiLM5AcSYMNhZQzP7Ni85FJuReuk1ynFhNRPgtULMz7iZdUT1Rs8bvyvZUjwFH3",
+      "ts": 1786456497,
+      "time": "2026-08-11T13:54:57Z",
+      "raw": -80000000000,
+      "amount": "80000.000000",
+      "counterparties": [
+        {
+          "owner": "ART5dr4bDic2sQVZoFheEmUxwQq5VGSx9he7JxHcXNQD",
+          "raw": 80000000000
+        }
+      ]
+    },
+    {
+      "sig": "3ZEHejfu98S9ruyWDiqZt5svunzotAPQH5z9Dq1idfYpLU9YWfVoa78MWq8kXR7Togvc8CYSVXuxpVKvzdD1FhQ4",
+      "ts": 1786457017,
+      "time": "2026-08-11T14:03:37Z",
+      "raw": -150000000000,
+      "amount": "150000.000000",
+      "counterparties": [
+        {
+          "owner": "9EwwcJGrpmb1BxuJXA5eYLeK64PF64n7MRvdfoo6wfVL",
+          "raw": 150000000000
+        }
+      ]
+    },
+    {
+      "sig": "4yssyQiJ8Q2Qrk7bWB8XAeh3xmuh2jYqzg6RzoYwwJD4cfFQptTey6BKYeRYFTSobhyoDkj3oQEppXKXQFNsC2Nn",
+      "ts": 1786457413,
+      "time": "2026-08-11T14:10:13Z",
+      "raw": -275000000000,
+      "amount": "275000.000000",
+      "counterparties": [
+        {
+          "owner": "69kf3P5X9Bh7pkWGmqrr5WjxP4QdyeqJQqyj8DQy2NgB",
+          "raw": 275000000000
+        }
+      ]
+    },
+    {
+      "sig": "3B9Lt8F1S1dX8wbpxeyVuHqc2fk4sLKeWfhU14m5A98zEn3QQjSxzzNXSv1dBnz5j4DowUtaP5B3mVDzmvhd9tzm",
+      "ts": 1786460636,
+      "time": "2026-08-11T15:03:56Z",
+      "raw": -200000000000,
+      "amount": "200000.000000",
+      "counterparties": [
+        {
+          "owner": "H1iqoVg5jP6mJy3wJcewRJtEVDDrxS7nYaArcQfQC7zJ",
+          "raw": 200000000000
+        }
+      ]
+    },
+    {
+      "sig": "32hGovSqVWq7zXuLBUTAKTtSBk2VkPzzXLzPpUtne9xkkfNN2ktZrgzwZqg5h8czCLRXJsg5Wxhhxcex6QzNyxVA",
+      "ts": 1786461704,
+      "time": "2026-08-11T15:21:44Z",
+      "raw": -80000000000,
+      "amount": "80000.000000",
+      "counterparties": [
+        {
+          "owner": "HPHBmKKtBaCi5JhcHVoDH6X48CDvaufh4qtwqAB2Zxry",
+          "raw": 80000000000
+        }
+      ]
+    },
+    {
+      "sig": "2BGRjTt7QokdVd9GAE8LggtjjbHn5sXEbxLNrpywLtsxhGTBAk2H7sedw8ApyjMHSdEq3jxJbA6cUADycD49WcCv",
+      "ts": 1786461763,
+      "time": "2026-08-11T15:22:43Z",
+      "raw": -45000000000,
+      "amount": "45000.000000",
+      "counterparties": [
+        {
+          "owner": "F6uRXrhaAJfD46H3q6saEpzYgQhY6EJJ6dV2GaVZooyD",
+          "raw": 45000000000
+        }
+      ]
+    }
+  ],
+  "recipients": [
+    {
+      "owner": "CGXrfpUkN5Jfo1zxo3G2zj2tJLeJrA9siS6cDQENaGf5",
+      "raw": 1200000000000,
+      "amount": "1200000.000000"
+    },
+    {
+      "owner": "zux62kQ6ygiAowHxcxyLbLE892E6rS8Tnvhsju65vYt",
+      "raw": 1200000000000,
+      "amount": "1200000.000000"
+    },
+    {
+      "owner": "9ggkEFf3PK56dvP2yjm1N7X8Bxzty1BYfk3Rp68TyvQP",
+      "raw": 700000000000,
+      "amount": "700000.000000"
+    },
+    {
+      "owner": "8Sid38QZK7K1BHmPbPdcTbiSt2f6XYhFSKF6EPUguaky",
+      "raw": 670000000000,
+      "amount": "670000.000000"
+    },
+    {
+      "owner": "CALZBwUeN9yRFXLSZwqoWAR45BBKyZhZBsPM7YeSSsP2",
+      "raw": 620000000000,
+      "amount": "620000.000000"
+    },
+    {
+      "owner": "5CYEcx88NhdRaFw3pc5YNBXoiKa3EseD8BM7Bvs8NkaU",
+      "raw": 600000000000,
+      "amount": "600000.000000"
+    },
+    {
+      "owner": "2UWD64c9gtGc2RyrALfUebcVrcDm3A3RqLhaGJXKZHBr",
+      "raw": 555555000000,
+      "amount": "555555.000000"
+    },
+    {
+      "owner": "52houUTLXsy3a26PtkwShmUUoDBjyVmQCZkZ7syjjMS",
+      "raw": 550000000000,
+      "amount": "550000.000000"
+    },
+    {
+      "owner": "3iNpHZrcE45FPR8pKhz7g4KXEZNHoiic7eG9bRwrBJ8b",
+      "raw": 475000000000,
+      "amount": "475000.000000"
+    },
+    {
+      "owner": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+      "raw": 400000000000,
+      "amount": "400000.000000"
+    },
+    {
+      "owner": "8gGvvEsv5Ct7pCX5N231USpbBHmH3kZ6r6VZYTJQRcwB",
+      "raw": 300000000000,
+      "amount": "300000.000000"
+    },
+    {
+      "owner": "4uNfdSDH8syyp5BLp9gnrZEnsZjA7q68B95SnbmokT8F",
+      "raw": 300000000000,
+      "amount": "300000.000000"
+    },
+    {
+      "owner": "GjEFh87khycTvL2b1Vt9wSju4bFodpfLLeWU1MQwwy1B",
+      "raw": 300000000000,
+      "amount": "300000.000000"
+    },
+    {
+      "owner": "AjmmrnMkd4FHe7HZULcof2WZaR7x2ivdvNJwGcLJz2YS",
+      "raw": 300000000000,
+      "amount": "300000.000000"
+    },
+    {
+      "owner": "4rJVuXBgH94giakRzL78AJMP9i4kYojUXKNcWp5RTsTd",
+      "raw": 300000000000,
+      "amount": "300000.000000"
+    },
+    {
+      "owner": "69kf3P5X9Bh7pkWGmqrr5WjxP4QdyeqJQqyj8DQy2NgB",
+      "raw": 275000000000,
+      "amount": "275000.000000"
+    },
+    {
+      "owner": "3Biv41TvD1P2agAsLfUWW7Kd8WGKmu5CkKMq4frcf96f",
+      "raw": 270000000000,
+      "amount": "270000.000000"
+    },
+    {
+      "owner": "CwzXrbvJ7KNR2UHWx5mHS8h51byX4Yo142xoCCPUV56T",
+      "raw": 250000000000,
+      "amount": "250000.000000"
+    },
+    {
+      "owner": "DgKeRrDYYSvhfG8FjgSPGpwGgw4YkaDzyByJGDPNhbQm",
+      "raw": 250000000000,
+      "amount": "250000.000000"
+    },
+    {
+      "owner": "DZxhGs7uycXudBrLf8o1bQ9FVxXkrF6kGK2B5gmuY2CD",
+      "raw": 250000000000,
+      "amount": "250000.000000"
+    },
+    {
+      "owner": "f4CMmXJCRu4fzyqZPkDiFhGKAeCo1s7sxUtPKQp9SDy",
+      "raw": 250000000000,
+      "amount": "250000.000000"
+    },
+    {
+      "owner": "F9AngKEoAdmL2XxREwcD9BC9H7FhPyafQVuJPrTvg6Z",
+      "raw": 230000000000,
+      "amount": "230000.000000"
+    },
+    {
+      "owner": "2LZ3idLfsxKyaE9MhgFPS9pkqUrEreg744wNLK1eUSxf",
+      "raw": 220000000000,
+      "amount": "220000.000000"
+    },
+    {
+      "owner": "F3Ffty2Lv3QisQE6QrziecKPB8KmBBveLC4VnfYNHPep",
+      "raw": 220000000000,
+      "amount": "220000.000000"
+    },
+    {
+      "owner": "GfRPp2sNRJioNvCJm7zQLCa3TjGkVgSkeAubWkxizdiB",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "Dp2kvpj47C8jdfL99uFhspfp7BGH3CFKgNZDdYeHiDh",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "AzQSc6nb9sB3SFsMtkcMpLtN2sqRWqFwJxH1makv68i4",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "FNAREy7yVYc9sUzmS4xdCFpoa34p8ZEgrdCtqw3gkQn9",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "H26JfMMi7eRRjoSA69Jx3QKbvx8mpqbLg5WBB4wLCa9V",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "H6CeM19X1mc4t6CduUXXKGCyt6NeE3NvEKz6Tm4dLTmc",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "H1iqoVg5jP6mJy3wJcewRJtEVDDrxS7nYaArcQfQC7zJ",
+      "raw": 200000000000,
+      "amount": "200000.000000"
+    },
+    {
+      "owner": "Ch9eVziW4PhVm5ginYCbKR1pZzVaCwe4ZczUnRsJvJDg",
+      "raw": 185000000000,
+      "amount": "185000.000000"
+    },
+    {
+      "owner": "4Sxux1VrSnTViwoTVCan6zk3P4XZY83Asht8jiaXqqHw",
+      "raw": 175000000000,
+      "amount": "175000.000000"
+    },
+    {
+      "owner": "HmUt3Jn46j7c7ANdURmEyjSRj8i3Em6MhjQUi37PZ219",
+      "raw": 170000000000,
+      "amount": "170000.000000"
+    },
+    {
+      "owner": "Eh38pfuTRERvv6AcTZFeQsZZZLEtFBwvVhrD342phCTy",
+      "raw": 170000000000,
+      "amount": "170000.000000"
+    },
+    {
+      "owner": "Hrg6CgABraxLaoxcyZafddHdJymTQkQbyVaqBipq3rzU",
+      "raw": 170000000000,
+      "amount": "170000.000000"
+    },
+    {
+      "owner": "3w7rx9LsYS5J5YNNKcpeYMR3rKNnWHhE92xu8vfQfrdv",
+      "raw": 170000000000,
+      "amount": "170000.000000"
+    },
+    {
+      "owner": "7ANtxJEnojrw1bebwH9dYEDM9yad9L3wab2PkD4qkLP9",
+      "raw": 165000000000,
+      "amount": "165000.000000"
+    },
+    {
+      "owner": "8Xn3iQXNEnmgdzuTv16RYGYQntXwhUdzSKht5rgm9TMJ",
+      "raw": 160000000000,
+      "amount": "160000.000000"
+    },
+    {
+      "owner": "7WGjeHZpnbCyiZn28W9uNxbi6xq7K8QXecNZk7a6FzQa",
+      "raw": 160000000000,
+      "amount": "160000.000000"
+    },
+    {
+      "owner": "741TyxhtrGgdtHJDmygqtjXyxmSLYGEucu42Bguj1tbg",
+      "raw": 150000000000,
+      "amount": "150000.000000"
+    },
+    {
+      "owner": "9EwwcJGrpmb1BxuJXA5eYLeK64PF64n7MRvdfoo6wfVL",
+      "raw": 150000000000,
+      "amount": "150000.000000"
+    },
+    {
+      "owner": "GtbgC6AJQ2xhBoKsFCUxMcx4FHspvt475ToNfTziT6ii",
+      "raw": 148000000000,
+      "amount": "148000.000000"
+    },
+    {
+      "owner": "CuDe51GPh5qGsmYBJDxSsufhQQhA618uDbkaXFZ4pztL",
+      "raw": 140000000000,
+      "amount": "140000.000000"
+    },
+    {
+      "owner": "CN52REwZiVsRHaDhMSs9nsyroeVukkEQ5YQku8A4t4iM",
+      "raw": 130000000000,
+      "amount": "130000.000000"
+    },
+    {
+      "owner": "2fuwm8KXGsf71fTRPqe4QgZ6SJ4eDqZzNfwfx5j4ftM1",
+      "raw": 125000000000,
+      "amount": "125000.000000"
+    },
+    {
+      "owner": "HFisjLKfhA5UbSocq62iZLdZWnwPXMvo4Vo9S7ZzGEL2",
+      "raw": 125000000000,
+      "amount": "125000.000000"
+    },
+    {
+      "owner": "9TGd518ifTja3SfKffjbbsREb3Cv3tnWzZXevH3DCNnZ",
+      "raw": 120000000000,
+      "amount": "120000.000000"
+    },
+    {
+      "owner": "Cpsj1hcaz5XEFb3uGBDnTAHKNr6Pg2pY3fJPkHiMJaFz",
+      "raw": 115000000000,
+      "amount": "115000.000000"
+    },
+    {
+      "owner": "FbvnwyLq2WaXyQKTx1C3zquBbTzGU7QyBpN4TSE2UNUC",
+      "raw": 110000000000,
+      "amount": "110000.000000"
+    },
+    {
+      "owner": "FNzQhXqumRTWn3S5pLSxpnw8VDM1eWACUy6ejmsbNxbq",
+      "raw": 105000000000,
+      "amount": "105000.000000"
+    },
+    {
+      "owner": "BBH7jwRdKyrSAefmRUheiZicQG1EBKofFaDoUrUVjXHz",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "EppTis6BBUNH3kvPSAyeRxhPVTzzahUPijd8c5L3tfca",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "2K6VhA5xF9hqQEg76gJSZQgNYTH5oBh8ZMvvBHzsNTrS",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "7MFNzuU2GkBykJzg6sNNQHApAFEG7FPLr5yRazqNvT1n",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "5JtTq7UXFpEJ3Je13AQVvZrxQMo44LrG54dmSHR2mpCJ",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "BtmvjDr24SmXQMS952CFjSEnjHeLgGuvRYVpV77Q8wQJ",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "7zvDR2ijiwxwsiWa1uSxdoL5LroaK3Qy5fUAUAG87cu8",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "oYqiaG2fBMkbj8MqnKLo6ahdy2UXnfGn4dPtWs5M7bD",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "9jDmi7iqLeAbQH5Pe3BQJWLXD9GTKyb2Vm3NkNxBGNbc",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "ADWM6h8fPpjeHk6tyV4jEdRPdRbV5mdNawNiYX4Ycrds",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "C7Ds4FQ1H9EnQrhNayFcs9wDb5t7HS8jrCh37Me9eYVy",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "CmVPg7BAP3Ly5wxkA9aWvf2XpMQPoaypEd77XriP7N2Y",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "C51Q5dUtzABLxxoYyNgDWaDM9aJ21ByZYxuxDcxGAMfi",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "9KjaBdDUuTB81KTAvxV9fz8t7cTQLLnLrRLShJ4S8vZZ",
+      "raw": 100000000000,
+      "amount": "100000.000000"
+    },
+    {
+      "owner": "7pVL5RU5wDe7G4aRALtv6kqftYLr46VY4eZudwXrnvcG",
+      "raw": 90000000000,
+      "amount": "90000.000000"
+    },
+    {
+      "owner": "BSzpGGB3AMwtW126RT3Z27STSBrVjKV5A96H4BsUKdtD",
+      "raw": 90000000000,
+      "amount": "90000.000000"
+    },
+    {
+      "owner": "8K4x2JrVEahRjAbVwsyioqZ3HMVCwVpPdLWvHGkZC4SW",
+      "raw": 90000000000,
+      "amount": "90000.000000"
+    },
+    {
+      "owner": "HpbGQurKZdpX4ZeWcJa8ZFmM1uSLtVutBiZ12bonxtos",
+      "raw": 90000000000,
+      "amount": "90000.000000"
+    },
+    {
+      "owner": "BdQTaAtBBtdDggJU95Hw5Qwpb3QGqJW1iDVRVkSZYbWC",
+      "raw": 85000000000,
+      "amount": "85000.000000"
+    },
+    {
+      "owner": "2mvGhorGBGZ4TZgGyRQozFYvDj2xwvYjxjvfVXkyNyQM",
+      "raw": 85000000000,
+      "amount": "85000.000000"
+    },
+    {
+      "owner": "GB3cedtHn4erQ8kL1GfYsXYB3D6ii7MLXBEq3DgFuwZ3",
+      "raw": 82500000000,
+      "amount": "82500.000000"
+    },
+    {
+      "owner": "4NbvPPLLuY7ab8iUXedLZZFF8XRj8epZK1WKtm9SmZbA",
+      "raw": 80000000000,
+      "amount": "80000.000000"
+    },
+    {
+      "owner": "DWJVBEW6i7nSmRUfQqxCwGKi8U7NAB9WoM9YWTrECA76",
+      "raw": 80000000000,
+      "amount": "80000.000000"
+    },
+    {
+      "owner": "BGnpsmRFLrBBYqe1RY1XqNep2d385167CpWzpwYGAoKH",
+      "raw": 80000000000,
+      "amount": "80000.000000"
+    },
+    {
+      "owner": "ART5dr4bDic2sQVZoFheEmUxwQq5VGSx9he7JxHcXNQD",
+      "raw": 80000000000,
+      "amount": "80000.000000"
+    },
+    {
+      "owner": "HPHBmKKtBaCi5JhcHVoDH6X48CDvaufh4qtwqAB2Zxry",
+      "raw": 80000000000,
+      "amount": "80000.000000"
+    },
+    {
+      "owner": "5iZvwfoMdnxXpPGw9hBKEz3tHv2jYG3TgExHDsWrpTyV",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "Em2t5Le7VRu52atyQpWm8h88xXDw4tEE9GAeQiSGvNVA",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "E7pskdV9xCCMXtsu747tjjFEMq9Fwwnvwo6fApQWBwxP",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "9zvu8poieSXgzEjgAmbVus3bQEYWVYiJB9vKAPqx5vjH",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "AMqGTSDRn51DcQcLW6YUkPUcEPyf9nMCVKTZ3ezVxDdW",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "9XFxcvb3NpLxM9dpYEFZbwK9YBNLBh6DC7XyzaSYJzz7",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "BLUymCdbrhSP3zQgGmsc2Yez5AyjZSh2BgH2NdM1xRBd",
+      "raw": 75000000000,
+      "amount": "75000.000000"
+    },
+    {
+      "owner": "7FBJEubxFDAJdDWrGwTAF6BcT7N7aB6NFTkdm5bhDxd2",
+      "raw": 72000000000,
+      "amount": "72000.000000"
+    },
+    {
+      "owner": "6HJGj5h4nHshYs3frVq9MjrGxX385kj3YkaTThTJsjsq",
+      "raw": 72000000000,
+      "amount": "72000.000000"
+    },
+    {
+      "owner": "HNozKLoXu3UL41ekFavzuSoLu7KEjj5wTYj3khwMifyd",
+      "raw": 72000000000,
+      "amount": "72000.000000"
+    },
+    {
+      "owner": "Hhr9ENKwvrp9JYktWRLuMKsG1dWcoSqW4Cd6Vyafv1nS",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "HGpvad3VEVHATweTEm8FYheKTtLriZEiYXHZEzdQHpL4",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "8Wj51LtKKsCvjamGJnUXB281uvqm5PhwwmUS4ztdPdyh",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "EKFdYEYXJSsB4qTLuBLYhDftabP56M2r3sdvoqKiV7CW",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "4rAYJ5wanB6w8pFrfwjEZo6zxGGYrNSUF84VxjffKNuh",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "GvrPz54rxxMLixnBNAFjVYkBzBpCVkACpEqDnwcibPac",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "7kv9yetHjrsmnmfAZfH8UUq6cLV9xV5wegn67DMxrwJB",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "H6YVqfjKrQiy69AnsMfTMBCebk1F6FMmjWs7qHEpLxyF",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "64w4qRu9VGio7U1Asc6B68QDpS8L1McmSn2yyExC6Fii",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "CD3SpD4upBmmbZtZE5fohVN2dE3HFrmXTjT2XT1ngyLq",
+      "raw": 70000000000,
+      "amount": "70000.000000"
+    },
+    {
+      "owner": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+      "raw": 60000000000,
+      "amount": "60000.000000"
+    },
+    {
+      "owner": "4nBfdKEykGrmbxbFHu7tRmDqPUnP1LJcLeXJe7tcF6t3",
+      "raw": 60000000000,
+      "amount": "60000.000000"
+    },
+    {
+      "owner": "ANVFyjrxGtAKd1Kgf2MhVma9BUsNA2eKmsVMCzhAWik4",
+      "raw": 60000000000,
+      "amount": "60000.000000"
+    },
+    {
+      "owner": "7DoMGTsDFHNSkeeb22Zn3pji3Ne8Uh9eZLKTEkJrTyKX",
+      "raw": 60000000000,
+      "amount": "60000.000000"
+    },
+    {
+      "owner": "C9kerFv2Bo5pGEw8czvRV8jGXabUTty8GggBrxWY9ESV",
+      "raw": 60000000000,
+      "amount": "60000.000000"
+    },
+    {
+      "owner": "2bVXAo7Zn82t3ThyrfmTQgbY6rG7yD2WiM6eCPKgUvmi",
+      "raw": 60000000000,
+      "amount": "60000.000000"
+    },
+    {
+      "owner": "EV3uN9nFZEUB3z4WB5pxTzhERiziZDxjkxdjzUgCqZW9",
+      "raw": 55000000000,
+      "amount": "55000.000000"
+    },
+    {
+      "owner": "59VpVyro5goqxkvbo6HqDShBdsuk1yLxCgJJPhYguUQv",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "3yHq9S9xd8GePLqi5VmbJfffN7Bo9vRQtDNQN1UD8RSP",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "J2Ni61di8g38bPAhuncuCvgw5Z7rr5k1ZU68s3XwRaZe",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "BPDC4ugGmG4bbG6k1eJSrGjw2bwreRjRuxp2ixi2Nnyw",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "7mjiedwGbxCjUH3sn1jEcj8vTLiergrPZYmjKrAKubiC",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "C4mDzBE1tU1JgkE53srVSEqqMcxNp3SnasCFqPD4h1Ds",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "98hxKE8FcJZmQYZgb6ihzZy8VaGRk8rWrNZ3fYmuuWEj",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "BKYYNoYNEmDNB4kgqQ12jHHEmGpLFK9hgjsBUjt3Cu6i",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "5ED73iSPRQ5w897Y4yvGg49Tby1qgzeRYNnFyD8XreTk",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "DdcgdmjAq1F5XBAeMdHgAqqiEXXko1GAMnsnd4RzBhSi",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "FCziEFnbjtqAPM4iiTpktqcxkQomDpwFhXTi7cQZ6Qcu",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "4h3iBS4VHJewd8zjBDsdbAK8yQSKfoWWJtAHcoZVeWmq",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "CPnTiY3Yik6UNezffCG8bWXHMeKN5F3wHonpvYdgHU3n",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "E2XpeKfuCfJ2k73ZBXF4nzWVFLHzsaU6ZChn2hTvsEuB",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "6oPLAyT2tQsHDhAnmtY3GGqbetwgbhutCjnEvptUSvGX",
+      "raw": 50000000000,
+      "amount": "50000.000000"
+    },
+    {
+      "owner": "6oZY9xQk6podJgPCSW2fNZCNnjfU6h449PmPGgn6dBSw",
+      "raw": 45000000000,
+      "amount": "45000.000000"
+    },
+    {
+      "owner": "F6uRXrhaAJfD46H3q6saEpzYgQhY6EJJ6dV2GaVZooyD",
+      "raw": 45000000000,
+      "amount": "45000.000000"
+    },
+    {
+      "owner": "4CYZSfiZwVsRYZBHcGZwCoXi5J3jrXckFZhWPw5Z9h2R",
+      "raw": 43000000000,
+      "amount": "43000.000000"
+    },
+    {
+      "owner": "31GuvCAugnRcaBsvdwYJ3z2nyiwHcf32trUoqwrozp69",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "27Cm2ai2x7VdX5Hcg7zfU4oS2AFziWrwwj5weSWwGzKs",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "EvdJRiD1LrsBNQYVXRfWMdLmjYYAmaH3tkqRcRuUbrhV",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "DtVJcWpuiJ8WGW8WnpnUBt3nTAXWNKaMqZ2M1Yh4ju2h",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "H76MXffyWvTHr9KfYTsPCr2ja2KBeutUtijY2NckGr7Y",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "FnPexeZtieARisBrxMABRrBWzDva5ok2QdgBPDPw9hKR",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "EYG3urvLQyKx65LYCL67tbAMnsNAfJUbBKRFWpTBbK6G",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "6fRu1KMKr4sT8aWdbcm3GBk7sMZSEBk4a16NDSPAjzEM",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "6Hcp4g4BDt3c1GDw2iGS6bPT26S7U3WwG3V8aPaiyv9s",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "862ujMXKooH8SBkovLw8Nuf3uAw4YqT6Emvxf2QZrbZH",
+      "raw": 40000000000,
+      "amount": "40000.000000"
+    },
+    {
+      "owner": "EeVi7FsTi3DBQHL3aEUrgR2CHgpuY5NvwbjrTmnfFMNM",
+      "raw": 38000000000,
+      "amount": "38000.000000"
+    },
+    {
+      "owner": "8N8PUnfrBKQgX4v23wGKNvkmmrYbMBkMRisaQJWMDJkX",
+      "raw": 38000000000,
+      "amount": "38000.000000"
+    },
+    {
+      "owner": "79t56uz97mX6TZb8cZT8SZ5yZhTtWXbmY9CJDbuiGzox",
+      "raw": 35000000000,
+      "amount": "35000.000000"
+    },
+    {
+      "owner": "89SLWPMaWpRNaF1LD4fBFXgbyreyMfZ9Pjjx5hxfp7bD",
+      "raw": 35000000000,
+      "amount": "35000.000000"
+    },
+    {
+      "owner": "GqFgMUkKMVCLQgYtLvePh2TZZv28XVDZySz1RNYdakyG",
+      "raw": 35000000000,
+      "amount": "35000.000000"
+    },
+    {
+      "owner": "CVvJnDPcWdmUJN6YC4cHwBS2cJ9T8KoVh3xEwGquHYz1",
+      "raw": 35000000000,
+      "amount": "35000.000000"
+    },
+    {
+      "owner": "8doXQXgP55rYHJCDvJrcSD2jbgsYMGLnt23UeJCQhsie",
+      "raw": 35000000000,
+      "amount": "35000.000000"
+    },
+    {
+      "owner": "5AhbfS3SQ3CbhPsozY4v9RxHqhkL2D716cErLkog4cBD",
+      "raw": 33000000000,
+      "amount": "33000.000000"
+    },
+    {
+      "owner": "4AD1wMsXd3toFjdT31yung8MXd6HY7xbfoMFngYHzQ34",
+      "raw": 32500000000,
+      "amount": "32500.000000"
+    },
+    {
+      "owner": "DKruQSdgkHviJfGKGuLM5cLmKzFoeE56tQNrsLLih8rn",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "AvPoU9DqijgwBd1iJJkZpSTyoac7WogVbEHMzZDyAtX6",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "FF7R8zxniXNJP3DmMQmBvKUcfmt7Z3SQ4PivTNVzMjzb",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "5gNQfafEpq6Wn9FBVLpykwUvpDgjCk5xkwkUtzg6XZNC",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "Dts9ARn6bxxqVJ3z3EJwmqE95rVyJY9ZC5DWNn8Tdrzq",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "Gu3eCYgXkcXugpQoGqdj7X5pi1PVStcAokbpa3MGZgLc",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "GFR4VV939FsvSzfrXVJacQpwBSnjddV1xh3jfCByeBPv",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "B8mPU8jpaJHgjrvNv1acy1HvFc85BadY4Fxc7H1tcqMx",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "6xPJ1b7Y6HEN4ALNaxurdDXQaocEhFAdrtGL4cRdtKTf",
+      "raw": 30000000000,
+      "amount": "30000.000000"
+    },
+    {
+      "owner": "8iyReQez8ED5ptzJ3rPAs3MAvEJNTa8ko4gW2t9ND2TW",
+      "raw": 25500000000,
+      "amount": "25500.000000"
+    },
+    {
+      "owner": "35nFeyyZa9ceGUkQDozFgrazJwiYELdGbbfqiydqV75R",
+      "raw": 25000000000,
+      "amount": "25000.000000"
+    },
+    {
+      "owner": "3zAZiavbrPNkQNZuSiSc3Ct7re3VDKjYVL9hJFKiEqMK",
+      "raw": 20000000000,
+      "amount": "20000.000000"
+    },
+    {
+      "owner": "2hzBJ9ujTZUsvSaG1Duw2YZc8QKYCx3KWJCrFtwZLHUW",
+      "raw": 20000000000,
+      "amount": "20000.000000"
+    },
+    {
+      "owner": "74iJr5at8yGJid8RrRdmfyhtNqyRt65rQ7bRQy9UrzDn",
+      "raw": 20000000000,
+      "amount": "20000.000000"
+    },
+    {
+      "owner": "9hP8zmchAnooafCR9KmK2fepkUXTvtQyWGtSjpsmpvZF",
+      "raw": 19000000000,
+      "amount": "19000.000000"
+    },
+    {
+      "owner": "GoJAqhWNrzhAbUqpXb9jfMtZysA2AEskdKFPq841r6At",
+      "raw": 17500000000,
+      "amount": "17500.000000"
+    }
+  ],
+  "floor_check": {
+    "outbound_transfers": true,
+    "unique_recipients": true,
+    "outbound_raw": true,
+    "inbound_raw": true,
+    "inbound_txs": true
+  },
+  "floor_ok": true
+}

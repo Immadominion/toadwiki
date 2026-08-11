@@ -1,0 +1,131 @@
+{
+  "collected_at": "2026-08-11T17:24:07Z",
+  "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+  "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+  "decimals": 6,
+  "supply_live": {
+    "raw": 960572843750785,
+    "ui": "960572843.750785",
+    "decimals": 6
+  },
+  "campaign_owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+  "campaign_ata": "AuA2VRui5JNWNWF79iyaSKpW7zMQLfzFZBjd2uS3YW2H",
+  "deployer": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+  "canonical_pricing_pool": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+  "files": [
+    "metadata.json",
+    "authorities.json",
+    "pumpfun.json",
+    "wallet_proof.json",
+    "launch_timeline.json",
+    "deployer.json",
+    "copycats.json",
+    "campaign_invariant.json"
+  ],
+  "verification_ledger": [
+    {
+      "claim": "Description text retrieved verbatim from the CID the mint points at",
+      "verified": true,
+      "method": "verbatim body of the IPFS document at CID bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za, which is the target of the mint's on-chain tokenMetadata.uri"
+    },
+    {
+      "claim": "Immutability chain: frozen on-chain uri + content-addressed CID",
+      "verified": true,
+      "method": "on-chain uri (null update authority) + content-addressed CID"
+    },
+    {
+      "claim": "Mint is Token-2022",
+      "verified": true,
+      "method": "getAccountInfo(mint).owner"
+    },
+    {
+      "claim": "mintAuthority is null",
+      "verified": true,
+      "method": "getAccountInfo parsed.info.mintAuthority"
+    },
+    {
+      "claim": "freezeAuthority is null",
+      "verified": true,
+      "method": "getAccountInfo parsed.info.freezeAuthority"
+    },
+    {
+      "claim": "metadata updateAuthority is null (description immutable)",
+      "verified": true,
+      "method": "getAccountInfo extensions[tokenMetadata].state.updateAuthority"
+    },
+    {
+      "claim": "Only metadataPointer + tokenMetadata extensions present",
+      "verified": true,
+      "method": "getAccountInfo parsed.info.extensions[]"
+    },
+    {
+      "claim": "No transfer fee / hook / permanent delegate / default frozen",
+      "verified": true,
+      "method": "enumerated extensions[] and checked each dangerous extension is not present"
+    },
+    {
+      "claim": "pump.fun wallet<->handle mapping round-trips",
+      "verified": true,
+      "method": "wallet -> /users/{address} -> username -> /users/{username} -> address, compared"
+    },
+    {
+      "claim": "70,000 TOAD transfer occurred as described",
+      "verified": true,
+      "method": "getTransaction jsonParsed, pre/postTokenBalances delta"
+    },
+    {
+      "claim": "Recipient token account has exactly one signature ever",
+      "verified": true,
+      "method": "getSignaturesForAddress walked to the END of history (no cap)"
+    },
+    {
+      "claim": "Tweet exists and is authored as claimed",
+      "verified": true,
+      "method": "tweet lookup by id"
+    },
+    {
+      "claim": "Recipient's pump.fun handle matches the replied-to X handle",
+      "verified": true,
+      "method": "recipient wallet's pump.fun username compared to the handle the tweet replies to"
+    },
+    {
+      "claim": "INVARIANT: sum(inbound) - sum(outbound) == ATA balance, residual exactly 0",
+      "verified": true,
+      "method": "full ATA signature walk + pre/postTokenBalances, integer math"
+    },
+    {
+      "claim": "Deployer balance identity holds",
+      "verified": true,
+      "method": "sum(inbound) - sum(outbound) == getAccountInfo(ATA).amount"
+    },
+    {
+      "claim": "Creator pubkey decoded from BondingCurve byte offset 49 == deployer",
+      "verified": true,
+      "method": "getAccountInfo(9oi3zoTqd1T8T3CVuSDfSNwjeWaj6zZLdYMLWNyayaeA) base64, pubkey decoded at byte offset 49"
+    },
+    {
+      "claim": "Deployer never sold (pool actions classified by AMM instruction name)",
+      "verified": true,
+      "method": "no pool transaction classified as Sell, and no non-pool outflow returned SOL to the wallet (which would indicate a sale routed via another venue)"
+    }
+  ],
+  "verified_count": 17,
+  "total_claims": 17,
+  "unverified": [
+    "timeline: slingoor (deployer) tweets about the launch",
+    "timeline: @eltoadpepe X account created"
+  ],
+  "caveats_the_site_must_render": [
+    "pump.fun returns x_username=null and x_id=null for BOTH wallets. The pump.fun username is a self-chosen display name and is NOT by itself proof of X identity. Render this caveat; do not hide it.",
+    "x_api unavailable (HTTP 402: {\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}); impression_count NOT available on this route",
+    "slingoor (deployer) tweets about the launch: No tweet id was supplied for this event and tweet SEARCH requires an authorised X API credential (the configured bearer returns 401 on every endpoint). Supply the tweet id to make this row citable, or omit the row.",
+    "@eltoadpepe X account created: Account creation date requires GET /2/users/by/username with user.fields=created_at. The configured bearer token returns 401. The keyless syndication profile endpoint returns an empty body. Unverified.",
+    "TOAD moving from this wallet to the pool is NOT evidence of selling. A liquidity deposit sends TOAD *and* SOL to the pool and returns LP tokens. Any figure that lumps the two together overstates selling and misrepresents the deployer."
+  ],
+  "rpc": {
+    "primary_calls": 66,
+    "fallback_calls": 0,
+    "cache_hits": 893,
+    "primary_exhausted": false
+  }
+}

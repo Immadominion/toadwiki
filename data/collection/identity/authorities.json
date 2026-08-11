@@ -1,0 +1,85 @@
+{
+  "collected_at": "2026-08-11T17:22:40Z",
+  "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+  "owner_program": {
+    "value": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "source": "helius_rpc",
+    "method": "getAccountInfo .owner",
+    "verified": true
+  },
+  "mint_authority": {
+    "value": null,
+    "source": "helius_rpc",
+    "method": "getAccountInfo parsed.info.mintAuthority",
+    "verified": true,
+    "note": "null => supply can never be inflated"
+  },
+  "freeze_authority": {
+    "value": null,
+    "source": "helius_rpc",
+    "method": "getAccountInfo parsed.info.freezeAuthority",
+    "verified": true,
+    "note": "null => no holder's account can be frozen"
+  },
+  "update_authority": {
+    "value": null,
+    "source": "helius_rpc",
+    "method": "getAccountInfo extensions[tokenMetadata].state.updateAuthority",
+    "verified": true,
+    "note": "null => the description is IMMUTABLE and cannot be rewritten"
+  },
+  "metadata_pointer_authority": {
+    "value": null,
+    "source": "helius_rpc",
+    "method": "getAccountInfo extensions[metadataPointer].state.authority",
+    "verified": true
+  },
+  "all_authorities_null": true,
+  "extensions_present": {
+    "value": [
+      "metadataPointer",
+      "tokenMetadata"
+    ],
+    "source": "helius_rpc",
+    "method": "getAccountInfo parsed.info.extensions[]",
+    "verified": true,
+    "note": "expected exactly ['metadataPointer', 'tokenMetadata']"
+  },
+  "extensions_raw": [
+    {
+      "extension": "metadataPointer",
+      "state": {
+        "authority": null,
+        "metadataAddress": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump"
+      }
+    },
+    {
+      "extension": "tokenMetadata",
+      "state": {
+        "additionalMetadata": [],
+        "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+        "name": "The Toad Pepe",
+        "symbol": "TOAD",
+        "updateAuthority": null,
+        "uri": "https://ipfs.io/ipfs/bafkreifxw72yzkc2hjoktvce2kbtxh672ak2eqv47wvdrdnuchabpdb5za"
+      }
+    }
+  ],
+  "dangerous_extensions_absent": {
+    "value": {
+      "transferFeeConfig": true,
+      "transferHook": true,
+      "permanentDelegate": true,
+      "defaultAccountState": true,
+      "confidentialTransferMint": true,
+      "nonTransferable": true
+    },
+    "source": "helius_rpc",
+    "method": "enumerated extensions[] and checked each dangerous extension is not present",
+    "verified": true,
+    "note": "No transfer fee, no transfer hook, no permanent delegate, no default frozen state. This is the strongest verifiable safety claim on the site."
+  },
+  "supply_raw": "960572843750785",
+  "decimals": 6,
+  "immutability_caveat": "Verified: the CURRENT metadata update authority is null, so the description can never change from here. This script does NOT independently prove the authority was null from the creation transaction onward."
+}

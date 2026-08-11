@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-11T17:57:47Z",
+  "profiles": [
+    {
+      "handle": "mdudas",
+      "name": "Mike Dudas",
+      "id": "7184612",
+      "description": "investor @6thManVentures",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2086970388097970176/fYi8HUbl_normal.jpg",
+      "banner_url": "https://pbs.twimg.com/profile_banners/7184612/1781947270",
+      "joined": "2007-07-01T11:21:56Z",
+      "website": "https://6thman.ventures/",
+      "metrics": {
+        "followers": 1697729,
+        "following": 819,
+        "tweets": 213,
+        "likes": 290992,
+        "media_count": 42,
+        "captured_at": "2026-08-11T17:57:58Z",
+        "source": "fxtwitter"
+      },
+      "status": "ok"
+    },
+    {
+      "handle": "slingoorio",
+      "name": "sling",
+      "id": "1509239489021030405",
+      "description": "Jesus mode // code slingoor everything",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2087011272080375809/XcVop0GX_normal.jpg",
+      "banner_url": "https://pbs.twimg.com/profile_banners/1509239489021030405/1785614026",
+      "joined": "2022-03-30T18:42:27Z",
+      "website": "https://slingoor.io/",
+      "metrics": {
+        "followers": 94820,
+        "following": 1810,
+        "tweets": 139155,
+        "likes": 161739,
+        "media_count": 20149,
+        "captured_at": "2026-08-11T17:57:59Z",
+        "source": "fxtwitter"
+      },
+      "status": "ok"
+    },
+    {
+      "handle": "eltoadpepe",
+      "name": "el \"TOAD\" pepe",
+      "id": "2086108195693719552",
+      "description": "$TOAD. The original Pepe, the most memeable toad in existence.",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2086109640182661120/dt1PCNQf_normal.jpg",
+      "banner_url": "https://pbs.twimg.com/profile_banners/2086108195693719552/1786203037",
+      "joined": "2026-08-08T15:13:30Z",
+      "website": "https://eltoadpepe.fun",
+      "metrics": {
+        "followers": 4639,
+        "following": 5,
+        "tweets": 47,
+        "likes": 92,
+        "media_count": 31,
+        "captured_at": "2026-08-11T17:58:00Z",
+        "source": "fxtwitter"
+      },
+      "status": "ok"
+    }
+  ]
+}

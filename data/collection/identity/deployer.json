@@ -1,0 +1,6523 @@
+{
+  "collected_at": "2026-08-11T17:23:06Z",
+  "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+  "token_account": "8N4AmrpFTmQtMGniZguxgLU4W2f6pJ7KJdCnmJ3kmTZa",
+  "creator_onchain": {
+    "value": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+    "source": "helius_rpc",
+    "method": "getAccountInfo(9oi3zoTqd1T8T3CVuSDfSNwjeWaj6zZLdYMLWNyayaeA) base64, pubkey decoded at byte offset 49",
+    "verified": true,
+    "note": "Read from chain state, independent of the pump.fun API's creator field."
+  },
+  "balance_raw": 23628894583249,
+  "balance": "23628894.583249",
+  "balance_identity": {
+    "value": {
+      "inbound": "215057781.456575",
+      "outbound": "191428886.873326",
+      "balance": "23628894.583249",
+      "residual_raw": 0
+    },
+    "source": "helius_rpc",
+    "method": "sum(inbound) - sum(outbound) == getAccountInfo(ATA).amount",
+    "verified": true
+  },
+  "did_sell": {
+    "value": false,
+    "source": "helius_rpc",
+    "method": "pool-touching transactions classified by the AMM program's own instruction name (Buy/Sell/Deposit/Withdraw) in the logs, with the direction of SOL as a cross-check -- NOT by TOAD direction alone",
+    "verified": true,
+    "note": "Liquidity deposits also move TOAD to the pool. They are counted separately and are NOT sales."
+  },
+  "sold_raw": 0,
+  "sold": "0.000000",
+  "sell_tx_count": 0,
+  "sol_received_from_sells": 0,
+  "rebought_raw": 3993707036378,
+  "rebought": "3993707.036378",
+  "buy_tx_count": 335,
+  "sol_spent_on_buys": -622.243585109,
+  "lp_deposited_raw": 9465676216191,
+  "lp_deposited": "9465676.216191",
+  "lp_deposit_tx_count": 17,
+  "sol_deposited_with_lp": -1128.56399552,
+  "lp_withdrawn_raw": 9500810485711,
+  "lp_withdrawn": "9500810.485711",
+  "lp_withdraw_tx_count": 2,
+  "unclassified_tx_count": 0,
+  "never_sold": {
+    "value": true,
+    "source": "helius_rpc",
+    "method": "no pool transaction classified as Sell, and no non-pool outflow returned SOL to the wallet (which would indicate a sale routed via another venue)",
+    "verified": true
+  },
+  "plain_transfers_out": [
+    {
+      "sig": "DNe3AoKREpRnX9WqAD913Phx7SS9hJmtV3JCnyza9bZbZmukeaTbrrmjFQrDxv9sTMW2zrAGEq5tgxafrrvNjCc",
+      "ts": 1786202839,
+      "time": "2026-08-08T15:27:19Z",
+      "raw": -180963210657135,
+      "amount": "180963210.657135",
+      "counterparties": [
+        {
+          "owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
+          "raw": 180963210657135
+        }
+      ],
+      "sol_delta": -5.147e-06,
+      "sol_received": -5.147e-06,
+      "looks_like_sale": false,
+      "to": [
+        "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD"
+      ]
+    },
+    {
+      "sig": "48DLrQMyuuBSVSu8F2LBff7WdLRpYWnEuQZTvoiiM1KSGGCrtWcL79Ap16yvapWtJfwpuGaHZHHFSMKfBbe1bwZz",
+      "ts": 1786205117,
+      "time": "2026-08-08T16:05:17Z",
+      "raw": -1000000000000,
+      "amount": "1000000.000000",
+      "counterparties": [
+        {
+          "owner": "9EkcRCqFHP3QxyMmtMUNKLZSa6YrU7Uhc8yQNdKf34Eg",
+          "raw": 1000000000000
+        }
+      ],
+      "sol_delta": -0.002079177,
+      "sol_received": -0.002079177,
+      "looks_like_sale": false,
+      "to": [
+        "9EkcRCqFHP3QxyMmtMUNKLZSa6YrU7Uhc8yQNdKf34Eg"
+      ]
+    }
+  ],
+  "plain_transfers_out_raw": 181963210657135,
+  "plain_transfers_out_total": "181963210.657135",
+  "classification_note": "TOAD moving from this wallet to the pool is NOT evidence of selling. A liquidity deposit sends TOAD *and* SOL to the pool and returns LP tokens. Any figure that lumps the two together overstates selling and misrepresents the deployer.",
+  "buy_count_completeness": "COMPLETE for token movement, not sampled: failed transactions cannot move tokens, so scanning the ATA's successful signatures captures every balance change. residual == 0 proves nothing was missed.",
+  "min_balance_raw": 16424146212778,
+  "min_balance": "16424146.212778",
+  "min_balance_at": "2026-08-09T22:15:14Z",
+  "reaccumulated_raw": 7204748370471,
+  "reaccumulated": "7204748.370471",
+  "ata_signature_stats": {
+    "signature_count": 7914,
+    "failed_count": 7547,
+    "failed_pct": 95.4,
+    "successful_count": 367,
+    "note": "Overwhelmingly failed sniper-bot spam aimed at this account."
+  },
+  "wallet_signature_stats": {
+    "signature_count": 29685,
+    "failed_count": 21141,
+    "failed_pct": 71.2
+  },
+  "sells": [],
+  "buys": [
+    {
+      "sig": "61TZDfb8tL16ZKUFQY8V2AHnFSKCsGqBTWUqj43rwePD9ETAxky5q9KEwmXLqKyvSAV9u3FxghcJWf5nV6fHcL4v",
+      "ts": 1786203347,
+      "time": "2026-08-08T15:35:47Z",
+      "raw": 664035228,
+      "amount": "664.035228",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 664035228
+        }
+      ],
+      "sol_delta": -0.057988727,
+      "action": "buy",
+      "sol_flow": -0.057988727,
+      "sol_native": -0.057988727,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ppZ1vFMZb9uKEJFBJBSoKnpr4CHnLnZEidBpA4X1z8W1u2rfSgJSqLwQmYXdNLhdmQpjgciUufXHPKXfd2b9s9n",
+      "ts": 1786203349,
+      "time": "2026-08-08T15:35:49Z",
+      "raw": 1267395725,
+      "amount": "1267.395725",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1267395725
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2B8rFDMcSNfK1sj8BM3fef8Ubco7GniNby1upeHPbRoJyfaLHqyG7DeY1fG88UGf7GwLpawnmAEeY9xKVVZPnCqw",
+      "ts": 1786203351,
+      "time": "2026-08-08T15:35:51Z",
+      "raw": 629800788,
+      "amount": "629.800788",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 629800788
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3MYFrfEGPPymJyK42HWUfrzxhdNt7cF1e4HnFroM9ktsv7fEtcfb5swsybqojWgzYrZcVk6bhC2CCowp1crywjkR",
+      "ts": 1786203352,
+      "time": "2026-08-08T15:35:52Z",
+      "raw": 1259102071,
+      "amount": "1259.102071",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1259102071
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4xHpi6yP6XwymsEYcovjrY8LMZWmDQzWxUhc5NxAJtaznicFLKne8QcuLcrwwnfV6uHvSFJfiEckgmZapX6fxKLK",
+      "ts": 1786204578,
+      "time": "2026-08-08T15:56:18Z",
+      "raw": 626983529,
+      "amount": "626.983529",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 626983529
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "58GyCtezVts3HrqdPeHqEyjUASTz4roUrCaAwy612hTiidXCC3AkEXdepksVU6BWpX5MdhhFgReisPwCMAytb4fz",
+      "ts": 1786204580,
+      "time": "2026-08-08T15:56:20Z",
+      "raw": 612609914,
+      "amount": "612.609914",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 612609914
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5cwibP3CuzCAJt3dodJFGhQnhESGxCPsr8EkE6v8v7E4oLLJ7JNf2zMdU1cYatVYdnw7oubUTryXNXxrirQhEBNy",
+      "ts": 1786204582,
+      "time": "2026-08-08T15:56:22Z",
+      "raw": 1227155130,
+      "amount": "1227.155130",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1227155130
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3o627t832NXGGgimyRQKoTyFeQhUpM2xA6R6Kcnj11nkr3xwFpanqSi1aQ64nYRszx2HK9cLhZz7a4QBQ9svhT5f",
+      "ts": 1786204585,
+      "time": "2026-08-08T15:56:25Z",
+      "raw": 1214886557,
+      "amount": "1214.886557",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1214886557
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "dD7eqTVneyCfeWgzZqgSkS6h8YZ1s1zVhxkgnvJYbUwMVU2AWi1btn1nSEfwdZ8BVR4bjBYQHuu5JzPuaiajSgk",
+      "ts": 1786208750,
+      "time": "2026-08-08T17:05:50Z",
+      "raw": 958794741176,
+      "amount": "958794.741176",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 486237551011
+        },
+        {
+          "owner": "AFT9ZhYVHMRQrnntMYnqVrKvVrAxpaspCEMBXQNVMwLo",
+          "raw": 197990194843
+        },
+        {
+          "owner": "7xLfygtrTiJExAYgxLbBfV9faqN4Eu5zYifaAMWS7uqj",
+          "raw": 274566995322
+        }
+      ],
+      "sol_delta": -145.000023503,
+      "action": "buy",
+      "sol_flow": -145.000023503,
+      "sol_native": -145.000023503,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4SGqqjc5L4aFGgzbQSSQ8qA4LvnSUtAkcRfjotFuL3BL6Znr3CEeCiDatqHmsB8xv4yULttgWtt7AfTkcJrwbHCs",
+      "ts": 1786216374,
+      "time": "2026-08-08T19:12:54Z",
+      "raw": 430137341,
+      "amount": "430.137341",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 430137341
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5ydYB7xsTZBV5HDR3NK8EMsVJogF38dwH9idTmo13zyaEhNmYYwnmBrVGGJbxY6pTpmDfiQLNcRxoyTToJ8vPg6F",
+      "ts": 1786216374,
+      "time": "2026-08-08T19:12:54Z",
+      "raw": 215907201,
+      "amount": "215.907201",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 215907201
+        }
+      ],
+      "sol_delta": -0.057988727,
+      "action": "buy",
+      "sol_flow": -0.057988727,
+      "sol_native": -0.057988727,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3smmknBfFVduK6HYJyGHu9tkLsyZmnvTHPxsbL476ub5z8sZzXEnow8fZBSNk3Jm6RSEsZjVL4vRP31T4E9vbwA9",
+      "ts": 1786216375,
+      "time": "2026-08-08T19:12:55Z",
+      "raw": 2166916586,
+      "amount": "2166.916586",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2166916586
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2iJj4PDynNYzeuBrJhs6Kcb5CotN86sKwhh5xhGcQi4JgPijDwEh8gMz7gxrKL2PENe2qpiq4fXNu6cCEGSmCWWD",
+      "ts": 1786216376,
+      "time": "2026-08-08T19:12:56Z",
+      "raw": 2152590201,
+      "amount": "2152.590201",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2152590201
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4kSrjMFRfMcebm1YTFHUqNRweP1FZVeU5MzixCZoT7ZKmzmEadfFcBPQxDLnPJWS1AT29WJNZerzzzKAVVxbc3tu",
+      "ts": 1786216376,
+      "time": "2026-08-08T19:12:56Z",
+      "raw": 430601214,
+      "amount": "430.601214",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 430601214
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2GSMjgiJLfhi2YYyuXQeFe6KCqTRTSSSeW1KBsYr3srrMkwU6CxNaqyjjt3STLyYfyskseV2GgWy8D8MKYkoXLF3",
+      "ts": 1786216376,
+      "time": "2026-08-08T19:12:56Z",
+      "raw": 214971428,
+      "amount": "214.971428",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 214971428
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ENksFhiAXK6vcQwD5r9WSLKcwNRSDdFEXKaUzu3JbGLovvakRJhQcZoYxQoaPo8APWNwEe29kXi8YXnz6C5CvzD",
+      "ts": 1786216377,
+      "time": "2026-08-08T19:12:57Z",
+      "raw": 215176831,
+      "amount": "215.176831",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 215176831
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "561Rocb3X4N9L5cDtHB9vC9y3fTUPYT7EFQWeCs44SFuuQP3qFz5zMstS4Q9ZSmsaePwzHy4LEfCC9VxGQaBQ8Xf",
+      "ts": 1786216378,
+      "time": "2026-08-08T19:12:58Z",
+      "raw": 2150202788,
+      "amount": "2150.202788",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2150202788
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "sqgUTJMPSEiq9tHYBUmbvfQ2iCbTLWAExvxchUu2DpdJHqtdCaxbbgbicp18mCZD2Jxqhm5rS1JjUbd5YTfeTKV",
+      "ts": 1786216378,
+      "time": "2026-08-08T19:12:58Z",
+      "raw": 430404687,
+      "amount": "430.404687",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 430404687
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3RtH1VY1qbfWWXdmayZrWjGQ5cRLKUZQS7Q4XvUp7z3PGjxP69ud3YPVu99ZFSGtaQCJTLsQipW2mfvWr7fZAEcc",
+      "ts": 1786216379,
+      "time": "2026-08-08T19:12:59Z",
+      "raw": 2152917530,
+      "amount": "2152.917530",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2152917530
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4GUtZijGYx2LCSuTtngvEwg5bWVrwxpWt13V1ZD6EjUs5dVriDGnJiMHzP7Z7heMdgzqQ9BqGrd8bWG5AJsU8QJp",
+      "ts": 1786216379,
+      "time": "2026-08-08T19:12:59Z",
+      "raw": 430561824,
+      "amount": "430.561824",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 430561824
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5G1KqQFpLLEESsMH1A2AaKajaDHpURedm4NFcg4Nbk2bng5YDWAZ4b7d1sCV9TQTTymVmmnBv3x9uV4zaJB3Xt17",
+      "ts": 1786216379,
+      "time": "2026-08-08T19:12:59Z",
+      "raw": 214883712,
+      "amount": "214.883712",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 214883712
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4XZaQGdGc9c4UZY4pAXNBdmCWzgky7g1LoQGS8DzkpKzViitwd5zG9YQNPeqyoZouEpC6mxcmzv5hqF9UtPqcWC2",
+      "ts": 1786216380,
+      "time": "2026-08-08T19:13:00Z",
+      "raw": 215247348,
+      "amount": "215.247348",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 215247348
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5zsiH5ZeZBkMHiGQ6T2TUFVmCC3XRevg2hzN4pMDVuyLZw6ULEmW9NWgfBtrdAEMcKGEsFEUgUdr4yCfkovvECgp",
+      "ts": 1786216381,
+      "time": "2026-08-08T19:13:01Z",
+      "raw": 2151717070,
+      "amount": "2151.717070",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2151717070
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3L5Bai6XRnk3pGN8Z85jwKvhaRPUfoo7XxZzsR6TzjyCCz7haimKgHVnp51N8gAKWDA4k1SW263DmrnHmkzNCpuv",
+      "ts": 1786216381,
+      "time": "2026-08-08T19:13:01Z",
+      "raw": 430449731,
+      "amount": "430.449731",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 430449731
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3etiWX4ouuyoNttJYFn6Si5BP6NhZ6DgkSJNoRaH8oJMb3xy8iSsqZRe2RQ4LJfUN1rACPT8vx6B4sUDo1XqVH8F",
+      "ts": 1786225702,
+      "time": "2026-08-08T21:48:22Z",
+      "raw": 189775562615,
+      "amount": "189775.562615",
+      "counterparties": [
+        {
+          "owner": "6P5YvBQd4Aihcm4XP2DPb51pBTrcnRCMgsU99WjcWsUs",
+          "raw": 94365875773
+        },
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 95409686842
+        }
+      ],
+      "sol_delta": -29.54493149,
+      "action": "buy",
+      "sol_flow": -29.54493149,
+      "sol_native": -29.54493149,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4jQr7WccrxnnqeDwTZtwLZEgVFyrKzRQgjQWKkCxR51uLr3ZEwL5eMMVjTbwWKeCLhWSvDAbj98uQ7TKzzW1Jd7E",
+      "ts": 1786251986,
+      "time": "2026-08-09T05:06:26Z",
+      "raw": 586337574,
+      "amount": "586.337574",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 586337574
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "25ho6qS3Fryoo5hSWYqpSbnjVQCtCBee5haH7mxSU7r9fp8dQmJNFC68qNeFdKJp6bVt5d8EvM64jxoCwVDNrFjF",
+      "ts": 1786251986,
+      "time": "2026-08-09T05:06:26Z",
+      "raw": 2934414296,
+      "amount": "2934.414296",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2934414296
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "56TkrDJEhQ91y4veaiiNvtDaRywRBBvzAG7FYG37LzcjtTr6Z7MrTkWgspEj7Jz6EEobBsCp5ZCeELMwRRXgRkTp",
+      "ts": 1786251986,
+      "time": "2026-08-09T05:06:26Z",
+      "raw": 589472989,
+      "amount": "589.472989",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 589472989
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5hvwKMhKkcXjGFgPkFTa1m7hgKpaXC5CXbUfZTuAqa2XrH4Ywqaoaw6NtA13SpCvs7snVdw1uap2T6qqCcFh2WQH",
+      "ts": 1786251987,
+      "time": "2026-08-09T05:06:27Z",
+      "raw": 586045747,
+      "amount": "586.045747",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 586045747
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4uAVZQCEjGYm8bkr3Satvj7Up3Vr1nabhkLjhtXcipXSW5uHVLPN4byit8X5JrTyvEZXBYC3mCEifXTVdZo2Yg9F",
+      "ts": 1786251987,
+      "time": "2026-08-09T05:06:27Z",
+      "raw": 2930911302,
+      "amount": "2930.911302",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2930911302
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "GcB4rcvkhKs8L5QPhU5ccaScPgayRBux72WtEdKF3S3MGmcj4jzPUCKqwRqCHwNQRu7foHqfTAWKBt9tSkZXuwi",
+      "ts": 1786251988,
+      "time": "2026-08-09T05:06:28Z",
+      "raw": 585184388,
+      "amount": "585.184388",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 585184388
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2DeAPuKQ2s37sSgweaS5JQejw7oxPnic2f6Lg2znLe4eKhAaogEreJPD1VFc2Y5Yta4TdNcTDmEUkMrP3hMnjHbm",
+      "ts": 1786251988,
+      "time": "2026-08-09T05:06:28Z",
+      "raw": 2926505116,
+      "amount": "2926.505116",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2926505116
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "28sDY8nT9enmPDkDqotqSUG6v8H9MVPsss5zAMPXYowMwMxeeiJz9TA3peFYGtmwxfCqzwwJJPsfboueNgK5tBT9",
+      "ts": 1786251988,
+      "time": "2026-08-09T05:06:28Z",
+      "raw": 585417509,
+      "amount": "585.417509",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 585417509
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3W5vZUr6mGihQgXpQwdrXid5Gsnjn8FeTZTbsVuoxvrRbVeFoStbA9JFEv7YXE7LV8tUPDMzyeEVhwAy8tN9AuG8",
+      "ts": 1786251988,
+      "time": "2026-08-09T05:06:28Z",
+      "raw": 2927719972,
+      "amount": "2927.719972",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2927719972
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "28QqMbkcr66rrvadMzBPkHkgZYRa1C6ZGEFh4U2MYNziKkAopxvk1XhBgXxesPCZ4RUn9U1JAqs2EoLEVZqXPjyR",
+      "ts": 1786251989,
+      "time": "2026-08-09T05:06:29Z",
+      "raw": 2923454564,
+      "amount": "2923.454564",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2923454564
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3WyYpcjstt5so2UhrCmbzm444v7hmX1BRi8GVRfonrRpdmDMtX9WYjKMdFoPQ1tf8QprfqtNTGsT8XNKDLxTqFSb",
+      "ts": 1786251989,
+      "time": "2026-08-09T05:06:29Z",
+      "raw": 584931846,
+      "amount": "584.931846",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 584931846
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2CgvYWcBem8KaMDaG2vyN4mFCgfYw5AUg6mPa4Fe8EA5AE1ChXBT6AM9yCTkkg7T4onEG3neHFgTAcHmaCuYycav",
+      "ts": 1786251989,
+      "time": "2026-08-09T05:06:29Z",
+      "raw": 2925242031,
+      "amount": "2925.242031",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2925242031
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4bsJVAvcLg4yhNuACHvE7QKLYaHtc7vgxWoMgwxeRwfwp1gJQM3Hy14qbQrzmcstBYR7qFsfZqHgJHrK1reixAdH",
+      "ts": 1786251990,
+      "time": "2026-08-09T05:06:30Z",
+      "raw": 2922755368,
+      "amount": "2922.755368",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2922755368
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5oXd4q2acqw8Q24NwCTkAamQGC3BuFReneDypCqUt98E7zMbqeBMJBWBAkeyxF6RZxckUz6gMyh4nfWcGwQUaMNz",
+      "ts": 1786251990,
+      "time": "2026-08-09T05:06:30Z",
+      "raw": 584706127,
+      "amount": "584.706127",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 584706127
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "63khk9mYKhzGu8PqBYLcyrUfR9ffcFjevJFy5GyxbUXy4AgAeDwPHAm6QDYaRHu2aFwk81eVoxfxXadwguXEws7Z",
+      "ts": 1786251990,
+      "time": "2026-08-09T05:06:30Z",
+      "raw": 584744923,
+      "amount": "584.744923",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 584744923
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4hmnVGT8FZYGy8c4EUgoZnaUnigZ9HWmsHqo6aAeYdsPrthMemmCwigs2tYpUf3bzhU2ebmNp1fD9V63uX3dY9qq",
+      "ts": 1786251990,
+      "time": "2026-08-09T05:06:30Z",
+      "raw": 2924307137,
+      "amount": "2924.307137",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2924307137
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2YFrEvNwYVUSZwms1ef1SpZd2T9tMmXSnYziermc3Jn77HTEQSVxk9seuFoMSBiKARs3rLqnDSkFxPk58JMYaJnT",
+      "ts": 1786251991,
+      "time": "2026-08-09T05:06:31Z",
+      "raw": 584309819,
+      "amount": "584.309819",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 584309819
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "hSoEXYpdLm4nvkzQWyEq26XuQve9XAafVe6zq7JLAkkKZQtoMLmUJQJbCm9EG3hutHvB3AMnWSpWvxR1GeWtYPB",
+      "ts": 1786251991,
+      "time": "2026-08-09T05:06:31Z",
+      "raw": 2922130964,
+      "amount": "2922.130964",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2922130964
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "yEbtdnAShAMdDnDWvJuN9DR6oKD6zPrymzdkwisHdWwqVrpRenxdss9MrCC9GUiMuFYrhgBmBb3WTQXCpguB4Ye",
+      "ts": 1786251991,
+      "time": "2026-08-09T05:06:31Z",
+      "raw": 584434662,
+      "amount": "584.434662",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 584434662
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "Et3wnJcUoWvVWs6RkBRwKFT1ZPpf2sVKLvC55Kfud4e8Mu2oaBZKWVB9LySFbay6fAiHs1F6AgS2ggB7SHxkLcD",
+      "ts": 1786251992,
+      "time": "2026-08-09T05:06:32Z",
+      "raw": 2920968320,
+      "amount": "2920.968320",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2920968320
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "66NWQHCGEM5XFHw2E9VfmQ3xbXsHU7ZUsZNEUpVJuZMohuTLrnxGAejyLNxEo6mCgdy4dMy4HKPt47Z57R3ohZYa",
+      "ts": 1786252000,
+      "time": "2026-08-09T05:06:40Z",
+      "raw": 2910311710,
+      "amount": "2910.311710",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910311710
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5wp4RjaeMyAqK8bPq2LNpWaL3Ee958pcjNvUaxeHkTdd4W4hTk6giy2CsGLCLTX3HCmry9eqZ46FNLuHtsz6ouoo",
+      "ts": 1786252000,
+      "time": "2026-08-09T05:06:40Z",
+      "raw": 582174216,
+      "amount": "582.174216",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 582174216
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "Tk8vKjMbrRf1utB36h8iz1cH586MRF8uaUbawCnLAcxiEufm3ZryRwzzz8VLs7JfZmFx1wgdvR6q9mQCNF5nGmo",
+      "ts": 1786252001,
+      "time": "2026-08-09T05:06:41Z",
+      "raw": 2910318521,
+      "amount": "2910.318521",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910318521
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5HinJuXuyy29mqTXFSKkg6wXjh4usMhhca7sAtPx8XqyCg86khDrYC9iAwVuP8aYYhrx2wg9kuicoYqzfJbswFcS",
+      "ts": 1786252002,
+      "time": "2026-08-09T05:06:42Z",
+      "raw": 2910486128,
+      "amount": "2910.486128",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910486128
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2urbnmPxHUSirrvaQMPS6C6F8bNTfYKEYFCaVm4tAg7njShAq6wkCSLgVsNo62k5L6GnaQ97m1ADMHctKNCGLeSh",
+      "ts": 1786252002,
+      "time": "2026-08-09T05:06:42Z",
+      "raw": 2910485192,
+      "amount": "2910.485192",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910485192
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "EcwvDdtDwqCHwYHuHNBpieWB8VbgnpKikyQLvNrZXtMF36CEw8iqM9gmHGDr2YG7px2WyJ2feDT1sVkWzzG3Jm5",
+      "ts": 1786252002,
+      "time": "2026-08-09T05:06:42Z",
+      "raw": 2910312702,
+      "amount": "2910.312702",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910312702
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "nDLXYywo6o3bLNZnAm3fZc9TJfWh29NrdUZ8JicaTTXtJeTeXKk3QbkbiJbinGugSvVNePd7xgCK8J35bFDRZN9",
+      "ts": 1786252003,
+      "time": "2026-08-09T05:06:43Z",
+      "raw": 2910485365,
+      "amount": "2910.485365",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910485365
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4fJcUM1st1u5HjpD2DTtamkc5Nuhjv2ddSwixC9F8dCAASirGwE6NxdLpHE9QP3TKAd3NdmSeU9LUV1Z9s22wv55",
+      "ts": 1786252003,
+      "time": "2026-08-09T05:06:43Z",
+      "raw": 2910485269,
+      "amount": "2910.485269",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910485269
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "7WUKSsiaxB3NqUSngtqVoPAn5i4uzh6kLd8NcaasTQt59JXzhKHbV1gDxigdzRvKqYG1pzfKWTmUgReDTbguiXj",
+      "ts": 1786252003,
+      "time": "2026-08-09T05:06:43Z",
+      "raw": 2910389149,
+      "amount": "2910.389149",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2910389149
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4CPewoeKFPXsasGShjs4BySjYaTmL18EU4rLVMTs3sx1R45fBTs3wo868ku745sKEGeDapKjemyu6nH7tnsE4rNL",
+      "ts": 1786252004,
+      "time": "2026-08-09T05:06:44Z",
+      "raw": 2908559592,
+      "amount": "2908.559592",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2908559592
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "24jokAWGaaJkdpdBUgdFTrqPYnRbartGLyaPW17KfRr64iFdm81aMpqVPQwz859UzT5c3EShhVzgcd6ifpTzEKDs",
+      "ts": 1786252004,
+      "time": "2026-08-09T05:06:44Z",
+      "raw": 2909522239,
+      "amount": "2909.522239",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2909522239
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2s7xn1fLYK4pTydpSqaEbP3Wt9HptdEe3vMNU2NrU5N3vdsdEpUT27rtjMcj8p8zWgDYrD1bjNjdpDtHHDx2Ww39",
+      "ts": 1786252005,
+      "time": "2026-08-09T05:06:45Z",
+      "raw": 2908802424,
+      "amount": "2908.802424",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2908802424
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4NwsfzXsnXWfGEkfgQmDAXAaFe5KjNpY1Kt7vD2PT3ZBG8A2nXP3gVRNprgXkokLcFE5uNbt9EhFDrtDKoXSFnMr",
+      "ts": 1786252005,
+      "time": "2026-08-09T05:06:45Z",
+      "raw": 2907774806,
+      "amount": "2907.774806",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2907774806
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5haz7U3JzxPw2RcqH11heHbkSVLNS4KkJ3CLbJRsBz786hLoHFsqsCAQFhe3jVw2AicTMkevBGv2dBXZHuYnK6Fa",
+      "ts": 1786252005,
+      "time": "2026-08-09T05:06:45Z",
+      "raw": 2908737063,
+      "amount": "2908.737063",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2908737063
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2qrgpfCanAqoxTpatgkC9SdFDup9sfw3o79uYEiYHEgCEAxGaUUDsZHZFK7Wvbo6woTqYuXFNJhb3jcCnzXwjUWx",
+      "ts": 1786252678,
+      "time": "2026-08-09T05:17:58Z",
+      "raw": 2739913914,
+      "amount": "2739.913914",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2739913914
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3PmVtzEvrpFYsEsG4HXt7ed98qRJMdnei6jAJ4FhToqmDmXBuotZbxcK7hLiMW67jHyUJtuTE2Cg3K7dc1sw3qSv",
+      "ts": 1786252678,
+      "time": "2026-08-09T05:17:58Z",
+      "raw": 2745467349,
+      "amount": "2745.467349",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2745467349
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2i2pqFr2s9CypoRfq4SxxJ1SFjF5Yvkkj1eEhXwQXZBkzx2HeWWvjup4ewroe585VpgaLCeosRowTx2AoVJEMM8M",
+      "ts": 1786252679,
+      "time": "2026-08-09T05:17:59Z",
+      "raw": 2750333577,
+      "amount": "2750.333577",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2750333577
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3FuwgqBoyeBDtVHB9qcZyT3aXcLS37zfWpFGXaSuh5JrBfNdgfRwftwMbENKgQg8X2zVp4wgkL3oFAyMb32KNyRt",
+      "ts": 1786252680,
+      "time": "2026-08-09T05:18:00Z",
+      "raw": 2748798360,
+      "amount": "2748.798360",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2748798360
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "24NEvkXKNvqgonQWRwtGzg2NwzQaQ9RD3xj4xxaaDWQHuAmS2asfgXsJeVosVVAWronjF6VqnEsTrJotvuXqrwjA",
+      "ts": 1786252680,
+      "time": "2026-08-09T05:18:00Z",
+      "raw": 2749682225,
+      "amount": "2749.682225",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2749682225
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3ZhvSH5whKkKzG8jvA1nDLTASYgHBmfnA1t1gdyNTdrT6PQF78K1BienB92SQbnKY6bUgz1t9W7vmjbBKx3DmNVQ",
+      "ts": 1786252681,
+      "time": "2026-08-09T05:18:01Z",
+      "raw": 2747036274,
+      "amount": "2747.036274",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2747036274
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3JFcHjiPsuqja67rwUsZ6U3TqRFVrZ862oKq96uHedosDyw6hsv8xJN1HFK7UfZaXgzreY3ar4Q1HyTLWAqrfwWW",
+      "ts": 1786252681,
+      "time": "2026-08-09T05:18:01Z",
+      "raw": 2747914922,
+      "amount": "2747.914922",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2747914922
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5dZFJmAjqAK7bc7PqDu6YCjo5ieTYXxVoesDaNHaqrj8DyGXm71viKuBNgjVtFn8QJzvMjiyYc3KABFZc6igxVWS",
+      "ts": 1786252682,
+      "time": "2026-08-09T05:18:02Z",
+      "raw": 2744389784,
+      "amount": "2744.389784",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2744389784
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "51KDt7eNm9A1PkXhbAk922qMU6BNtQfY4SAXCVYnxBwRPTr2s3Et4RZEJptzmM7Yh3kVEto7osg62DU7iu9W3KDc",
+      "ts": 1786252682,
+      "time": "2026-08-09T05:18:02Z",
+      "raw": 2745271522,
+      "amount": "2745.271522",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2745271522
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "Vpsv4mRoyAByoANWUwnJNWzBtfoddbNMjw8dur186irXBpXwbAjJPTnzh6QiBtzQMqL9V113GjXhMn95ky3uH4L",
+      "ts": 1786252682,
+      "time": "2026-08-09T05:18:02Z",
+      "raw": 2746153685,
+      "amount": "2746.153685",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2746153685
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "Th8ah1fF6SjBHCGapUvjiaFJ3TTWMfWb1zEGPQbYoFBjkE5Q79VcnTuxGFhFjsiXVsDK44jhkRyCnkiMEAHJqD7",
+      "ts": 1786252683,
+      "time": "2026-08-09T05:18:03Z",
+      "raw": 2743624668,
+      "amount": "2743.624668",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2743624668
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3jWrgU6ATwdbP2o6QofBXqGa5Ta7Q1zy8xfMpMruty9F6NCeAotowy4JfZW6yBvxEJyBvhg8HXmD2XTEnzZ8otGU",
+      "ts": 1786252683,
+      "time": "2026-08-09T05:18:03Z",
+      "raw": 2742627582,
+      "amount": "2742.627582",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2742627582
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4dy2XSkRwKVmCDcw35TSpmJmokqA77mcnjTyKuy7xL46caBchyQ563vBkHNuyq4fVcXm3wmdXqxvsBWw7xQD2DQS",
+      "ts": 1786252683,
+      "time": "2026-08-09T05:18:03Z",
+      "raw": 2743508470,
+      "amount": "2743.508470",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2743508470
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2UEXv3y4e2fyhajGPUxNaMHCdQg8QPkBC3xN3W8MJB68V7GHAGjh4uo3zyuiUEm3tgF37fhUFfhQfniEHcGDh7Td",
+      "ts": 1786252684,
+      "time": "2026-08-09T05:18:04Z",
+      "raw": 2740103437,
+      "amount": "2740.103437",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2740103437
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4mWgqB66i34t175LTzQEQsfvK5yvsRFdr5U9tVjo3N4fPKoTh7HUYQTt1GfaycqfZFQLnRqey8UFtS8UfTDpg6ZL",
+      "ts": 1786252684,
+      "time": "2026-08-09T05:18:04Z",
+      "raw": 2740983109,
+      "amount": "2740.983109",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2740983109
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3WyTX1rhcbudxn7UVjBDAAH5yQxYKSrXm1crkHL3qdz5nvEV3qininFPaEhZiLxtozt2R7GfVKXqZ5bRRWKUS4GV",
+      "ts": 1786252684,
+      "time": "2026-08-09T05:18:04Z",
+      "raw": 2741863204,
+      "amount": "2741.863204",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2741863204
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4oDaCH2VdeeDLhGWiEFJ1spCFJm69jqrCgdNHmehKUXGpM1YparnyVntojmG6zj54cjucNVSE82dsZC4Sw5vSg4h",
+      "ts": 1786252684,
+      "time": "2026-08-09T05:18:04Z",
+      "raw": 2742743724,
+      "amount": "2742.743724",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2742743724
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4PTDe16zEfbi4Gbnmy43ydC98BucwwCGjPMD8iq36viwTrEcWZ9uGUGQtVAyeySHJZUtBoMan4c5WNQyHTznQLNN",
+      "ts": 1786280871,
+      "time": "2026-08-09T13:07:51Z",
+      "raw": 117532260895,
+      "amount": "117532.260895",
+      "counterparties": [
+        {
+          "owner": "FmmsWmW3TdUqbSPR97kBvyVuCHfgpZ94qQ6LSjaJuNEE",
+          "raw": 25344140874
+        },
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 92188120021
+        }
+      ],
+      "sol_delta": -19.998167668,
+      "action": "buy",
+      "sol_flow": -19.998167668,
+      "sol_native": -19.998167668,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "wQwprtbTSEpkC4t4T3fHFB5fTSUCLWXqc2oycxgfybRQquvVQfEoaJwa5z6XoVCpnbbVMoSKWWK234jNn4Ee6cf",
+      "ts": 1786299684,
+      "time": "2026-08-09T18:21:24Z",
+      "raw": 4316284655,
+      "amount": "4316.284655",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4316284655
+        }
+      ],
+      "sol_delta": -0.505949447,
+      "action": "buy",
+      "sol_flow": -0.505949447,
+      "sol_native": -0.505949447,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "54jUBwiZd23r2P7cqiWih6vedWhFyuGeEetCSDqCCZEDEjL68gfcpi6UxtE56tRMACoWKGsPtbv3JizmmRoj2KqX",
+      "ts": 1786299685,
+      "time": "2026-08-09T18:21:25Z",
+      "raw": 4291410874,
+      "amount": "4291.410874",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4291410874
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "62t4fS1Y5WhATTdTdHRQpqzRYkddeMXfLLqdL9WnQgFd3YYGpuVKN92GVPo8ErfcW51H1HeNMUaipPKA3CiVrLj9",
+      "ts": 1786299685,
+      "time": "2026-08-09T18:21:25Z",
+      "raw": 4299290110,
+      "amount": "4299.290110",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4299290110
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3TKdRsGMqk53YTXyUWcPESEx2zZd8rRnHEDCKvZs27gygjaR12njVDvGLstQioUuCMqF3Y3a8CMGdYk8q9jwHYCK",
+      "ts": 1786299685,
+      "time": "2026-08-09T18:21:25Z",
+      "raw": 4302745752,
+      "amount": "4302.745752",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4302745752
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4XTTHAaEdKb8qtDP8e19UMVLdZZehxMsBvYC1hfs2q81L62pWUgjatjm4q4au2LFFSWNQ1jkQxJzdnGcU6CDp3A6",
+      "ts": 1786299686,
+      "time": "2026-08-09T18:21:26Z",
+      "raw": 4281092004,
+      "amount": "4281.092004",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4281092004
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "38GyPgEDCgwbiTcxfERaiUnC9cFugzFqKWi7mjuo4LaXHyKA9kbuiEDnMxVrzAoPmhFePVfUBCDpfQRDRpaFuaEN",
+      "ts": 1786299686,
+      "time": "2026-08-09T18:21:26Z",
+      "raw": 4278218437,
+      "amount": "4278.218437",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4278218437
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3q26J79CrujvoYV1P6xYVMZdT7XJvnTW3WGHMXSoeiH8VCCE8TbjfqnsswNFVQHebSJZrAqs1ht42ENpbG5LdGNX",
+      "ts": 1786299686,
+      "time": "2026-08-09T18:21:26Z",
+      "raw": 4279852224,
+      "amount": "4279.852224",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4279852224
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "36aRDZogkjuhZGC1EyjfyM9zekDG3aii9FMdKgddzVoDagCD58EDua5HS7zJ9zjPGxAwWyQnhD9pHF3GQsi9Lrqf",
+      "ts": 1786299686,
+      "time": "2026-08-09T18:21:26Z",
+      "raw": 4281486947,
+      "amount": "4281.486947",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4281486947
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3Ry27ykz36MBpwvM8xoxzWyDKfordwHRX9MJ8eUeqr1mJ4KmYCNnDM91ATvY1ahXK44Fve8ej1j6rB4r3uzPUpYi",
+      "ts": 1786299686,
+      "time": "2026-08-09T18:21:26Z",
+      "raw": 4283122607,
+      "amount": "4283.122607",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4283122607
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "PprVez6BUFPywLxDLzq2W65o2oUgf1AFNNDJs5rhvpmqp3rvgUWC2oCfhiZMaVGF1Qvh8oyz3JFPQuDbuo94atY",
+      "ts": 1786299687,
+      "time": "2026-08-09T18:21:27Z",
+      "raw": 4277442376,
+      "amount": "4277.442376",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4277442376
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "322edTu9XtmGz8LN1nRXQhhafm8ZdKDW3PtG4fUyF2NFYLkDY3dZ2jsXm1EChVBvmuDdc2NZuMrEnH8TPzCuAWhb",
+      "ts": 1786299687,
+      "time": "2026-08-09T18:21:27Z",
+      "raw": 4279075714,
+      "amount": "4279.075714",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4279075714
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3xyh7rxMHm8wMHgbf8z7WwZp9JvZxBfQt3oWPuHYZfdodN34hzq2mgtowCJcPHAEi5PRYUQkMpanL6G8o3TS4Gco",
+      "ts": 1786299687,
+      "time": "2026-08-09T18:21:27Z",
+      "raw": 4280709989,
+      "amount": "4280.709989",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4280709989
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "28f6HkTdh9XSRtoUvjPaena9tuvPNJX9Yhrm6HCVF1S5o4c1WTt4hwyGUWKECLPhfMxQsAUJqpMjxibkPyPgbogu",
+      "ts": 1786299687,
+      "time": "2026-08-09T18:21:27Z",
+      "raw": 4281579765,
+      "amount": "4281.579765",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4281579765
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "eJaqHA9iVJRy5cQtcxdD21WzNZLmvfvLPpjreFjdXUsdMxW1iCSc6T3FKxEVGQecjSeRLUMYdk4qS6RfK3dcQ6p",
+      "ts": 1786299687,
+      "time": "2026-08-09T18:21:27Z",
+      "raw": 4281740942,
+      "amount": "4281.740942",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4281740942
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5zu1wwxGZ2fGrmdYXa7TF63Wv5BtnQMMX5QvmH7T7T9zmNB8tqLRRsGWgkwaX78JHqQC18bQeY7kLZ3hEhpFe6DG",
+      "ts": 1786299688,
+      "time": "2026-08-09T18:21:28Z",
+      "raw": 4274178503,
+      "amount": "4274.178503",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4274178503
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3vBjvTzQxuvUFF9L2JAs3Z7s59qwkL7uYrRaSopTABWy8kErJQMXBACRVT3TAWcgTaB1uWQ8ddJxTbDZ8CeUXLtA",
+      "ts": 1786299688,
+      "time": "2026-08-09T18:21:28Z",
+      "raw": 4275809972,
+      "amount": "4275.809972",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4275809972
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5VoGN6cYrZTbRZuddNh72SDeWEkBkP97RNqTLdYn1FnhrgxrWnZ4Ly89aV3XLo4NB3CUMyPgVf21Voag9jeAbnFE",
+      "ts": 1786299689,
+      "time": "2026-08-09T18:21:29Z",
+      "raw": 4271735338,
+      "amount": "4271.735338",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271735338
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2TWZJRnmgLyVW1S4zW7V8PYcp4EvGzeKaiBw8zbZUVYfG2eMbVUDh9QYmJPYerVthXz9uNbBbHRFwtnziuauve6A",
+      "ts": 1786299689,
+      "time": "2026-08-09T18:21:29Z",
+      "raw": 4272685143,
+      "amount": "4272.685143",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4272685143
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5hzMF5QNvKAkYV9YT5UKBXSX6wCAWKeauJHbwYC5sibFY3PQGHKAswfoQ5uirjKXtuB9WHa6eMEYztDHRebs8Ykr",
+      "ts": 1786299689,
+      "time": "2026-08-09T18:21:29Z",
+      "raw": 4273367795,
+      "amount": "4273.367795",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4273367795
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "39MGY9hv2dryX14VZjpicN7zi8TFVGZnZ1RvVm7FZwjH4Vh1ZRVRtvbrr6bxGE48Jt9L4dXsLbD4JjdYkv8CpgVF",
+      "ts": 1786299689,
+      "time": "2026-08-09T18:21:29Z",
+      "raw": 4270918367,
+      "amount": "4270.918367",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4270918367
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "kwkTYyfKD7pGc7vb473zyqXpvRBpAd4r6qNJXC4oyv82CAEb5u5kwsSKhcAU5dEa6zr5smGX157pGyV5DnLPqCC",
+      "ts": 1786299689,
+      "time": "2026-08-09T18:21:29Z",
+      "raw": 4272547968,
+      "amount": "4272.547968",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4272547968
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "FUHUECPnxw3GYHnbL7jKHWy2NScQNpRcZzFapo29F3W4KoLmAeiXsk7GqnXZJRtP6aHb8A4aaAzCHcM1Vt2wGen",
+      "ts": 1786299690,
+      "time": "2026-08-09T18:21:30Z",
+      "raw": 4271934956,
+      "amount": "4271.934956",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271934956
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4w25pUvhvAdqFn7MGuYNW2XN63VYKPbr2EUxDKK2PjZQLtYgfTG3SRcK2fG6GhHyJdcQ4TyKZJJ3W5cu5Rh7ckhR",
+      "ts": 1786299690,
+      "time": "2026-08-09T18:21:30Z",
+      "raw": 4271936290,
+      "amount": "4271.936290",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271936290
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3BPKTcFTtsbJrLZwgV3Ep5jxwfYBQhbXLFbvqafT6NHvGZZwxcUGwQfudX35q9524z6LBTN3QuSB79cZr9XdRPS4",
+      "ts": 1786299690,
+      "time": "2026-08-09T18:21:30Z",
+      "raw": 4271936304,
+      "amount": "4271.936304",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271936304
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2nNBjr54FUfasxUu2xcKh9dVKt3xWuUEygzQkh7KtLzyfxwHqR4cvzuiHkgpovgcSqRuRzFaDuhX8B6ihmRqPBAY",
+      "ts": 1786299690,
+      "time": "2026-08-09T18:21:30Z",
+      "raw": 4271935854,
+      "amount": "4271.935854",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271935854
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "29Ngm4vJiraLGYAsh5dHAVVgTQ3HZTjCmhJgfyzpW89eNH1ceMyooHN6J7xZeJ8wH75cWiLDT9VZnabRYs1HYec9",
+      "ts": 1786299690,
+      "time": "2026-08-09T18:21:30Z",
+      "raw": 4271936285,
+      "amount": "4271.936285",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271936285
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3s91SAtN7VpJ8pL57s5K7kvd5XivWBZ1HEQ95WFKkFXLa9RmAThi23ZFs5dqrHUeLn51cgQFGFF8rSwnLKS1H47Z",
+      "ts": 1786299690,
+      "time": "2026-08-09T18:21:30Z",
+      "raw": 4271936304,
+      "amount": "4271.936304",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271936304
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3ie5iydjEAitNEWVnmtJ4jabz4VNbmZSpjtGbkGtBHwhXayhjnNBJ5BsnZAirJSskM5xrKGjZGqX3cbECjVSrzZC",
+      "ts": 1786299692,
+      "time": "2026-08-09T18:21:32Z",
+      "raw": 4262326582,
+      "amount": "4262.326582",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4262326582
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5wcabn52N2Tp1Ge4xquvqoCJFAbfuKRFUTN5NgZ1cQbKdRxRVzeFV5Nwj41LH46kCHX8QVy2zE8UJM6D6bQfjoYv",
+      "ts": 1786299692,
+      "time": "2026-08-09T18:21:32Z",
+      "raw": 4263041202,
+      "amount": "4263.041202",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4263041202
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3Gy2b1gzeAbJskPZjHsa2TS8u3npCFPGPJS3Ad79TkYvWh2NRaU3KDggicxW4kxDyGUgANT9yuNiKSWg9Wccj99z",
+      "ts": 1786299692,
+      "time": "2026-08-09T18:21:32Z",
+      "raw": 4264665521,
+      "amount": "4264.665521",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4264665521
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5ZKCZASmxzWampp9bwNDZ6fmGVJHnNDXMfmbGtPMyajzEPSpKmECop8AS6ToqdLYQ8uqXvUPa2RJ771ANwzrg25q",
+      "ts": 1786299692,
+      "time": "2026-08-09T18:21:32Z",
+      "raw": 4262272276,
+      "amount": "4262.272276",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4262272276
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3g4G8nLx1zrRNKzNVSQ2hSfdtApa4n944xs5E1YoQMsHgKd43AMn897FaXamSVBWVNHUqXHGZmkcSswqhce5jYzC",
+      "ts": 1786299692,
+      "time": "2026-08-09T18:21:32Z",
+      "raw": 4271655344,
+      "amount": "4271.655344",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271655344
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3BmUn8L1wQ3ZCcqRt7TfWeahxwbhNhVHQYTiqZUiSQmSjmC2oVaDzyK7qgLxpwRf53ip2qC9utWwUhcLzG7itXFP",
+      "ts": 1786299692,
+      "time": "2026-08-09T18:21:32Z",
+      "raw": 4271657255,
+      "amount": "4271.657255",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4271657255
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2bKcCeNVExMQwvgRs8tAS5xjHfgcB9aRwRGBjXKWjpfn4M6ZcdbV5kH9o9WMn5KXbeAWMzr12JY2bftQ36skRJMn",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4257452548,
+      "amount": "4257.452548",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4257452548
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "28X5rpg5AN2zbsQ2Gx49Qof96hGMN4A2wKMJG1veowyVtV6Jwk3mN4uh6q1fmG2YygRFJ1adXi48JtfmMTW8TS7A",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4251054369,
+      "amount": "4251.054369",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4251054369
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4JeZzKzwYTVzJSd178A9dGg5dkE6sDLRH539vfusCQd6SCeHKUc7KTA2yftkkPAxE3dHB3vWugRQ7LH6WzgyLgqM",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4252667085,
+      "amount": "4252.667085",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4252667085
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2veG45jYUXh61eHB5mLFJ49YTH8YY7NZ5AbAyT6HgwWdX2LETYpKtqUZHozVdj5KjfAmXZUoXxreyLUy1BGVyxkr",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4254286231,
+      "amount": "4254.286231",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4254286231
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5NkWWp6jDqcnmMtkdFfqzfT3x2GiByDNyCsDtDYVWqbnzrBQUwyNTcJ9cuumCkkp8dgFZP86wkdArFcfpkmJ4bkv",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4255906302,
+      "amount": "4255.906302",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4255906302
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "56bS2T1tFQbto16b8nftAeNodw6YAQjSLt2HdWJ2A32BvJHmUx1FfZCx9TnZqpaNWas9RKXbGYHnKHwiBR87fqxZ",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4257527299,
+      "amount": "4257.527299",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4257527299
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4Ct1aQYqY3mVDrwHUrEhoJWNQvyaTGRnFL3RXsWbxps9NbnzAJ7UPcpj7NS71cSZnJ62JtvxVvq1G6crDTZ9gb6B",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4258927330,
+      "amount": "4258.927330",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4258927330
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ZPkeKF3VmXPJKK2ZL1qp7FbArcVJpPhJmKAH8WNUVKrw4aEsNeFv1znjizpRfdaWY6pMBfiv1BbwBn6jU645DRu",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4260550055,
+      "amount": "4260.550055",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4260550055
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2mLABFyMzjJR7yDXBVxqzcPdqjWKsKMiSKhQQiL9HLVDqhTD5usP5zKjDToHoLAzsc9DHVVMQ3vaj5yV6gBUfPHr",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4260053371,
+      "amount": "4260.053371",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4260053371
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3KbmcLjo7LM2uqSvwzXnuKt3jUdsxucUbHSZZbuafivLZNWda6DYYJ7VV881VYm6mEBpfiKtuexu2C2P76fvajHE",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4261540262,
+      "amount": "4261.540262",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4261540262
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "66CEfFjU7pQ3JcJqhUCg8JM5Jv9MgcLmLF6UaRdEhaTtu5vkFpofvNfEM46Mp7ZspPU4L7ew7RXuY3SBUnLvZtDy",
+      "ts": 1786299694,
+      "time": "2026-08-09T18:21:34Z",
+      "raw": 4263612649,
+      "amount": "4263.612649",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4263612649
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2UiKCdb8gzXiyfQVArE3mU4Juaqdvik64bEpx3bkirCVqtEVH9CYkKuSgdqqsLYJzHrgtPSJmtDH1oLgBXFJALMR",
+      "ts": 1786299698,
+      "time": "2026-08-09T18:21:38Z",
+      "raw": 4251618963,
+      "amount": "4251.618963",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4251618963
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4XRZ1xeok3ykPnVTKCDZDX2CGdXon4Sd9Y1PQqeFpiKoryacMbMjZzB1e8kQhcTtYhwqcUVnvjiNukLfqNGxUmj6",
+      "ts": 1786299698,
+      "time": "2026-08-09T18:21:38Z",
+      "raw": 4251618436,
+      "amount": "4251.618436",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4251618436
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4pVDiKhdJ2PwQyqh7M3CwvD4kriD6i1gbybppvutttzbvHRA55WgHg3QhFSCzAYrPBMvDQTJzR2ACKaxdFtNfQhW",
+      "ts": 1786299698,
+      "time": "2026-08-09T18:21:38Z",
+      "raw": 4251619044,
+      "amount": "4251.619044",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4251619044
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5rwv5DuD51tec3B4kL6aNvGv2UbGzM8RVCbPmYmuq71hVRaHuwGMhzaqrmCKngwYX2J91aTiad3CcTJq4vfW35ya",
+      "ts": 1786299699,
+      "time": "2026-08-09T18:21:39Z",
+      "raw": 4242010811,
+      "amount": "4242.010811",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4242010811
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4c2iaN1jdBbAZQXREBYrx12KMa9TwUng1y2tZCaW8xo8rzxJvmdYit7sg88w3DRamrZzTAjgfiia6akaBKd6VSfu",
+      "ts": 1786299699,
+      "time": "2026-08-09T18:21:39Z",
+      "raw": 4243055515,
+      "amount": "4243.055515",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4243055515
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4PMapfaK8zR59JmxjMaMcVAGZZtohNBbrs3vVxm9mzKF27drCHLjUqgDSDVQ38PjAnNTcf3vR1Mnn1kGRMQE6idc",
+      "ts": 1786299699,
+      "time": "2026-08-09T18:21:39Z",
+      "raw": 4251632445,
+      "amount": "4251.632445",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4251632445
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2kKGy6gUpTRvakSisH87XnsQWoaMWaye7ZNYuPDEs6HGUByEtEFAUp36rNPKmdKYdnvkxFgRuSjP147VWZZiPEMq",
+      "ts": 1786299700,
+      "time": "2026-08-09T18:21:40Z",
+      "raw": 4232458033,
+      "amount": "4232.458033",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4232458033
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4Y7CDPU1Ydt54NLDzowXiKg2REKMR6EczU69V73US8nUBLEeU5a8v4jQgKoG4w1nRMH9jeFjfaGfKCEcJPuTJNde",
+      "ts": 1786299700,
+      "time": "2026-08-09T18:21:40Z",
+      "raw": 4234065567,
+      "amount": "4234.065567",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4234065567
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4gg7Mw1Asa5pHr8vZwemHYcLuyRfFzmN7b3UCbMXQ78N1bE8ib8JyLcSRQZUJeztkqZmS1tG3wz4ZbZNkwRoQAru",
+      "ts": 1786299700,
+      "time": "2026-08-09T18:21:40Z",
+      "raw": 4238893672,
+      "amount": "4238.893672",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4238893672
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "6US1exDdewd26wbRsEBzCTxg6vE1C69kfgM5oCfP6DeaCnrpPoEEP7yhN7Mw9b9RrE7VzH9CTyLjv16HF33YZXB",
+      "ts": 1786299701,
+      "time": "2026-08-09T18:21:41Z",
+      "raw": 4226062763,
+      "amount": "4226.062763",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4226062763
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2zafGaKrTeMyrwKd4iWHZjMPC8PVJmmAPQcs7E1ArPHBvyoz9MH86vgBxcr4xx6o9vVpkfKJ7i1kKqxxDJ58paNU",
+      "ts": 1786299701,
+      "time": "2026-08-09T18:21:41Z",
+      "raw": 4230851414,
+      "amount": "4230.851414",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4230851414
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3d5ep5KPigeVGdYs8Y9vkTBaMuydMt7j4K1tEPa8GcV6i8ZHKT2R3xQKHXSE2buiih2XkontbJNxpeQ25wh3W9HS",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4219557291,
+      "amount": "4219.557291",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4219557291
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "8HpVmpiSM1fjctEDaf1Q5AbiU6f8wDxc5buuLw1pqZQ9KAVzHMkiWrZJHqkCn1wU2ezEqGh4TVs8PHP38F6cMNu",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4220270705,
+      "amount": "4220.270705",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4220270705
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "BMwgmQrQt3LbL63LH4eM1gvRWCDy8AKDqehT9QstUXKW6AsDUajm17Nu1JxCJWsNRcahnGRruiY4KpS1X2c8N3u",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4221871285,
+      "amount": "4221.871285",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4221871285
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3PFBxSivemZXBDQCBy3xLZDARcS88spkLDvHvAaYTfctRD9qtrnyZTQtVUaUKwNH5VvXSFjeqD1TRBe2CvLxQLHR",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4225334517,
+      "amount": "4225.334517",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4225334517
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "39rftAtewQ8djTTMyyoumM3jAtJHkQkL6SxNFzDrokiurwvPqAj5KMbBor6VQAt7y2UaUJ3Qxbsr2CKx1W3ghPSP",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4225464839,
+      "amount": "4225.464839",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4225464839
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2uzog17X4CeX87uuw3p6h8L929eXn3v16VssQrREM7yiJoge7mNjcLbAeFzgwrZvbwgzA7nNqGzHwYmSvMC8G1uP",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4227068378,
+      "amount": "4227.068378",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4227068378
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5haqEQKWDrHjRCzBEN5RG3m7ZApc4ni3axhF9rWFYPBGCLjg57smpDSoauc5ihxYZf5jesUmU8q6zeNamTuXr92k",
+      "ts": 1786299702,
+      "time": "2026-08-09T18:21:42Z",
+      "raw": 4228672830,
+      "amount": "4228.672830",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4228672830
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5SW2p8JhiBNU3ZBk1f95Y8AC826cZCKL21p4MVeaeC9wxeVLFadL3eNYKBCeCNSMQEaHMPLEdvewNiKi6X4uAewE",
+      "ts": 1786299703,
+      "time": "2026-08-09T18:21:43Z",
+      "raw": 4221301711,
+      "amount": "4221.301711",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4221301711
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2BtJK729AMJjDKmN7VYjShJmtKnX42MfBNoLEkw9MQhLgaj3MtN2k7yHM4qTZTqJbtfdRWVWqk3VdKKwMmCwSPpY",
+      "ts": 1786299704,
+      "time": "2026-08-09T18:21:44Z",
+      "raw": 4221335880,
+      "amount": "4221.335880",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4221335880
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3HsziWwD6T1QcZNz3hJZaJa6utXNrT1gDFuDtKcvWTq6UmSbfdKLRr6AHgYGuVnTDcoBT4uHNQjioZDLQ3ocVavG",
+      "ts": 1786299704,
+      "time": "2026-08-09T18:21:44Z",
+      "raw": 4221336655,
+      "amount": "4221.336655",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4221336655
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3L4JEaRWJsZ1nVfSRLUW2bTPpGgJv6JUtsNDVc7BcJLzWVYRjsf8kjxb4VPKBcsVP8AmpKciwQcBJacfaZH6XTSy",
+      "ts": 1786315221,
+      "time": "2026-08-09T22:40:21Z",
+      "raw": 943207136,
+      "amount": "943.207136",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 943207136
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5tMtncUCzJuGUVjrH2XxZdkWYk7qXS3sJ8veHCsBWmAFi5iPQePgttLB1XpPaQxQv7G1LRFxi8N81pHEX8fKbLBa",
+      "ts": 1786315221,
+      "time": "2026-08-09T22:40:21Z",
+      "raw": 943211144,
+      "amount": "943.211144",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 943211144
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4PhVo2xvjRgozxzbrZWC5EE32WRPZEPcK9anJB8cw6j9ofEn2xmfgzon4CHw9ghBSTJHDwK7iTPLXeTsh2JEUqwa",
+      "ts": 1786315221,
+      "time": "2026-08-09T22:40:21Z",
+      "raw": 948708753,
+      "amount": "948.708753",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 948708753
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3pZExvktM9t6zFsPaqzKBJsw8iSLGgFxJ9WeQVUHyZQ4JqxFC9AKBh9D1SknmzyxSDyQsUHB43qCrL6LakYNtvfJ",
+      "ts": 1786315222,
+      "time": "2026-08-09T22:40:22Z",
+      "raw": 4741638107,
+      "amount": "4741.638107",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4741638107
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "537x9wW82ocXy5RW7nDgyVyt1gDRhK8ppnRYq6kSThmj5Qrc1DjPLUkZjP8V3JqmpR6PVZKwNx3zH3WvnqXZpq8U",
+      "ts": 1786315222,
+      "time": "2026-08-09T22:40:22Z",
+      "raw": 948623873,
+      "amount": "948.623873",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 948623873
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3i6va3qkWZshsB2bN5X6U544ndCwNpbEonVCE96WEMgwVVydrMr5QU6eDncyztiiXV9tgKTsCNGHNKkSbPTQjRNa",
+      "ts": 1786315222,
+      "time": "2026-08-09T22:40:22Z",
+      "raw": 948698001,
+      "amount": "948.698001",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 948698001
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2mi4aU4Rc82ZFeE1k5VXzpVNXvCfbquCupyuwUjcPnJdiTyXevRCpFcD1giBtmF5t2vW3T8iCBNmggRzKiMVneL3",
+      "ts": 1786315222,
+      "time": "2026-08-09T22:40:22Z",
+      "raw": 948846283,
+      "amount": "948.846283",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 948846283
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "BsnAm3bnsURKYFcZLUfapED3Pm9XRpaPH69JKnk4aDMr7dcwPeef5xSaTbAcscL88kNt6rPMu32ZN7b6BQRNhnE",
+      "ts": 1786315224,
+      "time": "2026-08-09T22:40:24Z",
+      "raw": 4798324057,
+      "amount": "4798.324057",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4798324057
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4CmJ3pzVnDscxXm1x5CFfdwJ84C3s5Az8wGpc2xpiHATYZGWsDH3o6JJTwSQVw6xFN1WjNb7PxPEBabHGJtDpgDW",
+      "ts": 1786315224,
+      "time": "2026-08-09T22:40:24Z",
+      "raw": 4800587482,
+      "amount": "4800.587482",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4800587482
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ZPjJrGDZaZPsXiRHWCUUC8FpCsv4UjGuhcGFZpLU69nyaSu4yodECqQ5ULT5z64RFTDaqjx863Uo9eVjEGiR5sr",
+      "ts": 1786315225,
+      "time": "2026-08-09T22:40:25Z",
+      "raw": 4785758065,
+      "amount": "4785.758065",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4785758065
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "29tzbUUGcLyakeCuoaq7S4yyCmvcgwc9dizkZF1RA43q9uaMdKYuVE8jeVAF667JFhEHirV5jM3DQUBoAFSLwnLf",
+      "ts": 1786315225,
+      "time": "2026-08-09T22:40:25Z",
+      "raw": 4788012601,
+      "amount": "4788.012601",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4788012601
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3WRGU9FG8KtubntaA18wTt5g8tdUkGG6z1k1R1faZoXmF9N7rXFJTqh2GEF9NDT9jnCkiorgRnWbztn6jdgPDmAs",
+      "ts": 1786315225,
+      "time": "2026-08-09T22:40:25Z",
+      "raw": 4789854805,
+      "amount": "4789.854805",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4789854805
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2WxL2cAAXvKXC2QMZWa3fD32N8YC3PdnsvSt9QF8wMSUevFpU3o725WqZGt9XXChST9wbPK5ZJU3KDi3gBiuT7Kp",
+      "ts": 1786315225,
+      "time": "2026-08-09T22:40:25Z",
+      "raw": 4791735889,
+      "amount": "4791.735889",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4791735889
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "26GqofASB4JbVZT2dsRZjve1DmNr4btGwDKuKgFgCYqfWNVZHCxyWybaqtdTcpRwSWWjMw6dtDx3RokXokQ26CVr",
+      "ts": 1786315225,
+      "time": "2026-08-09T22:40:25Z",
+      "raw": 4793994653,
+      "amount": "4793.994653",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4793994653
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "UjW7LxR4gVTBLfE6yXpDyaWy6NHAdYCnjCXxtKxNAVQwLcuGyx7U1G2J3oNkame5supJY1vMeGswDtL8Z1rXART",
+      "ts": 1786315225,
+      "time": "2026-08-09T22:40:25Z",
+      "raw": 4795878177,
+      "amount": "4795.878177",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4795878177
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2PZtyeSWm8X9JSmuVVWP7QP8SzWLeVNrv3qTs8fd3ohpsGXZapvW9SYkyJFnzsaw7hrrGWYTBwLNZhxvvzEx4dKW",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4753656151,
+      "amount": "4753.656151",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4753656151
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4hM116DC8Kb8Fa2EMsgt6Dgj1QY7dGvFKCRjQ1RYJTudAgroHGdyBDVJ4P3ppcA6P6BVtEqNZYJtqzUdPP7x6QnY",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4755515942,
+      "amount": "4755.515942",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4755515942
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "38DeV8QHMrncv2YMC31fXFjtbfZAZucAAumuBPSZ6SY182Hr9i8ceE8xnUeiybqNRVq6PbFfpYP29HPFhH42Pomz",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4757376825,
+      "amount": "4757.376825",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4757376825
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5zFeSmUhNtS2KwFnhKezNvACCVbx1fVfXmi7BixRJuBSAFWQXFGDQGN96mj9KveR8BTj3JeoR9wwLwbyL5MY3Khm",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4759238800,
+      "amount": "4759.238800",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4759238800
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "WsMWD1X9BMv3b2VjkSWLASa83JwFmSDWMrjfgMyzpzRH8gG1QLiS2ENKeS7THqm13tJkCueBfFpvK6VY3XnaB9S",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4761474615,
+      "amount": "4761.474615",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4761474615
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4apqforuYgiVqGXSA1AdHNxGrBAgnF5FJK2dt5TzdSAgKHtpZPjc22eDHkMEgBuFjd6uUYbMxFt9bmVodNzjgpyW",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4763338997,
+      "amount": "4763.338997",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4763338997
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2bVDjrE1gdtWruJqFypXE9k3dL72b5wJDdGkvEN81ujVxHPTBniGPaebgy2HLeKsUSNb372oYC3AoeCacvjqPjao",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4778358891,
+      "amount": "4778.358891",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4778358891
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3tiHRYwZxZaoLttQH7CTDFW3So9NsnyjBZtouR4KzbSGApYC6SYkntZ5zsXGYqHyoM7RGq3p8HA5nh1cTwaF5gyy",
+      "ts": 1786315227,
+      "time": "2026-08-09T22:40:27Z",
+      "raw": 4780608199,
+      "amount": "4780.608199",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4780608199
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2NdmCrAKXpn5Sqrh57cBJacfp2b9Bw186ftgghW27UECnAamLMCLax5dU7Ka9fXVMi7qtSra8DLNk9oks7dedYjt",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4728827731,
+      "amount": "4728.827731",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4728827731
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "MSavVjwF3vMa87aY6MPxSsmi8No2qLNaFViHAFCetk5JWnXY4iVzmn5GfFR5WC6vvCFhtM41WjrcpcPYS77CyGk",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4730672964,
+      "amount": "4730.672964",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4730672964
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5W4TVYzAmPFENuNKerfZvqyrabgtoPNBw3fqqCLmSE6Tf6TiXZtQw9MkJnwWtdSxNK6QfTChvw7E1Pc4QiamGLgJ",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4732519278,
+      "amount": "4732.519278",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4732519278
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5x2KgVLeYWomQ6rktqR8XkBEzLdPbh5J1LyPpsmcVZsZkdqEV63QyapNAidzL65WcBXGWwFribJ6L5PTSfigjERZ",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4734366673,
+      "amount": "4734.366673",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4734366673
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3w6cdCAComH2D94XtqGL79tgKHzMHWRmctVn7wYQ1p2mhxxbUSLUYsu4W5TMiT4jzr5amZRiNtMrrLS6oo8FbAjk",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4736215150,
+      "amount": "4736.215150",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4736215150
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3kuwbru8vBEt9MUMGxQVeGB5TQR5WiwnzmUP3HA7QmC4iR3oatMp5dwVdJ86C2oq9jgBJTXyu8C4Af7viDN3vKGF",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4738064710,
+      "amount": "4738.064710",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4738064710
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5mbsFxAXxigVuhrqpd36mY2NqioMeEf8RbWoWNuWk3Dw45dBk291YW4rwfg8qVkCgZ8HmsLAhtXB9bh8xSkqjeot",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4739915355,
+      "amount": "4739.915355",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4739915355
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4p4XavKWCBJMtn4Z3eXiB5sjskxx8Kh9YtVGZa3pL7MdznS56rMRiFodAX6Ced2SXhrjue5Mj1ZY25niVrkGBq8R",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4741767084,
+      "amount": "4741.767084",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4741767084
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2WQvVBhZY3koen7Gn9oRyf541C2KgLE3ic9BjZnGg1BT48NoytCkgqxqMAAw54peRKycbsE9hkatGFZx25xdPJzo",
+      "ts": 1786315229,
+      "time": "2026-08-09T22:40:29Z",
+      "raw": 4743619899,
+      "amount": "4743.619899",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4743619899
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4Fk3VdzcLS1RYF2H2zh24ehT3wYbqEmLvLYgFwuRDnru4Vo9w5Ysv8GRk3JFMCL9gVARxcqzKyFuC7vjW3bMUay2",
+      "ts": 1786315257,
+      "time": "2026-08-09T22:40:57Z",
+      "raw": 943539415,
+      "amount": "943.539415",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 943539415
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "zBsdeAruPdq2e3ieB9UZbr86yVdeHGBQEKuJ8QdcUbhdxECh5XdEidTqrb1L2R1zPAT8r4P1en7G1HurSckeirQ",
+      "ts": 1786315257,
+      "time": "2026-08-09T22:40:57Z",
+      "raw": 943638799,
+      "amount": "943.638799",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 943638799
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4dR8kUmzsTU2BdNq1AdGuNBXhTMSuevxHysvLGFonqKaTsPbWZdK6AsEkto5yF9kheCY3fFN4u7RKxdQCpxpdDEr",
+      "ts": 1786315258,
+      "time": "2026-08-09T22:40:58Z",
+      "raw": 943465895,
+      "amount": "943.465895",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 943465895
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5nHiJ7kY7TmogtkxfQf3cpPLJGrsfDDQEBNEoqHjeGtWbWZSdLNmSdWbcmbQ3Qj9S7K7uruZVYyvAeKRyxkApQ2B",
+      "ts": 1786315598,
+      "time": "2026-08-09T22:46:38Z",
+      "raw": 900412892,
+      "amount": "900.412892",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 900412892
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "zgd6e5NhUoVfDgyfwRUu69tm8dKSZjEBLk9bxw3YxRxd5yzEgQhj8aTkz1KUbUVMhT46muWiodN1tb4YmhHHTVD",
+      "ts": 1786315598,
+      "time": "2026-08-09T22:46:38Z",
+      "raw": 900390714,
+      "amount": "900.390714",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 900390714
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "647hXTzAc7A3uNf7iKKCtN1Q8CHrZ9BB9PTaKJszQqbrcm6yfeVUuxhdQjSYBthE99XXYQxwkD6viLWegdnpd1uJ",
+      "ts": 1786315598,
+      "time": "2026-08-09T22:46:38Z",
+      "raw": 900057854,
+      "amount": "900.057854",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 900057854
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "27M675Ldgsc5xuEetBrY7DGea7G1iB3o1Rf6zDBBPy7krB6YfLjt9gzYYCiAkNxKc35T4dUy37MBZ8HNc4t2MVyJ",
+      "ts": 1786315598,
+      "time": "2026-08-09T22:46:38Z",
+      "raw": 901154572,
+      "amount": "901.154572",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 901154572
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4StaNnz929XTVio3Er3jGV9H9qPj4eyYxzdYpg6kL6isrqnpzG55nPsL5SQw3xs2dzNDKhGUSnAvPPhdEEhKhSA",
+      "ts": 1786315599,
+      "time": "2026-08-09T22:46:39Z",
+      "raw": 449576482,
+      "amount": "449.576482",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 449576482
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3mejMHdPax1S5RHcbHFbKvofHjQCEDcFon5oQtUU6YYyz6cp2vdRdNayuV9XEXiiuF2e6KzXJQLPvEs8CRGRMfF2",
+      "ts": 1786315599,
+      "time": "2026-08-09T22:46:39Z",
+      "raw": 899202360,
+      "amount": "899.202360",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 899202360
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3tn2QBYfhQUXRhyAwqGNCTHoq2XUksswoYsxuL2bCTeFfyUUNFUytyTGJdBzyTDJkySDNBDDF1hrWUrAzPpvBQjE",
+      "ts": 1786315599,
+      "time": "2026-08-09T22:46:39Z",
+      "raw": 4497038549,
+      "amount": "4497.038549",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4497038549
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "jVshwaTju9578c33WHcBEuErpTrF2dYFf8Nvb5sc274srr7JKE6RpCgxjh5RBSMggYzcNN6rL9wX4xxBWZFHsLR",
+      "ts": 1786315599,
+      "time": "2026-08-09T22:46:39Z",
+      "raw": 899612808,
+      "amount": "899.612808",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 899612808
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2jPG6VJbz9qeJp42rcS77Czjy3Gr1DN6ySSntSmSCvrZ24ERxjwYozs4rjZg6fNtdaw3D9L6NMnjSV2kdXNxAo1S",
+      "ts": 1786315599,
+      "time": "2026-08-09T22:46:39Z",
+      "raw": 4501037603,
+      "amount": "4501.037603",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4501037603
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3ghcxNNSPRgw8aScxV2d64HALMfEsvVCh8VqHaBxPWW2wRR2PkmK7Lx9VfGowQacKQ3FHNRbTKCPU6FCvmusC219",
+      "ts": 1786315601,
+      "time": "2026-08-09T22:46:41Z",
+      "raw": 448821189,
+      "amount": "448.821189",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 448821189
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5931UY5QkPNWA6UeX33ZWBCTiM3EMjqCAxFRoZA8HaTorpwJEmuEDi3kieV9dea8uDbU9LJXR8a5wWRStLiz7WaX",
+      "ts": 1786315601,
+      "time": "2026-08-09T22:46:41Z",
+      "raw": 448838241,
+      "amount": "448.838241",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 448838241
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "JGwdMDgwaRzgVLSaw1QvfBgrPm3ZWJyV7tsUd7q9GzPREYpTjFCGaSFyE5tcbYrc7gqxYtbQqMzb12iccoFXMp5",
+      "ts": 1786315601,
+      "time": "2026-08-09T22:46:41Z",
+      "raw": 897727688,
+      "amount": "897.727688",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897727688
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5UHjQKpiKieT4HP1L2PR1YYuGQYwq3H33dUAxnzbyx6J2PdJv8tqcipC23CWHMmAGtQ398tdn8FVk6annkwUt3hC",
+      "ts": 1786315601,
+      "time": "2026-08-09T22:46:41Z",
+      "raw": 898757745,
+      "amount": "898.757745",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 898757745
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "ZdiBMzAdgGGrfKj6JhuaNuvsdGkz9AA5Eaf1CFnkohBx2mV3oSq6irZYVYZCaeXabDdiw6YMAbdFiiMcxs1H2z2",
+      "ts": 1786315601,
+      "time": "2026-08-09T22:46:41Z",
+      "raw": 4494814714,
+      "amount": "4494.814714",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4494814714
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3ZyFxVNA8vbJN3KEz6iyRavYDpuK1fMdsET7GsbRXs5iNUg5dMh9voLRoFGSucMJVUSSZZbqKk71VChhDLpi4W8s",
+      "ts": 1786315602,
+      "time": "2026-08-09T22:46:42Z",
+      "raw": 4486934319,
+      "amount": "4486.934319",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4486934319
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "67XS99W3GQVUqqAK3eCo9yb9exkApxXy8EZHKYU2DhK4GEB2EJKY5tBEPRZvPVbFGwV47LU9VhZUt2K9wpuFkqVH",
+      "ts": 1786315602,
+      "time": "2026-08-09T22:46:42Z",
+      "raw": 897591271,
+      "amount": "897.591271",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897591271
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5zLbaG59Y1uLRmzAjWtpuEt4g9E3B4aV1gY8pfjrbG5puaRo66DmWDqmUesrgeagj5wQS9jWa4MEu7HqmJvobaHx",
+      "ts": 1786315603,
+      "time": "2026-08-09T22:46:43Z",
+      "raw": 897261863,
+      "amount": "897.261863",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897261863
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2GPh6mDji5GQ3MmfqQURaBPQinqwFDaHn4QquAQ7Pwux8gFZhwfHn4ztMCeM8eZ8ZPHwhY4NtmzJ5tuPtqSwUNsC",
+      "ts": 1786315603,
+      "time": "2026-08-09T22:46:43Z",
+      "raw": 4487332743,
+      "amount": "4487.332743",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4487332743
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2WUm8F36GbmQbFf2vMzU1U78urp544GbuSFZyJiwcSgFhvvTQNya11DKoAT6EV4w7DgbsHPhfzA2iUsyiW4mZHBZ",
+      "ts": 1786315603,
+      "time": "2026-08-09T22:46:43Z",
+      "raw": 448826943,
+      "amount": "448.826943",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 448826943
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4w4RsWiJstwaCCg6VZEi1dX517DHphpQaDJyht8TQFpH8kZGy3wDvuGWPS1ZkrSKdqhZjNNvDJVqGaZivqTH1zUg",
+      "ts": 1786315603,
+      "time": "2026-08-09T22:46:43Z",
+      "raw": 897705089,
+      "amount": "897.705089",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897705089
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "nrpArKg2Adu88ZtqsacS5eMKcAySdZfaHh27G1XqzmnUboYq8gdrda5QPdSFFxew5L5CPe9buFz1XFnay2jL5yP",
+      "ts": 1786315604,
+      "time": "2026-08-09T22:46:44Z",
+      "raw": 4539126579,
+      "amount": "4539.126579",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4539126579
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ym8n4bCKRjz3zUZFrFHWyARgVGiYeogVqNn88HsYBJpuQ1aZHK9rYG3vouWJXj98YfVSV1LzW63eJ2TJXY6zDbG",
+      "ts": 1786315604,
+      "time": "2026-08-09T22:46:44Z",
+      "raw": 454007952,
+      "amount": "454.007952",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 454007952
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4UNcUNF6SFSxeFtGiiPXPjF2rM1QJpJb7S3RLMF3riZcLC6Es7EcVMLxLESWyhanZ5qstimpwT3zzwgbAuppmpWc",
+      "ts": 1786315604,
+      "time": "2026-08-09T22:46:44Z",
+      "raw": 899820680,
+      "amount": "899.820680",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 899820680
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4oU1hSdZyoZJUHfpW7fSR98ukWrKYSG6UGYP5d397ythUTScRi7zkubuTjzMvPaVz9LSsQS4Lc5maGJZKjT9sJME",
+      "ts": 1786315604,
+      "time": "2026-08-09T22:46:44Z",
+      "raw": 899889139,
+      "amount": "899.889139",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 899889139
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4HRCdTUiiu4E12CgYETURRnfrqH4ZgBkf3CakcjPVBeY3fuKEGSfzdViMkU7QyPpFTtuYZDfhioxrJ2EHX6XfJKY",
+      "ts": 1786315604,
+      "time": "2026-08-09T22:46:44Z",
+      "raw": 899957605,
+      "amount": "899.957605",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 899957605
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4HzAhNvgQFrnDAVEQxBXEhnA9yCa7CTN4Sx6ceLgZo9MaQSAyzLc2bWn9EZ4JAvpQTpxMduW2VC5HXgjShbbGhPu",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 4489645498,
+      "amount": "4489.645498",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4489645498
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "Frj3XpWPEtREZcodzVCvwNHAMF1wAkMS5VpXgbTe3kguSsWsE4f6z52yW5xyucUVA8v66tNvaZDdrX8MbAt3MaT",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 4491351943,
+      "amount": "4491.351943",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4491351943
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5E4FNEVtu6aWLaTWCT84HuyWUwJkxTKQCuXFLfdAVMeKPdDYLHLGcky4EVcbqijUTZ5NknpkDM1MkKW7Qtvo39QY",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 898475095,
+      "amount": "898.475095",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 898475095
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2qAxWBSNbN7pEtW3DBddqqY8o2DE3xT4hKTQJsELx8qrahjnaGPbuKi7govJEqeMYUwdkbFnHsTZbU4vbs3aTBb9",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 901934240,
+      "amount": "901.934240",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 901934240
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "o4ghwFGHcnL293LwcCxVkSSSg7sfV6JLPw2mYksHuHjyKuqeSAHgZCs4T9jsjWm6BGLp73h9GHd2zsATVxWQ86T",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 4505581858,
+      "amount": "4505.581858",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4505581858
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2wKK9kesKffto1R592hdSJeDuPyFxvuB2irAKEnUNaKatTTWbN2f52Rfkg4NGG3Y1dUsd3f4tznZzmvi7RXvqeAt",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 901322052,
+      "amount": "901.322052",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 901322052
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2VjytRwLzzq8EmqZot6H5ZcBsMq9j6wF1RAYpUUXaMkbGHL1FYgFD97SR3EfvPsYTHJLSDayCdzcpAvGvvxp3zov",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 901390682,
+      "amount": "901.390682",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 901390682
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3sWSx4wJxvGb7pPqragwA4oZ2Hj9HTzpdtKHVKEeanTwst8RKfgAuU5qysCNcJxWRMRx12PkEQykNTxNCczj5Nku",
+      "ts": 1786315606,
+      "time": "2026-08-09T22:46:46Z",
+      "raw": 4507983896,
+      "amount": "4507.983896",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4507983896
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3FW5AAEKau8teaJue1T3GWKYbEz3GSKDyB1Zi9tqcvcH8dRShLJfHrMHsnvfaDPzhnQc2PU4kyvC8KToBKpMnbqt",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 896133671,
+      "amount": "896.133671",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 896133671
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "35HLPxeURahNE2EjnJiSNWU5vUa3z2aEgviQdGuJZBEUNbZzGXbzjihQYtXrKWteQq27LtxZgCRcotxb67XdBiSH",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4481689833,
+      "amount": "4481.689833",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481689833
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4Mk4aicuE1abR6bvngjMKW2JnyYAHe91ztGs2SHW3NPr8oZPKpaAyUoH5CRobfiUeNp65J9uvgHhpZvuKBACgheS",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4481879341,
+      "amount": "4481.879341",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481879341
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3wbY4AHMrqG2WuTA5SHMEfyFUWYKEuadQHar1sptMmoiirRXD7bEUhvf3RDdW2hmKmineaD9iZrd98hshhw7WNeE",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4481686397,
+      "amount": "4481.686397",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481686397
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "26iDFEPNXiwn11aFihPbkdpe2UM4FVFn7am6zcBPU1pmxWpGtJ1HQFgKJMWESW4ALAWomG6KuzCdjs9Rpn1PhoAb",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4478584774,
+      "amount": "4478.584774",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4478584774
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3XUX5pHLa8ytXYRrWScmGVStExJqZuKqbri6ktF985JsYifgMZZHEXnHwAU2U87aihU84LMpFK8uCPdJng5ww6Mx",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4480284910,
+      "amount": "4480.284910",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4480284910
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4UfBPbjfi7CEDErFfCaNddGj2pM2x67epSx5C2PZBDjA2eaoX4vAb97iH9Ar9wKsrjaD7GHH3sRgoVkietDavqKS",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4481801491,
+      "amount": "4481.801491",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481801491
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "PU45EXfmQzVTcbNHLWwoN1412a3xq8oGATaanV4kQWQ7WRpAseuUmyMJbUPABk8XQ5H6Gx9RsN3Zjm3WhwzBEX3",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4483503460,
+      "amount": "4483.503460",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4483503460
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "556jHvTD3M28sRzHk7528b9LUtbUEyqQFfEKYXh6SS2HhAjz7a29ytDEg43DJWTHGqRjZLKWfJCPxcwNwVX5Ge32",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4485206399,
+      "amount": "4485.206399",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4485206399
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5Y4b7kvP7EcFqBmWuPcKWCPjaC3eSJHZADaQNVCNpbreDKDwjos4Mm51MuLFTMBfTUv7iKnqV8UvzUZL3GdokSS2",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4486910308,
+      "amount": "4486.910308",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4486910308
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2P6JCVd7t3AvLyafAuPc8i7B3uVNebuvnN2qddZ4QSaUoKtP92wUxRBnKFsrt9ibJRFQFbqztdkgPfPBCtdTdNcf",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4488615189,
+      "amount": "4488.615189",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4488615189
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2DnngSdRv9jpSp9vbXeuyQvXmVCaKVWUBAbWEWcJJmCubvyYyUGcNa7a2FasKycWzroLuTnyuevMree87Wz2hTF4",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4498373716,
+      "amount": "4498.373716",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4498373716
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5b6dQc7Gv94fjqfsAK1RAkWr9uRitghRsYCTkaNvG81nf8P5T8RB6dshY2g9Q1f3qAZ2x7vKxtCZNDhNmLr9nsmY",
+      "ts": 1786315609,
+      "time": "2026-08-09T22:46:49Z",
+      "raw": 4500085138,
+      "amount": "4500.085138",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4500085138
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4PVoEMMP5mf46zH3jBT4hG28TJnD8eEw1VKmGg28KYiotj9iTvnJLbMPgzdJNMjFtQU2sBMesm6Zzy9M1GUwAJAp",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481688222,
+      "amount": "4481.688222",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481688222
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3smE7sg4H9ihahNcNUjSUTDx1hRctFpnLyqZ6hawdKwvWzK99FMUxhavaFqEHysmvizJW336vMRYHZLxEJ4RvzW7",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481690196,
+      "amount": "4481.690196",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481690196
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3e4FHFkztgvfq45KYqgm1aznoP3LoFtTZ8Judn3i1M8HDGsh5YW3k72a7nweXxoTFxkGFNwYbB8BYVdjnL9JrSRM",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4479986604,
+      "amount": "4479.986604",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4479986604
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "48b2QsxuhAHD6f6XxPzxJzeXWJ1SvoCn3ytixeNGRHoAJQ2Xnvr2ARUfJCfcZn7CGFNzjceKn2xPd4JjATNXkxGo",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481687527,
+      "amount": "4481.687527",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481687527
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4XrHQ8iXbs1v87sKPRczaoKiLDzm1e9RWaRaik1HwDawLGPkww291qa8dQj7KwdtTbDDQjoicDHL8NuwJ4CPp6Lf",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4478285507,
+      "amount": "4478.285507",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4478285507
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2M9ud21ZEmGuxy7PQ3BnqZtfTbmhyFC4j17rEYfeho8V2ApyugqwsqHBcFmvTVgdBbJFUY9TFyUXLUKtdyPWdVkp",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4479985463,
+      "amount": "4479.985463",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4479985463
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "cQurL8ASpR9utqbr8R7B5H4i2g9viH8vHPrMCw2fQ2o9UYcbgexyqJHyjpZXcQquKD1RqQMxzhVPDSo72Jb9dax",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481686388,
+      "amount": "4481.686388",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481686388
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "gaQyzyFgU9wLhRx5aHmVmvbZqF1z7qfkrqBdJzUMoYuMLKqF1gcqvuTUC6bh9WubiUdhTy6R6TPgXEoNtbCbBr3",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481691340,
+      "amount": "4481.691340",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481691340
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4q9QBxazs9ovoZXg7JGQc27bVzDRHnDgKM3GzbK8TRHMMFFihELVkyHXGPUqhj7VZCuW9snomNiLju2cHwQMH3zy",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4480047415,
+      "amount": "4480.047415",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4480047415
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2rDTTm8SbH3ApDNJQwq6UNq7C94knGfRKdMH7bG3NznsSUc3BQbhNt7KpY3Sr9hd49cwCvHMLXxFktb4GwRo42RV",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481748377,
+      "amount": "4481.748377",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481748377
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4FUEfSC4N5QrGmSANYFzCVLUoUBwyV46cw8ABAbSJ1bH95jRxm4jibsjw5TKvyFoVssDjQrHrXi6ygZdcapE7MiJ",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4483450309,
+      "amount": "4483.450309",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4483450309
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "42X1excuM6pipbqfDYcWfpjPKNxXGQ3N6vxZL42xour5HksDzXahmNXskQDpx7ucpmCYBGuG6Ybzz9pa9cA2Ke2",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4485153210,
+      "amount": "4485.153210",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4485153210
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3xvDb3i9hyXumB6yjV64XmbXbGJpidEgiH2hyHFqhzny4tSf6FnbNm7wKqNTVdq8khPDTgW2yAVwn9SrgVrgGYk7",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4481744943,
+      "amount": "4481.744943",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481744943
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2Dpv89tmERHFwP426rb1kEyWtTz4CbyTysN3MkYAqWibhNHeiTXGtw66qSDigBWw17zVkKBoraz15nFin2f8m7sF",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 896553037,
+      "amount": "896.553037",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 896553037
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2X6hmeE3zdzbbks4Hz93tx6RkK1BEf8sKrUsbff1vbh2BgFdTtkw8KaBZYeo7XhSrVgu66XhCebiqMPzmJfVYqfQ",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 4483787377,
+      "amount": "4483.787377",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4483787377
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3VWGunBtSdY7Cs4DhbLYpvetmJjtudpRniUurtxjZQ69th1utbiyEi27WU3nusGdwTosbsWPPPSggo4vYsBpVwJB",
+      "ts": 1786315613,
+      "time": "2026-08-09T22:46:53Z",
+      "raw": 896961663,
+      "amount": "896.961663",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 896961663
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ZgKXWqU856rnMuMgwzU9L6Y2V5k7uJmybLerUgbhQZcQasAMonK71a8C941KnjfZpFBLwGLEvNzdCSFAMH5C7We",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4479982866,
+      "amount": "4479.982866",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4479982866
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3Eih4br19kSzZNUaUCTyaT52LzoNbvwv61G4Cr7sYgLStGSpJAf1RR53A4EdAek46mxmjuFyjnMqCWGDfpCHZCpx",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4481683782,
+      "amount": "4481.683782",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481683782
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3K9tS7RzupF6nM7Ht6mAH1zuhtyVhwoGkWivGhc68YyAz2gC9GFfrb7Kii8VWwLQG6VQFafiBsKqdfCiLkN7Tg4D",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4481683997,
+      "amount": "4481.683997",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481683997
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2nARjwEEy1BttNvGpzyRB95eRtWLx16Uq5Np9SWQC9jGEvUdm6pRgBAVKYePFxpGsccioyodzmKBKHQ2HCM2T8MV",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4479982140,
+      "amount": "4479.982140",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4479982140
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "TjSD1vgH4REr1fpJ11Xj3aGh7RUkbqPjn2yfF1g27qWTLmZh56nmstXkGRx57Z4n3n3bNzJpvJabBz4354eoY2R",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4481683057,
+      "amount": "4481.683057",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4481683057
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4mF9FDWXthbewL9TFFytBE8Pm8w6NLyG3cPii2tbuayWT7qKtTYDWNQLkYJacfAq2afhX3c5oBqRXwm4oyxJ2uvc",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4479539921,
+      "amount": "4479.539921",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4479539921
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5BUWQxJuh5uvnVoA3Hop1oFGEqmwV7x7eFouajDuMroF4es6djirkk2njtBKmsXDBRi6oiSM7XAso2DzrYssQrTF",
+      "ts": 1786315614,
+      "time": "2026-08-09T22:46:54Z",
+      "raw": 4479987300,
+      "amount": "4479.987300",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4479987300
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5ySVPgEGagH3fQoj5yiHSNfatfCZzz4f9St15TVt4VbmU2LrJNq1Rk2VVA1t7SwiJ9vk96V8yehG3SZrhesvfPn5",
+      "ts": 1786315617,
+      "time": "2026-08-09T22:46:57Z",
+      "raw": 447783678,
+      "amount": "447.783678",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 447783678
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4qzcXqTtBoP1scr6vMJcNeP9Kg9Xfrwz95PD3GFUBc6Pj6y18D3T87Gjb9UrSuu6hjrkK5YKqfFjfL6MjXr9dJFv",
+      "ts": 1786315617,
+      "time": "2026-08-09T22:46:57Z",
+      "raw": 447782635,
+      "amount": "447.782635",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 447782635
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2AFKEvJV2AmpjB4NR1beXzDdLjBpA3e7QfZHDydrjv9XcNtuD8pVisHC8N6be9HUx6H4LUmyyr5dWqNj4T1a7KoM",
+      "ts": 1786315617,
+      "time": "2026-08-09T22:46:57Z",
+      "raw": 895616292,
+      "amount": "895.616292",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 895616292
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "37dJvYipEwAep2ZxtNP1BMckqtt4knPXwCxtMRaFnsPjzwxYfkDzrJoCTjqLiPBjCXkmfteFfYJShzXEgqRcpAyF",
+      "ts": 1786315617,
+      "time": "2026-08-09T22:46:57Z",
+      "raw": 4473998615,
+      "amount": "4473.998615",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4473998615
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "45E4p1eL4tnBSKNiYXNvRiAVfk64hVBZkbsnbJFCGzQWRBX9xUXsgGjcwNv77QuApbAvDdW7FrwsQNauohdCvWoQ",
+      "ts": 1786315623,
+      "time": "2026-08-09T22:47:03Z",
+      "raw": 4556470336,
+      "amount": "4556.470336",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4556470336
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3bBniKEgfeMDir8QuN7dgCuvTBeyeFmm8RCbAbv3Ww85TgezZRf92N5z2tUbw8GXmPbSqv1xVHYbtq87Mo9hu6UG",
+      "ts": 1786315623,
+      "time": "2026-08-09T22:47:03Z",
+      "raw": 4558214971,
+      "amount": "4558.214971",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4558214971
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "ekjteGXZUPMNQmWEeA9UkFgtuzw7yUEf1XLcG8kwX4bYsBkkSFjnqQsyizSkn67wggX5dadDigpfTTs9vrAaFx5",
+      "ts": 1786315623,
+      "time": "2026-08-09T22:47:03Z",
+      "raw": 4560133310,
+      "amount": "4560.133310",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4560133310
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "fshZy6n6F5LLdC4MFin4hgGQihVz6HD6Z1uUtwMNskWq8yAtpzBGAV8XFpEGt1fq4PPHBMLCJFzVKSQbZi8b8WS",
+      "ts": 1786315624,
+      "time": "2026-08-09T22:47:04Z",
+      "raw": 4554278053,
+      "amount": "4554.278053",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4554278053
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "1mx96ffbmw3safAny1cZ5jpogZMwrMQmpstMZAACR9mBVx5Kd7Lv4iL7GSzHhzUiJrqvofYKECMa5csmrz7WdKc",
+      "ts": 1786315692,
+      "time": "2026-08-09T22:48:12Z",
+      "raw": 897794213,
+      "amount": "897.794213",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897794213
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3pAgJayXGeNSmhpxmue9yAVLPsAYYYoPAhJkMpK8TPmjVeakAQkCdSYoAs1zNMhaAGco4zJa15K3WzowM4iJoip2",
+      "ts": 1786315693,
+      "time": "2026-08-09T22:48:13Z",
+      "raw": 4477807771,
+      "amount": "4477.807771",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4477807771
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5BKFn6Q6NFRS79pLJWYqZjSoeqWcXoQeVDf54mJ1siYQbPEm1S5E1XuxU7jFPBaXe7pfyiUQPMWNvAYGKZ1wjGmA",
+      "ts": 1786315693,
+      "time": "2026-08-09T22:48:13Z",
+      "raw": 897316885,
+      "amount": "897.316885",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897316885
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5qoskndueRnfrjvHVqCS6f36RS8bz7mLQNLYZyvRGz1mspjjNJshcU9BnZS6Uhi8wmEGVAnN7veUsemGGXJ6VwEr",
+      "ts": 1786315693,
+      "time": "2026-08-09T22:48:13Z",
+      "raw": 897726000,
+      "amount": "897.726000",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 897726000
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "42oBt6qpHNgX6gHzVhXyUyqzDscBQu3SQ6Ju8LSn3pyeEb6hmtNTFc19J37k9S27oBbVdoHbFYSkzEsUyHhrvMuJ",
+      "ts": 1786315694,
+      "time": "2026-08-09T22:48:14Z",
+      "raw": 4474006346,
+      "amount": "4474.006346",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4474006346
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2QoHfsBdtBvhLJDcM2vhZQkC4NFPaxKumiDKGodgxEySh7PeE9Hc54kzh6kCT6ddvANgK3uHxPhKXLZcbL1sZ7ZP",
+      "ts": 1786315694,
+      "time": "2026-08-09T22:48:14Z",
+      "raw": 4475703726,
+      "amount": "4475.703726",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4475703726
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4x5wL2MdLJK9ZAp4AVt4rCmQGPn9MWPmaMGu9s9LRkacFpofYExyjYwYkuE4WF6uVftH5f2oePWgRmgZDcWYsdnk",
+      "ts": 1786315694,
+      "time": "2026-08-09T22:48:14Z",
+      "raw": 4476929670,
+      "amount": "4476.929670",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4476929670
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4Ro87dJLuESmmvUX81ZPC4kmkHfj7SxU7GGDfoHEj6rztgvtzw44kvDkSMjhZpibwyAcBfxUSxDSMzuqgnWGythy",
+      "ts": 1786315695,
+      "time": "2026-08-09T22:48:15Z",
+      "raw": 894404235,
+      "amount": "894.404235",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 894404235
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3fzKT2Gm2syy2WgmBDSnUPL5rqnnCumHUYheV4w74yMfpMuLZ2mKLhEKeP7R6UHJRR1B5VtiwbXE5J63GP1qXeYc",
+      "ts": 1786315695,
+      "time": "2026-08-09T22:48:15Z",
+      "raw": 894472070,
+      "amount": "894.472070",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 894472070
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "59gq8DJp6uwSiFbocYGRBA7diJyHngCjWLND9uRaMwodUFH4kRxMVaViBSpHTTz4rwQnWFnYDhF6E29wsFtTFna5",
+      "ts": 1786315695,
+      "time": "2026-08-09T22:48:15Z",
+      "raw": 894539912,
+      "amount": "894.539912",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 894539912
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4pacJXM2PFy6nNEsN4HRoKfaPxHXfkULBLJkdX1sqbe7FomNhsCYwaDt6CDQRPq9U2s3veEenRqWGeSRqYkWy4VM",
+      "ts": 1786315695,
+      "time": "2026-08-09T22:48:15Z",
+      "raw": 894607762,
+      "amount": "894.607762",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 894607762
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5cpYjosDyUqrLx9a2dpSTrcFnaPmbAxYuW9wZZygMrfRvnBPEr1yigRxK8rDsgeVuL9u2kdKFwZNhSVvszYtuvMW",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 893423180,
+      "amount": "893.423180",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 893423180
+        }
+      ],
+      "sol_delta": -0.104105047,
+      "action": "buy",
+      "sol_flow": -0.104105047,
+      "sol_native": -0.104105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "idMvTpVmkxrZiqWbVQxkFsK1enjeH5db3pCRmcJDkcQvjXif78nre3wPTKePghMvbvotvezkfoCosG2jSmepYwG",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 4468132655,
+      "amount": "4468.132655",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4468132655
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5dYNYabUmPDmmSNWLAA5joZdZqwPKpu7QjuzR4eZxST1nxV6q9Mda4h8hTN9uKNXez6d7ZaBD1JLR9H91D7qpL6a",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 4469826690,
+      "amount": "4469.826690",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4469826690
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3D2EBWKhcmwTunDzeChmeKQseQvRt51b7L3aWLYFoFGNovaNdC9fsP1cVfj2yi9NJWqSvGt9PdbkiAsjug79B4gq",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 4466287717,
+      "amount": "4466.287717",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4466287717
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4iKEN4dxU19huYYxPaQ52EJ67NF5RzMgpfqZeeCgSa3rCTsjp97fUaTYX9ZHoHbfLbLfv4mVpXsTv8bDtsguEFwe",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 4467736136,
+      "amount": "4467.736136",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4467736136
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4LrYTk4Ep1X9CNC4fKWt9CEkUzhFZTrrNmLTdR58ewDvQGmCgZKusMCBd9TDkmqgS7p1dFp5Zan5yhnUaNa7kWGQ",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 4469328857,
+      "amount": "4469.328857",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4469328857
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "27ekzmtBLf89UVaWvGMpVrjb1tVFyNugnCebCBvoNf3eupSyf9cR5XyHwredmwixYxURf2rZ8BFR8X4ab5Nwyc4i",
+      "ts": 1786315697,
+      "time": "2026-08-09T22:48:17Z",
+      "raw": 4471023574,
+      "amount": "4471.023574",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4471023574
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4avj9ibpDwcHyPyVAPPs7RWHDwzrVFjVN2YsSTJJhxmop6HuYz8wbn1zi7JycA6gbAYSHng8guaKVSpMfgnAdyhB",
+      "ts": 1786322133,
+      "time": "2026-08-10T00:35:33Z",
+      "raw": 145723750332,
+      "amount": "145723.750332",
+      "counterparties": [
+        {
+          "owner": "7iyWwX51LwktZoYbwjndBGwX98VYm3pqNRGoZLw1tB3s",
+          "raw": 115430584001
+        },
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 30293166331
+        }
+      ],
+      "sol_delta": -22.138613107,
+      "action": "buy",
+      "sol_flow": -22.138613107,
+      "sol_native": -22.138613107,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "BPWCetzsQ1JpTbYbgaZMRKbzdU3JTsWVrLVagshqo11exMD7SDFvBqkdF3nH9ZD3eTKz5EUJkfszcKFaPttJHv8",
+      "ts": 1786322967,
+      "time": "2026-08-10T00:49:27Z",
+      "raw": 3240260671,
+      "amount": "3240.260671",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3240260671
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5Nti38CKGuGrvaS5yUiscVHuU8QT76qwGPdopgmPDxZXCEeb1g41Tm93uFWJ8wMYTpWFaQrtz5mLoDGTqpsrLSoL",
+      "ts": 1786322967,
+      "time": "2026-08-10T00:49:27Z",
+      "raw": 3247288649,
+      "amount": "3247.288649",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3247288649
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5ezW29nrLbyW3wBrsbkgmJAxQCb1TWrXyxZvzJAq5RMdHyDp3atKojFrAU4zQNbVDAbcj6NkZadf2fTnrPogERiZ",
+      "ts": 1786322967,
+      "time": "2026-08-10T00:49:27Z",
+      "raw": 3265970945,
+      "amount": "3265.970945",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3265970945
+        }
+      ],
+      "sol_delta": -0.505949447,
+      "action": "buy",
+      "sol_flow": -0.505949447,
+      "sol_native": -0.505949447,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "211wDtVzTa62CsWyYV14tBacD7rE1kizsP9FUxyUaCUrJvEJZHHFmadXcHeoP5iwVgpbwrcv4t1Zs6ZrriRRk1PH",
+      "ts": 1786322968,
+      "time": "2026-08-10T00:49:28Z",
+      "raw": 3237084442,
+      "amount": "3237.084442",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3237084442
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2AutmLacFYSQMhBq9anW9i4ggFAemyzJJcDDs6kkyNfsDLV1bCfvcgjDEotgUjy3nAPEUcZidEDmdbFk4qyhjpXB",
+      "ts": 1786322968,
+      "time": "2026-08-10T00:49:28Z",
+      "raw": 3238407303,
+      "amount": "3238.407303",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3238407303
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2wvpVnaiccCtq9SMNkHhFcLoofPiFjQuHFy2MU33XAopHzqJhdQjTNFsW7twjZbT8fFJru6KhGdaign2nETgui4C",
+      "ts": 1786322969,
+      "time": "2026-08-10T00:49:29Z",
+      "raw": 3229691382,
+      "amount": "3229.691382",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3229691382
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3LTnnLNfRnsA9t7rDjCHGDPjLaoH8r1Xayzc5ouuYXaeGGAVVs2Wnq8Jp2tTRWnSV82w236ZwR8faRJ3hqmALFJt",
+      "ts": 1786322969,
+      "time": "2026-08-10T00:49:29Z",
+      "raw": 3231009712,
+      "amount": "3231.009712",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3231009712
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "1258jbYmivHAzK2GC4YYpnVaofnkyhSXMTmhphCHYiRrANRUwDncTdtJvEjcWtYp6wrKRR7WHwitvQdnoXKutEFG",
+      "ts": 1786322969,
+      "time": "2026-08-10T00:49:29Z",
+      "raw": 3232592774,
+      "amount": "3232.592774",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3232592774
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4MTDfAdEvX1GCAmECENxVx9PTU5VWp6ogAKntzHLuzXJpzzPppwCYfKsTePHbVVmD9NfryY81ZABVe1fUdtzQHUi",
+      "ts": 1786322969,
+      "time": "2026-08-10T00:49:29Z",
+      "raw": 3233912881,
+      "amount": "3233.912881",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3233912881
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5TCfWtTLvZQs5WVMji4iWzs6qtSanNBirRfjk4myXt7ZjCoo3x1xs2YKtfi7m3NU6vFssY7ANCnazebS8ztd2qrY",
+      "ts": 1786322969,
+      "time": "2026-08-10T00:49:29Z",
+      "raw": 3235233798,
+      "amount": "3235.233798",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3235233798
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "57sETDzapM4eXwYVN2namzWDCi21k4HY91C51YDfTehFMqhKFe6fXSzQicCVEwK4UM7EdTX83uP93bEzgdcVFQ3C",
+      "ts": 1786322970,
+      "time": "2026-08-10T00:49:30Z",
+      "raw": 3226176471,
+      "amount": "3226.176471",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3226176471
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3pC8p1sxJWLSmCKEhfg35Y3VBBVpVNqmn6n3aNGGg1UMZnyPJZ1MoyMw3YUtPgtfRziTCSB2zqs5gCJQsESWWGfJ",
+      "ts": 1786322970,
+      "time": "2026-08-10T00:49:30Z",
+      "raw": 3227474700,
+      "amount": "3227.474700",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3227474700
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4SGcJna58JQuJTBCa5GvxtRiEmS6stEhoos1nBY8zKvU4G4iGp2BE8EKAZ1UJEqJhjtbUe8hkZHYJosceCAyMrxp",
+      "ts": 1786322970,
+      "time": "2026-08-10T00:49:30Z",
+      "raw": 3226005966,
+      "amount": "3226.005966",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3226005966
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5Gts6ghKgarHFUje4mwdUTRPQhqaVuBbBGFzjgSfCUady3YeVK1ZSFn8ntDe3HvyJLYhd6bLYJAcdjT6NnoLpzEE",
+      "ts": 1786322970,
+      "time": "2026-08-10T00:49:30Z",
+      "raw": 3227322039,
+      "amount": "3227.322039",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3227322039
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3xc269D6BPpKzCEfL29nn87DuFaDYhb49HLNEV9rAPxF1PirRr6dNdQ2bgCQVYvyhdQDCWyFtUGarbVeJVoVAeG2",
+      "ts": 1786322971,
+      "time": "2026-08-10T00:49:31Z",
+      "raw": 3198724069,
+      "amount": "3198.724069",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3198724069
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "U49NCydiP2ffe8RkWRyzd7vPgdXoR2xMANhci4dgSGmVD6BLNoGBrPo3GzL2SBZNPeqFro7WwaHanXjb2RbZtLs",
+      "ts": 1786322971,
+      "time": "2026-08-10T00:49:31Z",
+      "raw": 3200023474,
+      "amount": "3200.023474",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3200023474
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "brzwnv2FuSaVcQHKTppcEF4QqyYJpqkX6uBdtjBNMbmmYcV2gT3cuoRzk3epBAW9MpgZ15TjKhRTYLUQcJ1UFTL",
+      "ts": 1786322971,
+      "time": "2026-08-10T00:49:31Z",
+      "raw": 3201323671,
+      "amount": "3201.323671",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3201323671
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2PHose2mkArsm2dmVoXQ83QBifstfYbW79pRRF9pTygWLmNGwycEZxxmXBSH9od7pZPU5hGX2cnHAEsDr1D2y44V",
+      "ts": 1786322972,
+      "time": "2026-08-10T00:49:32Z",
+      "raw": 3214903163,
+      "amount": "3214.903163",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3214903163
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4iwZ3aSGyisEhq7TaK5Fai2joYML4a4t4q6VWKd8SoX29mPtZ9Q6uDyPusLTYYdkn9vGh9F1qLwXjwM4zaoeTLeR",
+      "ts": 1786322972,
+      "time": "2026-08-10T00:49:32Z",
+      "raw": 3216212436,
+      "amount": "3216.212436",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3216212436
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2n4sBq7zWpF9t3oBUeT8eGMS4FMUsYYXFqMy4EkrQ8HcPyeWrWrsaAFmzsa3oAQTJgh45PDePvumsqUoPYW22EvT",
+      "ts": 1786322973,
+      "time": "2026-08-10T00:49:33Z",
+      "raw": 3212665415,
+      "amount": "3212.665415",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3212665415
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5zvCxWQuzwVSdXA6ZY6oN3QNjJsfR8PmZ9rp6pwG4rjbecfn38MAgk1iCYCzRJTdSV5HLtfbt2D6m71H3bsV97VM",
+      "ts": 1786322973,
+      "time": "2026-08-10T00:49:33Z",
+      "raw": 3212556031,
+      "amount": "3212.556031",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3212556031
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "mcLFi8FwmZMNoELjjCMKX9oczyXXmPfnyyE8FSQmKZLJ6Bg8wN1hnwv92maE1jpYjP9kBkATBQSKDV2echcU9dU",
+      "ts": 1786322973,
+      "time": "2026-08-10T00:49:33Z",
+      "raw": 3212547948,
+      "amount": "3212.547948",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3212547948
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3CQztCwXJp4GryXYrSyFrDMNQKyCHTWVVuhfkKPCW9PHYC8FERFVhP9rCCWx1p14ZNgbFmNM37WanqwNMsD7EJ1x",
+      "ts": 1786322973,
+      "time": "2026-08-10T00:49:33Z",
+      "raw": 3212816630,
+      "amount": "3212.816630",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3212816630
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4cumnfM849hPWVVuF6aDCvdJJuQdYqxCLPUraFaVscb2k3zkYUvkCUPjo2rwGjceXNbwkBcYoyJdQQmKjbEWHqsA",
+      "ts": 1786322974,
+      "time": "2026-08-10T00:49:34Z",
+      "raw": 3212548885,
+      "amount": "3212.548885",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3212548885
+        }
+      ],
+      "sol_delta": -0.504105047,
+      "action": "buy",
+      "sol_flow": -0.504105047,
+      "sol_native": -0.504105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "8c62bKySR6zwqirZXahmt8ZSaidrwrWLPYS4fZViobB6UcMkVrv7j6Lvnpn6fSvvperpAZVT8QCrWKiop61fDCF",
+      "ts": 1786339698,
+      "time": "2026-08-10T05:28:18Z",
+      "raw": 424160198469,
+      "amount": "424160.198469",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 149953251313
+        },
+        {
+          "owner": "7xLfygtrTiJExAYgxLbBfV9faqN4Eu5zYifaAMWS7uqj",
+          "raw": 143727111248
+        },
+        {
+          "owner": "7iyWwX51LwktZoYbwjndBGwX98VYm3pqNRGoZLw1tB3s",
+          "raw": 130479835908
+        }
+      ],
+      "sol_delta": -68.876276509,
+      "action": "buy",
+      "sol_flow": -68.876276509,
+      "sol_native": -68.876276509,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "544vLZetYTvHNmhHgF7HxEGyheeYtJm4rGz7BHE57MBwqfxjbeABXqBZZpW9oqdhggYpXmc9LX5PPv6Lkwra5ej1",
+      "ts": 1786342686,
+      "time": "2026-08-10T06:18:06Z",
+      "raw": 557107950408,
+      "amount": "557107.950408",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 557107950408
+        }
+      ],
+      "sol_delta": -99.979933438,
+      "action": "buy",
+      "sol_flow": -99.979933438,
+      "sol_native": -99.979933438,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2hxCXphGQML4B3mMfECf3cmETy5P2kZMFZs3RaHaJ2gFXJM9r5JnpPY71FmEoTQykZttMGP89NVBHeYz2A9zmVXa",
+      "ts": 1786366245,
+      "time": "2026-08-10T12:50:45Z",
+      "raw": 52833745976,
+      "amount": "52833.745976",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 52833745976
+        }
+      ],
+      "sol_delta": -10.0018534,
+      "action": "buy",
+      "sol_flow": -10.0018534,
+      "sol_native": -10.0018534,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5YAMsCh1B6eFE2i3jqDPP29jeqzqLRLnfwJpRzyXuuWorVSMhNKUZSuCWRKw1FJBn5WRUjuqZwCH2xgXUGjT5ePR",
+      "ts": 1786378087,
+      "time": "2026-08-10T16:08:07Z",
+      "raw": 579792542495,
+      "amount": "579792.542495",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 579792542495
+        }
+      ],
+      "sol_delta": -100.002004999,
+      "action": "buy",
+      "sol_flow": -100.002004999,
+      "sol_native": -100.002004999,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "s5FdeSwJxnTc8bZZHbunBtkV4bCvEbFN2gfw2jfZXnW6rXcwmMGy71vfE8aLfYrNn925sNgFwLFA6nhCwJoQZie",
+      "ts": 1786381241,
+      "time": "2026-08-10T17:00:41Z",
+      "raw": 311461793,
+      "amount": "311.461793",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311461793
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3hhbF1mVJQHUyHcvwLYqBXwo3WaSa5RdSmMNvWZF3YwnMZ9UnRjNtUqVk5qoLoApjY1KjWXnAxbqChZCFN4mEqwY",
+      "ts": 1786381242,
+      "time": "2026-08-10T17:00:42Z",
+      "raw": 311249192,
+      "amount": "311.249192",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311249192
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "WN9MB4r1hCRhFTPict6qkA8SHtDq9UrwkwewREeGiuSVGvVqD1MciCf2DwrYbwWTWtt6TvtqL2M2XhzpCRvSGR4",
+      "ts": 1786381242,
+      "time": "2026-08-10T17:00:42Z",
+      "raw": 311261338,
+      "amount": "311.261338",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311261338
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "36D2ptsvDew4BGaYtTWMqwZSSUBMg1t7HpS2ERHS1QFfyU1R9wjrWnDDtTt5kNy3ABSYmcexVwdxviiGqKX4t9sr",
+      "ts": 1786381242,
+      "time": "2026-08-10T17:00:42Z",
+      "raw": 311273485,
+      "amount": "311.273485",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311273485
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4ijSzHAW1hEysUR6bN3nPc4HgeBKLvMbgvQdA9NkqHpLnkfgXcacshqmgVnvz3SpRsYyRr6PHLfdrY6YEaV1BMVH",
+      "ts": 1786381242,
+      "time": "2026-08-10T17:00:42Z",
+      "raw": 311285632,
+      "amount": "311.285632",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311285632
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "VUvinid3Y2ymn9aM8RTHotd1JiUHLLFu6zm6g24SMAtkbJ8Cs6hW7koebk1K1X7QPsrem8pt19aYWftAaqb88AC",
+      "ts": 1786381242,
+      "time": "2026-08-10T17:00:42Z",
+      "raw": 311309959,
+      "amount": "311.309959",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311309959
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3HYVE3cwj2YPMzBw6zqxFbdW2SXJWJFjb3ekyo7eY5rfYMHep31rnZe9fozkpomEKvP6G9QchbdPqMxNZLkRUuiR",
+      "ts": 1786381242,
+      "time": "2026-08-10T17:00:42Z",
+      "raw": 311328099,
+      "amount": "311.328099",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311328099
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4hBxdr37rx8h1chQVvaVQhoiRT1fx2pXx98U8k5dJnbHpZ3Q1dajYg72wj74wioCZpdprF1VwEriTXbB58egAhp8",
+      "ts": 1786381243,
+      "time": "2026-08-10T17:00:43Z",
+      "raw": 311188422,
+      "amount": "311.188422",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311188422
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "53GFdQkQdL89tPHMFJkkmAdiPLvaiPjx3FkYxY4UPNsQZBNWjcMtoTBURj2f5nzBKmVy1mvhUHFGHuZ1NpdhCSGZ",
+      "ts": 1786381243,
+      "time": "2026-08-10T17:00:43Z",
+      "raw": 311200564,
+      "amount": "311.200564",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311200564
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "ydaPZ18gsUXvmsVomUC3p5YXFC6cPDPjYogirt29WF78tntwz5o5T23iS3ybfkxF6ST2ofsop2zm2cSQmUGPtPV",
+      "ts": 1786381243,
+      "time": "2026-08-10T17:00:43Z",
+      "raw": 311212707,
+      "amount": "311.212707",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311212707
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4HZ5R22DTYS4JLqX1wJJjFBuvq29oDcRowGrbFXGpAEei5yyDwuQYeEGSDQ3r6vBZnY4Eder6Q4x4E5hzFhhUnJd",
+      "ts": 1786381244,
+      "time": "2026-08-10T17:00:44Z",
+      "raw": 311103391,
+      "amount": "311.103391",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311103391
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5z5TYoKJ3ADfNikfkPpJY5ZQi8QMJN72Z44z9dhQsYc8WWM93LhRRbe3PP3zh6YPXGDCA9p2LmLrSCc94QKasVaz",
+      "ts": 1786381244,
+      "time": "2026-08-10T17:00:44Z",
+      "raw": 311115528,
+      "amount": "311.115528",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311115528
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2yHKUE7uCM5QDToRrRUC35sQUzxtFVxZLQ7PF5oCERcmVqTHcmpczzijRG8SqGKqtYzpeyxLHgKpke26UAbU4JxE",
+      "ts": 1786381244,
+      "time": "2026-08-10T17:00:44Z",
+      "raw": 311151944,
+      "amount": "311.151944",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311151944
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2XFpx2e2HYQDgcCwPPib3SiesWQmKUQsnEiLtT75Rafxxp3zBRVeidvpSHPWesPMF1E6Maf1YCa5cBeoQKqeg5Tk",
+      "ts": 1786381245,
+      "time": "2026-08-10T17:00:45Z",
+      "raw": 308370342,
+      "amount": "308.370342",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 308370342
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4nWmBSUFHugJdWkeKrUZJc91vPziRKcw5ho3QXiks9utEL69YBgAWsqB8iHUnKc9jjBmmYmF1oZGHZeQFkvERS1R",
+      "ts": 1786381245,
+      "time": "2026-08-10T17:00:45Z",
+      "raw": 311018350,
+      "amount": "311.018350",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311018350
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5xT4sCbz37uNEVmwgH7hXvdPXn881trBKBVndCse4pFY4t8rQpDcxUhNxHCz29AgD9YJ7mnZx6NJ62iDHGzuyVWe",
+      "ts": 1786381245,
+      "time": "2026-08-10T17:00:45Z",
+      "raw": 311030482,
+      "amount": "311.030482",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311030482
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5gFrqV3R19k6K6QX1ko3Jd2kuputjUGRRXCLEQiq6RxTjVBS1zHfcaJZhP5qGvRhX1X4289YmZcBBCqpUTm29w88",
+      "ts": 1786381245,
+      "time": "2026-08-10T17:00:45Z",
+      "raw": 311042615,
+      "amount": "311.042615",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 311042615
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3Uveudz12BQBEh7cNsYeGLviGXjHSqzRKpB8LxWvB1qWpGWaU34ZPbX8xnEAPcLKxhHR8xTRYwnrbEsgnvrJbPvu",
+      "ts": 1786381246,
+      "time": "2026-08-10T17:00:46Z",
+      "raw": 309510571,
+      "amount": "309.510571",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309510571
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2Ff18Eo5RndzyoyQRivZfj4bWULmvkeVpCVSUXBsLUbg7LqYzEiogRPXTeS6WEZuQqu7KHSRuBaLmySxsL4VLESj",
+      "ts": 1786381246,
+      "time": "2026-08-10T17:00:46Z",
+      "raw": 309522615,
+      "amount": "309.522615",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309522615
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3gZfwEM2KsEGDHZoarQprAmBmoGArmwoKtN8ngPPEdbXwtipr5h7NQM1KVvxbYQFacsm2mANPRiB4U2TQ7RAGWA4",
+      "ts": 1786381246,
+      "time": "2026-08-10T17:00:46Z",
+      "raw": 309546533,
+      "amount": "309.546533",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309546533
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4sdTubPaZusJ5RiJcSwFktiqWGU4tWTXg3HgJ4e5F5Bi5kKWnEAJjFdbGYxVrMb7SCTHa1cSfJkTWEMd1mrLZAJK",
+      "ts": 1786381246,
+      "time": "2026-08-10T17:00:46Z",
+      "raw": 309571384,
+      "amount": "309.571384",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309571384
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4i9ynS7mvy6pejY1YzrdHjN384jV1BLBN9AeZXcZmMV8ArbqL62MB9e2XAvfJ3SVmW4UXX8wF1NxGn8Et1o4a2rn",
+      "ts": 1786381247,
+      "time": "2026-08-10T17:00:47Z",
+      "raw": 309485413,
+      "amount": "309.485413",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309485413
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "31k3SWTHgoC2qV91dyfTACWnHbp8AAxRzEhQ5ByosMmQFc4JeeQ7zJbPY6ERyNtBeFAmDSyfznXkVAKQZSiJohwC",
+      "ts": 1786381247,
+      "time": "2026-08-10T17:00:47Z",
+      "raw": 309497455,
+      "amount": "309.497455",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309497455
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2udG67G93QJoNB7LZdez9LzDexyLYQGRzHQfkgYKgpeNXfSPhgeQLGgqBmFPY5iRs8T5Dybk3ocf3nQgzH7Ra1KH",
+      "ts": 1786381248,
+      "time": "2026-08-10T17:00:48Z",
+      "raw": 309461330,
+      "amount": "309.461330",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309461330
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5HA39jZEB5WRrnHux6DUaerBFkfnsTWP2Ap6XhFLgCnLUBoHwz53ATyA29iQJRwnzMsVKHzpBW4pthVgiXec7x9w",
+      "ts": 1786381248,
+      "time": "2026-08-10T17:00:48Z",
+      "raw": 309473371,
+      "amount": "309.473371",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309473371
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "37TeVchPoY6HJMXYAeCqhm7HdWpkT5jrvxTJ5Mr2smjZHhfmmUQQk8cBouSjY6emnxyLXRoQkserzBa6wZ6c7wEz",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309056013,
+      "amount": "309.056013",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309056013
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "yvVM1wQUeHv8y7GujNBANqbQJA8NETmUGcccypexwaTBPFgkJetXAJ2m8p12dN9Wz6xn9T7SYL2pn1bkukQJWC1",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309068030,
+      "amount": "309.068030",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309068030
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4vhcphyVkSxm1yDpfPXt8aTyY4jyAztGmM1bHM6q6vqdCHDer236vGu3QawR3HyBLbcZsKnCACpegzQzfc1Z8KH8",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309344700,
+      "amount": "309.344700",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309344700
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2ajnkdEsAocgB7AoHY166HZGq3gFmYL8HBWKDekDnXZhtsGP9DvEH65Yn4tFtySbWZQ2dzPLVvJLvu6X3rzKnr1a",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309356734,
+      "amount": "309.356734",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309356734
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2EQKjeyRYYmhFzTX1oyDd22nTFyqj9aTJYYeaunVZFGHEHx1AbiySY14DYBWygPg4uMCAAwLsB11j6Dz1YJEBBpv",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309368769,
+      "amount": "309.368769",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309368769
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "uqhoBRsegb78sFkXeJYCiRMGPCQjG4EKM1cHxgogoCNi5f9YSNx6rchrivh28gW8SP8bB6QhiFmRhQaSBBf9g45",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309380805,
+      "amount": "309.380805",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309380805
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "58FvphAvkeK32ySWj8jdA2gM9tWrsSwh1NkpTdMR5sQMSaiAxFhZi9N59TgEEoj96nKmARd4JHdHWJuu9u79mn3d",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309392841,
+      "amount": "309.392841",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309392841
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "sQsQgcFPghfnV9xcPUuR6ARWSddHLnpuPBzEVcFUETf71Sh1pPvPBWQRVHzwJYWpZTggNzdCMsDJegpte5jeYTc",
+      "ts": 1786381249,
+      "time": "2026-08-10T17:00:49Z",
+      "raw": 309404878,
+      "amount": "309.404878",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 309404878
+        }
+      ],
+      "sol_delta": -0.054105047,
+      "action": "buy",
+      "sol_flow": -0.054105047,
+      "sol_native": -0.054105047,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2ou25r6Dc7rnbugWDsDiJMtJ2CNcSTMGZh36hYQ854hpXCUwnKt9ZnhYKyiGCXy7dQtNernvXnZtHkuHQuHPfPzx",
+      "ts": 1786430112,
+      "time": "2026-08-11T06:35:12Z",
+      "raw": 39017734278,
+      "amount": "39017.734278",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 39017734278
+        }
+      ],
+      "sol_delta": -8.002079513,
+      "action": "buy",
+      "sol_flow": -8.002079513,
+      "sol_native": -8.002079513,
+      "sol_wsol": 0.0
+    }
+  ],
+  "lp_deposits": [
+    {
+      "sig": "HuXrHq8zMRcMw8Q7WKD61ngjwyjdHvY3EbyQD5vppu115NTjn6fDhrTg2TFng2Gny8PnPouU9AHhdEnPn1j24t4",
+      "ts": 1786226286,
+      "time": "2026-08-08T21:58:06Z",
+      "raw": -3432112981600,
+      "amount": "3432112.981600",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3432112981600
+        }
+      ],
+      "sol_delta": -502.027938062,
+      "action": "lp_deposit",
+      "sol_flow": -502.027938062,
+      "sol_native": -502.027938062,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4KwpCbfvZ9A944dQciBg2SA4tUab46rRsyerx4eQzvqLWY2WmTYBohhnfpd356MgtuHnitCvjrN5RRaNr6BBepgt",
+      "ts": 1786226407,
+      "time": "2026-08-08T22:00:07Z",
+      "raw": -62457057151,
+      "amount": "62457.057151",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 62457057151
+        }
+      ],
+      "sol_delta": -8.919581609,
+      "action": "lp_deposit",
+      "sol_flow": -8.919581609,
+      "sol_native": -8.919581609,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2Fh3AqnBgXbCpedkDAAaE2KjZFEjzqG7B2RJLMcDDdVByvhVoFF1vmN666aPWzDEWesutsMeTmEBLQD8uGNwRX8z",
+      "ts": 1786226411,
+      "time": "2026-08-08T22:00:11Z",
+      "raw": -7063554249,
+      "amount": "7063.554249",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 7063554249
+        }
+      ],
+      "sol_delta": -1.000767912,
+      "action": "lp_deposit",
+      "sol_flow": -1.000767912,
+      "sol_native": -1.000767912,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3zG55rPsxuj1HB13gpPtfXDHFj3oVtNz9Ri43t2kpW2VZM2yGCdcdjZUEWjGt7y8RdcFHWALkgKX3SwghuL9Df2w",
+      "ts": 1786234169,
+      "time": "2026-08-09T00:09:29Z",
+      "raw": -133934023189,
+      "amount": "133934.023189",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 133934023189
+        }
+      ],
+      "sol_delta": -23.900414529,
+      "action": "lp_deposit",
+      "sol_flow": -23.900414529,
+      "sol_native": -23.900414529,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3yGtzZ7rusggo4TvEf1LxEg79FQ9wRYw2LG55PY2Bc8jApyGe5AfvYuCfdkZehricShK2FsKwghS5QZqakwUBmt7",
+      "ts": 1786234173,
+      "time": "2026-08-09T00:09:33Z",
+      "raw": -5599267915,
+      "amount": "5599.267915",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 5599267915
+        }
+      ],
+      "sol_delta": -1.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -1.0010051,
+      "sol_native": -1.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3ekPPqHMUP8J4QDc58YMKv54cor1Def4jJwv1RozWxBqcJ8cgCPgEwRP3nN1QTr1PWvqTptUHjT8eMBTkrnEG8S",
+      "ts": 1786234177,
+      "time": "2026-08-09T00:09:37Z",
+      "raw": -1124219220,
+      "amount": "1124.219220",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1124219220
+        }
+      ],
+      "sol_delta": -0.200686207,
+      "action": "lp_deposit",
+      "sol_flow": -0.200686207,
+      "sol_native": -0.200686207,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2ekAwjogYvHWAjY7WVvkE2eUJhaApDMA9bxd9Rm4bzx9wQW8DastbfUMgUNPaYvxdmWgeA9S17wsjCZCShmfVKSN",
+      "ts": 1786238426,
+      "time": "2026-08-09T01:20:26Z",
+      "raw": -38898230170,
+      "amount": "38898.230170",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 38898230170
+        }
+      ],
+      "sol_delta": -6.001007669,
+      "action": "lp_deposit",
+      "sol_flow": -6.001007669,
+      "sol_native": -6.001007669,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5bZVCHuy69VkwCJTB8n5Kj7VK1vMnXbhKafmWYFKBmpgFnMnEyBbcB8iRbhM8kZ8PPuzyQC2x84WPqCficLS3g7h",
+      "ts": 1786240623,
+      "time": "2026-08-09T01:57:03Z",
+      "raw": -16738856961,
+      "amount": "16738.856961",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 16738856961
+        }
+      ],
+      "sol_delta": -3.005670033,
+      "action": "lp_deposit",
+      "sol_flow": -3.005670033,
+      "sol_native": -3.005670033,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2yf3KuU8pLoqvJD9VLDna2uq3nvyDFH7N18gbcbYec4xqvNoYh4iRbn5GUynRBvhFZM3zHrxUv1AAEPxNP4xxZCY",
+      "ts": 1786296875,
+      "time": "2026-08-09T17:34:35Z",
+      "raw": -199219542760,
+      "amount": "199219.542760",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 199219542760
+        }
+      ],
+      "sol_delta": -24.033131552,
+      "action": "lp_deposit",
+      "sol_flow": -24.033131552,
+      "sol_native": -24.033131552,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5REb5fDgEbHfUH5xD1KbYFdyLshgqBkx6UmUBshZwZFvLvpdqoa4NsqSeWe7DoM6z6brV8LtTMozJ2MS8YzDX7JD",
+      "ts": 1786296879,
+      "time": "2026-08-09T17:34:39Z",
+      "raw": -4134880405,
+      "amount": "4134.880405",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4134880405
+        }
+      ],
+      "sol_delta": -0.500892628,
+      "action": "lp_deposit",
+      "sol_flow": -0.500892628,
+      "sol_native": -0.500892628,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5EE1QxznJ7PKRJMMEJt9wxKEjz4MapjqH8HNJTDtL9vC9F4vrtoYupmoxdfYCSExkWzcQw38ErHU1b8jGERE1pbf",
+      "ts": 1786296882,
+      "time": "2026-08-09T17:34:42Z",
+      "raw": -3792459169,
+      "amount": "3792.459169",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 3792459169
+        }
+      ],
+      "sol_delta": -0.461823005,
+      "action": "lp_deposit",
+      "sol_flow": -0.461823005,
+      "sol_native": -0.461823005,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5CHJsKf4mzcF2KwdjTW8SwRGx1ihvs1FNzvpwtmAPgGp37U5nEVUNuSH6u8X8mHndSZrzvGuEUAG7NP5f3HuaHDk",
+      "ts": 1786312823,
+      "time": "2026-08-09T22:00:23Z",
+      "raw": -5386338036908,
+      "amount": "5386338.036908",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 5386338036908
+        }
+      ],
+      "sol_delta": -539.965743823,
+      "action": "lp_deposit",
+      "sol_flow": -539.965743823,
+      "sol_native": -539.965743823,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4LBWLHyb3LBDPKTF1fMmydyZmMx2ezXGfejbkrNJeqemciHhw4pECMFoXKfQkqPdmK2TuV97B7t1QJ8dAiXNb7mR",
+      "ts": 1786312830,
+      "time": "2026-08-09T22:00:30Z",
+      "raw": -99579779117,
+      "amount": "99579.779117",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 99579779117
+        }
+      ],
+      "sol_delta": -10.018606132,
+      "action": "lp_deposit",
+      "sol_flow": -10.018606132,
+      "sol_native": -10.018606132,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "57zAjWbB62JXFV6955ZpFzqhNQfBg3rsg6E9H9XgukPnCzoaHPmqAxTYsABpg7cqQPD3hpAhjAy7NDSn7e4M1Myh",
+      "ts": 1786312839,
+      "time": "2026-08-09T22:00:39Z",
+      "raw": -4962155282,
+      "amount": "4962.155282",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4962155282
+        }
+      ],
+      "sol_delta": -0.501025257,
+      "action": "lp_deposit",
+      "sol_flow": -0.501025257,
+      "sol_native": -0.501025257,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5s4pyjZ2wThHUkuzdwgyFZzaoEQa6W3wJeb4Fb7RSd49wQAT1F8o6qRZtbjZ4GzjXkpXHhVYYrgPLyTEafMLTDGz",
+      "ts": 1786313705,
+      "time": "2026-08-09T22:15:05Z",
+      "raw": -59648693167,
+      "amount": "59648.693167",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 59648693167
+        }
+      ],
+      "sol_delta": -6.01019205,
+      "action": "lp_deposit",
+      "sol_flow": -6.01019205,
+      "sol_native": -6.01019205,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3ugJQy3nynQ9aoe81ZySbqg7stGiggoJ7TyvTQjvRraNzmsWjMwfLmpfsdUZqyy8YmLFfKJGtjNn99EdvJY2SNE3",
+      "ts": 1786313710,
+      "time": "2026-08-09T22:15:10Z",
+      "raw": -5962937683,
+      "amount": "5962.937683",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 5962937683
+        }
+      ],
+      "sol_delta": -0.600999988,
+      "action": "lp_deposit",
+      "sol_flow": -0.600999988,
+      "sol_native": -0.600999988,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2FVe49a5SB6eNyur6QwDgeZesYG3tTZ4Am1wZicvLgysi2iQkrg2QvGExXB4AamsCAGiFynsGaQYc9PKtrEKdeQ6",
+      "ts": 1786313714,
+      "time": "2026-08-09T22:15:14Z",
+      "raw": -4109541245,
+      "amount": "4109.541245",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4109541245
+        }
+      ],
+      "sol_delta": -0.414509964,
+      "action": "lp_deposit",
+      "sol_flow": -0.414509964,
+      "sol_native": -0.414509964,
+      "sol_wsol": 0.0
+    }
+  ],
+  "lp_withdrawals": [
+    {
+      "sig": "vQMhSMT3qYBtjHhwBQAmDUqWMyDrP6ZUhoNm6bteeo29fXkPbpH76sribZwvNVZMPNYP99xptQKaRmvUqwUqgEq",
+      "ts": 1786305745,
+      "time": "2026-08-09T20:02:25Z",
+      "raw": 4883446593196,
+      "amount": "4883446.593196",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4883446593196
+        }
+      ],
+      "sol_delta": 513.448806216,
+      "action": "lp_withdraw",
+      "sol_flow": 513.448806216,
+      "sol_native": 513.448806216,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "45nWkAjiUbCMVZ99beddraJqpfZebHkbfphhvwfqAmYMwTCZjaaPhiTHeWqPouXhZXz3LkcTnhxW3GNc3sUJEn6Y",
+      "ts": 1786322152,
+      "time": "2026-08-10T00:35:52Z",
+      "raw": 4617363892515,
+      "amount": "4617363.892515",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 4617363892515
+        }
+      ],
+      "sol_delta": 701.332308962,
+      "action": "lp_withdraw",
+      "sol_flow": 701.332308962,
+      "sol_native": 701.332308962,
+      "sol_wsol": 0.0
+    }
+  ],
+  "honesty_summary": "The deployer kept exactly 20,000,000 TOAD at launch. Sold 0.000000 TOAD across 0 sell transactions (0 SOL received). Separately committed 9465676.216191 TOAD to pool liquidity across 17 deposits, paired with 1128.564 SOL of his own -- that TOAD left the wallet but was NOT sold, and 9500810.485711 was later withdrawn back out of liquidity. Bought 3993707.036378 across 335 purchases. Also sent 181963210.657135 out as plain transfers (that figure includes the launch-day hand-off to the campaign wallet). Balance bottomed at 16424146.212778 on 2026-08-09T22:15:14Z and now stands at 23628894.583249."
+}
