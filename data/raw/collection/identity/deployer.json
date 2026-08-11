@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-11T17:23:06Z",
+  "collected_at": "2026-08-11T23:17:03Z",
   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
   "token_account": "8N4AmrpFTmQtMGniZguxgLU4W2f6pJ7KJdCnmJ3kmTZa",
   "creator_onchain": {
@@ -9,13 +9,13 @@
     "verified": true,
     "note": "Read from chain state, independent of the pump.fun API's creator field."
   },
-  "balance_raw": 23628894583249,
-  "balance": "23628894.583249",
+  "balance_raw": 21998710108182,
+  "balance": "21998710.108182",
   "balance_identity": {
     "value": {
-      "inbound": "215057781.456575",
-      "outbound": "191428886.873326",
-      "balance": "23628894.583249",
+      "inbound": "216933053.022546",
+      "outbound": "194934342.914364",
+      "balance": "21998710.108182",
       "residual_raw": 0
     },
     "source": "helius_rpc",
@@ -33,17 +33,17 @@
   "sold": "0.000000",
   "sell_tx_count": 0,
   "sol_received_from_sells": 0,
-  "rebought_raw": 3993707036378,
-  "rebought": "3993707.036378",
-  "buy_tx_count": 335,
-  "sol_spent_on_buys": -622.243585109,
-  "lp_deposited_raw": 9465676216191,
-  "lp_deposited": "9465676.216191",
-  "lp_deposit_tx_count": 17,
-  "sol_deposited_with_lp": -1128.56399552,
-  "lp_withdrawn_raw": 9500810485711,
-  "lp_withdrawn": "9500810.485711",
-  "lp_withdraw_tx_count": 2,
+  "rebought_raw": 4292574140188,
+  "rebought": "4292574.140188",
+  "buy_tx_count": 338,
+  "sol_spent_on_buys": -684.245729738,
+  "lp_deposited_raw": 12971132257229,
+  "lp_deposited": "12971132.257229",
+  "lp_deposit_tx_count": 43,
+  "sol_deposited_with_lp": -1807.358923411,
+  "lp_withdrawn_raw": 11077214947872,
+  "lp_withdrawn": "11077214.947872",
+  "lp_withdraw_tx_count": 3,
   "unclassified_tx_count": 0,
   "never_sold": {
     "value": true,
@@ -98,19 +98,19 @@
   "min_balance_raw": 16424146212778,
   "min_balance": "16424146.212778",
   "min_balance_at": "2026-08-09T22:15:14Z",
-  "reaccumulated_raw": 7204748370471,
-  "reaccumulated": "7204748.370471",
+  "reaccumulated_raw": 5574563895404,
+  "reaccumulated": "5574563.895404",
   "ata_signature_stats": {
-    "signature_count": 7914,
+    "signature_count": 7944,
     "failed_count": 7547,
-    "failed_pct": 95.4,
-    "successful_count": 367,
+    "failed_pct": 95.0,
+    "successful_count": 397,
     "note": "Overwhelmingly failed sniper-bot spam aimed at this account."
   },
   "wallet_signature_stats": {
-    "signature_count": 29685,
-    "failed_count": 21141,
-    "failed_pct": 71.2
+    "signature_count": 30447,
+    "failed_count": 21146,
+    "failed_pct": 69.5
   },
   "sells": [],
   "buys": [
@@ -6171,6 +6171,64 @@
       "sol_flow": -8.002079513,
       "sol_native": -8.002079513,
       "sol_wsol": 0.0
+    },
+    {
+      "sig": "5SQQfWk3wR6MbynrXnSM6gZFFgu9KRooKtMpG8VQAJxeAGCb5qduVYj4rieg3i6Wai6qLAD7fZpR8qXFZ12rprvU",
+      "ts": 1786472777,
+      "time": "2026-08-11T18:26:17Z",
+      "raw": 234022143529,
+      "amount": "234022.143529",
+      "counterparties": [
+        {
+          "owner": "7iyWwX51LwktZoYbwjndBGwX98VYm3pqNRGoZLw1tB3s",
+          "raw": 178386966986
+        },
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 55635176543
+        }
+      ],
+      "sol_delta": -50.000066597,
+      "action": "buy",
+      "sol_flow": -50.000066597,
+      "sol_native": -50.000066597,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2v3zojLenuUCJ9SW9GJte7dsdKNenvMkCH8eo2SewET9vrMr5WYWqWc65LA69p6THUXCvWhmuTvLi9k4uXNSeiBF",
+      "ts": 1786482891,
+      "time": "2026-08-11T21:14:51Z",
+      "raw": 10142406796,
+      "amount": "10142.406796",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 10142406796
+        }
+      ],
+      "sol_delta": -2.000018001,
+      "action": "buy",
+      "sol_flow": -2.000018001,
+      "sol_native": -2.000018001,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5a1fX6cXpsBfjhNHnRqvoy7MQH59bGtNpuEQ7azDL59vhYS7UEHEKdAMWwsUjBKJr3S9nHWkCyxmJCDzqd1eSFDT",
+      "ts": 1786487697,
+      "time": "2026-08-11T22:34:57Z",
+      "raw": 54702553485,
+      "amount": "54702.553485",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 54702553485
+        }
+      ],
+      "sol_delta": -10.002060031,
+      "action": "buy",
+      "sol_flow": -10.002060031,
+      "sol_native": -10.002060031,
+      "sol_wsol": 0.0
     }
   ],
   "lp_deposits": [
@@ -6479,6 +6537,474 @@
       "sol_flow": -0.414509964,
       "sol_native": -0.414509964,
       "sol_wsol": 0.0
+    },
+    {
+      "sig": "2hSiN8pK4nkNDFwebQerhxdRa279oRsJThVTWPSxkb4k8E2vrPVxVxR7isuQk3KYZBamjzbYyhmf1VUFG2Tr3RKq",
+      "ts": 1786476665,
+      "time": "2026-08-11T19:31:05Z",
+      "raw": -516164086932,
+      "amount": "516164.086932",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 516164086932
+        }
+      ],
+      "sol_delta": -100.002739286,
+      "action": "lp_deposit",
+      "sol_flow": -100.002739286,
+      "sol_native": -100.002739286,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "otwmZ2gLegmeLSBS2SQNairff6bbMiTxFgigRiwYrzw6YQysboXZTrpHGZLfRB4gvt1iTbU7uSZmvoTFr7p8wiW",
+      "ts": 1786476681,
+      "time": "2026-08-11T19:31:21Z",
+      "raw": -51639138194,
+      "amount": "51639.138194",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51639138194
+        }
+      ],
+      "sol_delta": -10.000370294,
+      "action": "lp_deposit",
+      "sol_flow": -10.000370294,
+      "sol_native": -10.000370294,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "bVqNkrwAipspdySmQAzU4mKApi39T5tmYYBfpxeQpzhHNRfFc2iJrYoLeBuzCWYWTR6YNkRvUmQ2Ze1y6WXGeAk",
+      "ts": 1786476684,
+      "time": "2026-08-11T19:31:24Z",
+      "raw": -51640092291,
+      "amount": "51640.092291",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51640092291
+        }
+      ],
+      "sol_delta": -10.001458784,
+      "action": "lp_deposit",
+      "sol_flow": -10.001458784,
+      "sol_native": -10.001458784,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5k64FBR29GPGT7U3vMnV46GtAweeFAykzCuTZscMDF28HH1gcjqyZwdZf4cZSV8CLCLL2Y4WriVbb6j5sRvMezuE",
+      "ts": 1786476687,
+      "time": "2026-08-11T19:31:27Z",
+      "raw": -51637749571,
+      "amount": "51637.749571",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51637749571
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5xQucmWZJGHrrWEupVSJuA7bpNVUcgGTvBBfRMsqGosN2y5gJ3c6Cie7WajG9MeLCAcVW8sy17BntPqHbUwRs1rS",
+      "ts": 1786476691,
+      "time": "2026-08-11T19:31:31Z",
+      "raw": -51640923974,
+      "amount": "51640.923974",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51640923974
+        }
+      ],
+      "sol_delta": -10.000387939,
+      "action": "lp_deposit",
+      "sol_flow": -10.000387939,
+      "sol_native": -10.000387939,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3f9t9e95WW2gXDi1jT2mQiNFdiavSAnwgNRVm3Pdsh6xvh2kngrgbqVcXhaPVaC1cMdyUBan2EBD79DKn14Ab5n9",
+      "ts": 1786476693,
+      "time": "2026-08-11T19:31:33Z",
+      "raw": -51649574002,
+      "amount": "51649.574002",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51649574002
+        }
+      ],
+      "sol_delta": -9.997665018,
+      "action": "lp_deposit",
+      "sol_flow": -9.997665018,
+      "sol_native": -9.997665018,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4QkoWs1xnaNMc2aGYL5cP6BaJ2QTjdbyKyJP6zLhEWZgPwcLijaCEthKpQPF4i9xNrVZ2YUmkZCpgg11vdvRpjMV",
+      "ts": 1786476695,
+      "time": "2026-08-11T19:31:35Z",
+      "raw": -51693757912,
+      "amount": "51693.757912",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51693757912
+        }
+      ],
+      "sol_delta": -9.995775397,
+      "action": "lp_deposit",
+      "sol_flow": -9.995775397,
+      "sol_native": -9.995775397,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5XFfaKCRDtgVd1ZSLSs7j71Th6WqfMYkAKqbpM2UDGbyff2EfYSXfRs9nbXMaLW8VB8hdEmiFJuVM54TQcW9wVk3",
+      "ts": 1786476697,
+      "time": "2026-08-11T19:31:37Z",
+      "raw": -52073932079,
+      "amount": "52073.932079",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 52073932079
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4Nawy4v4bfyEokxCS6ETqAzyVhCQFYfoT7tyvgBhgNUct3dvtGRpQRxfGkWnmjdJSQQpLYqQaVok42yAq4suCMQ8",
+      "ts": 1786476699,
+      "time": "2026-08-11T19:31:39Z",
+      "raw": -51914191129,
+      "amount": "51914.191129",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51914191129
+        }
+      ],
+      "sol_delta": -10.018960612,
+      "action": "lp_deposit",
+      "sol_flow": -10.018960612,
+      "sol_native": -10.018960612,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "65B55vunp4ge2AqMSW5XyKwNB4GGz9z3ZrhJ9g5ckWnYYsanJ9GBSEjEhRPnyw5FRQQZCv4bWYHoSsTwLhhQoFDv",
+      "ts": 1786476701,
+      "time": "2026-08-11T19:31:41Z",
+      "raw": -51452776032,
+      "amount": "51452.776032",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51452776032
+        }
+      ],
+      "sol_delta": -10.001128649,
+      "action": "lp_deposit",
+      "sol_flow": -10.001128649,
+      "sol_native": -10.001128649,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "42L44hqevdsTneytWcjCHW4LyMGZfUaTq9vsWBQVzw8QorD1qYNnvcyvY7LjJoqCMBm1fjCYc13waHwgYyBWU82G",
+      "ts": 1786476703,
+      "time": "2026-08-11T19:31:43Z",
+      "raw": -51453924137,
+      "amount": "51453.924137",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 51453924137
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "38CC54k76XQhcXK3rCNMH6SiYbJu5nb2aT863W7TPCX58Yo2CiZhHTEptQo1mS1r1qgCeiM1ZaiJj9DppTXoQXom",
+      "ts": 1786476708,
+      "time": "2026-08-11T19:31:48Z",
+      "raw": -5149221017,
+      "amount": "5149.221017",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 5149221017
+        }
+      ],
+      "sol_delta": -1.001004012,
+      "action": "lp_deposit",
+      "sol_flow": -1.001004012,
+      "sol_native": -1.001004012,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3pWdB1Ex3y38spgV4TP5iDZ9V2tmWt3kjBojtG7KP1MSY4B46ZknDW4rNb55qHbpxCji1gehy5jvHRtQNiatQrgZ",
+      "ts": 1786476713,
+      "time": "2026-08-11T19:31:53Z",
+      "raw": -2677597843,
+      "amount": "2677.597843",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 2677597843
+        }
+      ],
+      "sol_delta": -0.5210051,
+      "action": "lp_deposit",
+      "sol_flow": -0.5210051,
+      "sol_native": -0.5210051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "34a9xjpYD2er4nGWuxA8163c1yJy2KnMRcw5pXB1kBA2wJA6a5aNyMn1ELzz3Pv3MknX1jQWnTgtgjTZrv8wXCZ7",
+      "ts": 1786478617,
+      "time": "2026-08-11T20:03:37Z",
+      "raw": -50405342018,
+      "amount": "50405.342018",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50405342018
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5kP75n64qZ5B4cDVyTdw9PDhzM4yrH9q56HsZ3XtLA7snZebr6Hw8tTyx9hRxxxKKfzMyw4Y4pnAQiRqRR7KJ1iw",
+      "ts": 1786478620,
+      "time": "2026-08-11T20:03:40Z",
+      "raw": -50405286226,
+      "amount": "50405.286226",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50405286226
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2NZDWMH6WszLKT7eQCLx2mN3obJyLREWAvjgeYcivYU4L5mbqA2ofzUEY24RHtY8fgFH7cPvwe4oS74MJhh2SzoZ",
+      "ts": 1786478621,
+      "time": "2026-08-11T20:03:41Z",
+      "raw": -50407977661,
+      "amount": "50407.977661",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50407977661
+        }
+      ],
+      "sol_delta": -10.000469078,
+      "action": "lp_deposit",
+      "sol_flow": -10.000469078,
+      "sol_native": -10.000469078,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "3uWYCfbj9JjoAumr8khpvCCC4xoMgVemkjQJaxo6HC2UnKkNxwmbgVMfBD2vhr9Hih1n1ZDc6b3WempwZe6mzsc6",
+      "ts": 1786478623,
+      "time": "2026-08-11T20:03:43Z",
+      "raw": -50410679781,
+      "amount": "50410.679781",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50410679781
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "Z4id95WMVyx5hAQiZyLGaAu8C9MLGv3HPKB8mzr2NTQpb8FZWBZ4oyuqbyat6ZcfTYtDkBPiJGrkCUYcsNPncGm",
+      "ts": 1786478624,
+      "time": "2026-08-11T20:03:44Z",
+      "raw": -50410679781,
+      "amount": "50410.679781",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50410679781
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5TgkVq3TUgpBv6Yhi7QPKMyBWTvGH5PyUVrqGg7ojnPFnHGDmtEh5VCCChA4bFZ3V4dDgPUdj8ubpdkp9WQApq4M",
+      "ts": 1786478626,
+      "time": "2026-08-11T20:03:46Z",
+      "raw": -50410679781,
+      "amount": "50410.679781",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50410679781
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "5YvxpSkMDKfVp8Fnw5hzeG97wBRoxeaTLB1e3dJdjWECobFLbvbeURqw4zWYG8j2YhMUsrf818HTMvDjmUUDX6QG",
+      "ts": 1786478628,
+      "time": "2026-08-11T20:03:48Z",
+      "raw": -50410679781,
+      "amount": "50410.679781",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50410679781
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "RpjfrvpCP5S9cnTskH8BG2UsjibvZGGZH8JrkS1gyrGs6k4MVuTWgDiqz1NGSPdJAgkwD9MGGKBw1TP63Gj6wjW",
+      "ts": 1786478630,
+      "time": "2026-08-11T20:03:50Z",
+      "raw": -50410679781,
+      "amount": "50410.679781",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50410679781
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "YCC432xsizM34FAhMvekuPTUTiJuuYfAZgQUWCUNfkSX9U78RKcj2AkvsQLzqJut5oveyJ6FWNnf9yiWnFudrtt",
+      "ts": 1786478632,
+      "time": "2026-08-11T20:03:52Z",
+      "raw": -50410020847,
+      "amount": "50410.020847",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 50410020847
+        }
+      ],
+      "sol_delta": -10.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -10.0010051,
+      "sol_native": -10.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "YTj7twMUu9FgecpAGfATxZ1NCTZ6gMLuNf6aXPiQyxSCy4yH1gdX5q9KuwZUBuTnYQeMNXAYv3TsdXpnPVuFYDB",
+      "ts": 1786478635,
+      "time": "2026-08-11T20:03:55Z",
+      "raw": -40328016677,
+      "amount": "40328.016677",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 40328016677
+        }
+      ],
+      "sol_delta": -8.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -8.0010051,
+      "sol_native": -8.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "2pJubhLUza1vLnAkGtmLNLvrLnDq6XDvj5mQLwWAyomYRodb9hHkYN2fjcsMffUXL8vp4QviGbzDviaDWwUkrhrM",
+      "ts": 1786482133,
+      "time": "2026-08-11T21:02:13Z",
+      "raw": -1818175561949,
+      "amount": "1818175.561949",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1818175561949
+        }
+      ],
+      "sol_delta": -350.240055993,
+      "action": "lp_deposit",
+      "sol_flow": -350.240055993,
+      "sol_native": -350.240055993,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "4TCdJjs9rfH4sPMPF71pdJGxxWASEtWiR3gdMjJB57cmDHkezwDw8egmzvHpmEBXkqNXithejhA43LJXiZE7dmQ5",
+      "ts": 1786482799,
+      "time": "2026-08-11T21:13:19Z",
+      "raw": -97450385750,
+      "amount": "97450.385750",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 97450385750
+        }
+      ],
+      "sol_delta": -19.0010051,
+      "action": "lp_deposit",
+      "sol_flow": -19.0010051,
+      "sol_native": -19.0010051,
+      "sol_wsol": 0.0
+    },
+    {
+      "sig": "bDPnof2bK8o9Pk1cLM1RKQco2LDNLgimtZZfAJj9To54QDi7gUihnTRiaKFZ7eV6B31vT9U1JtijGx6BRoRfR2x",
+      "ts": 1786487701,
+      "time": "2026-08-11T22:35:01Z",
+      "raw": -55033085892,
+      "amount": "55033.085892",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 55033085892
+        }
+      ],
+      "sol_delta": -10.000841429,
+      "action": "lp_deposit",
+      "sol_flow": -10.000841429,
+      "sol_native": -10.000841429,
+      "sol_wsol": 0.0
     }
   ],
   "lp_withdrawals": [
@@ -6517,7 +7043,25 @@
       "sol_flow": 701.332308962,
       "sol_native": 701.332308962,
       "sol_wsol": 0.0
+    },
+    {
+      "sig": "tg9Mvt6Nr7UCZeui7S6g9jDXvEe1zYtbK8gW8KSUDquGTigbuLq8C3AVp8AuAnTyhzbDbGugbmdvf53MyjWZTdb",
+      "ts": 1786480997,
+      "time": "2026-08-11T20:43:17Z",
+      "raw": 1576404462161,
+      "amount": "1576404.462161",
+      "counterparties": [
+        {
+          "owner": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
+          "raw": 1576404462161
+        }
+      ],
+      "sol_delta": 292.421318886,
+      "action": "lp_withdraw",
+      "sol_flow": 292.421318886,
+      "sol_native": 292.421318886,
+      "sol_wsol": 0.0
     }
   ],
-  "honesty_summary": "The deployer kept exactly 20,000,000 TOAD at launch. Sold 0.000000 TOAD across 0 sell transactions (0 SOL received). Separately committed 9465676.216191 TOAD to pool liquidity across 17 deposits, paired with 1128.564 SOL of his own -- that TOAD left the wallet but was NOT sold, and 9500810.485711 was later withdrawn back out of liquidity. Bought 3993707.036378 across 335 purchases. Also sent 181963210.657135 out as plain transfers (that figure includes the launch-day hand-off to the campaign wallet). Balance bottomed at 16424146.212778 on 2026-08-09T22:15:14Z and now stands at 23628894.583249."
+  "honesty_summary": "The deployer kept exactly 20,000,000 TOAD at launch. Sold 0.000000 TOAD across 0 sell transactions (0 SOL received). Separately committed 12971132.257229 TOAD to pool liquidity across 43 deposits, paired with 1807.359 SOL of his own -- that TOAD left the wallet but was NOT sold, and 11077214.947872 was later withdrawn back out of liquidity. Bought 4292574.140188 across 338 purchases. Also sent 181963210.657135 out as plain transfers (that figure includes the launch-day hand-off to the campaign wallet). Balance bottomed at 16424146.212778 on 2026-08-09T22:15:14Z and now stands at 21998710.108182."
 }

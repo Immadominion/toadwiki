@@ -1,11 +1,11 @@
 {
-  "collected_at": "2026-08-11T17:24:07Z",
+  "collected_at": "2026-08-11T23:18:21Z",
   "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
   "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
   "decimals": 6,
   "supply_live": {
-    "raw": 960572843750785,
-    "ui": "960572843.750785",
+    "raw": 960572763885785,
+    "ui": "960572763.885785",
     "decimals": 6
   },
   "campaign_owner": "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD",
@@ -85,7 +85,7 @@
     },
     {
       "claim": "Recipient's pump.fun handle matches the replied-to X handle",
-      "verified": true,
+      "verified": false,
       "method": "recipient wallet's pump.fun username compared to the handle the tweet replies to"
     },
     {
@@ -109,23 +109,23 @@
       "method": "no pool transaction classified as Sell, and no non-pool outflow returned SOL to the wallet (which would indicate a sale routed via another venue)"
     }
   ],
-  "verified_count": 17,
+  "verified_count": 16,
   "total_claims": 17,
   "unverified": [
+    "Recipient's pump.fun handle matches the replied-to X handle",
     "timeline: slingoor (deployer) tweets about the launch",
     "timeline: @eltoadpepe X account created"
   ],
   "caveats_the_site_must_render": [
     "pump.fun returns x_username=null and x_id=null for BOTH wallets. The pump.fun username is a self-chosen display name and is NOT by itself proof of X identity. Render this caveat; do not hide it.",
-    "x_api unavailable (HTTP 402: {\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}); impression_count NOT available on this route",
     "slingoor (deployer) tweets about the launch: No tweet id was supplied for this event and tweet SEARCH requires an authorised X API credential (the configured bearer returns 401 on every endpoint). Supply the tweet id to make this row citable, or omit the row.",
     "@eltoadpepe X account created: Account creation date requires GET /2/users/by/username with user.fields=created_at. The configured bearer token returns 401. The keyless syndication profile endpoint returns an empty body. Unverified.",
     "TOAD moving from this wallet to the pool is NOT evidence of selling. A liquidity deposit sends TOAD *and* SOL to the pool and returns LP tokens. Any figure that lumps the two together overstates selling and misrepresents the deployer."
   ],
   "rpc": {
-    "primary_calls": 66,
+    "primary_calls": 126,
     "fallback_calls": 0,
-    "cache_hits": 893,
+    "cache_hits": 940,
     "primary_exhausted": false
   }
 }

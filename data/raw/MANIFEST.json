@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-11T18:04:42Z",
+  "generated_at": "2026-08-11T23:21:33Z",
   "generator": "scripts/build_model.py",
   "purpose": "Stored evidence. Every assertion on the site is reproducible from these captures; sha256 lets a reader prove the file behind a claim has not been edited since the build.",
   "model": {
     "file": "data/model.json",
-    "sha256": "6f5d8abaa956c277f93f206d51b1da7bc99ed33da8744fcf379be1f2296b6302",
-    "bytes": 818494
+    "sha256": "8408c76a28aa9612c889e6f1e57ae6320763fc5e2594a03dd7d0f78bf09cca46",
+    "bytes": 922088
   },
   "rpc_endpoints": [
     "helius-rpc.com (keyed endpoint, subdomain redacted)"
@@ -15,73 +15,73 @@
       "file": "data/raw/collection/identity/authorities.json",
       "source": "data/collection/identity/authorities.json",
       "bytes": 2850,
-      "sha256": "9d1b9e750e03f3f64d9fc35f1c2c6b47376cd790d09c9210540fcd6d4f9c68f1"
+      "sha256": "90f2d7e029cc9d30129dfd4181873aa1e3e0d981d182c43cdbf3077d638f7b80"
     },
     {
       "file": "data/raw/collection/identity/campaign_invariant.json",
       "source": "data/collection/identity/campaign_invariant.json",
-      "bytes": 93632,
-      "sha256": "4cbb597df6a03c9c4091de6ff2cfc73204059862e36b3a7cefd28afc428f6423"
+      "bytes": 117239,
+      "sha256": "ea862f48c04466ebcf68a07cd6f21534562479ab7a48f7547f8af69545400ff5"
     },
     {
       "file": "data/raw/collection/identity/copycats.json",
       "source": "data/collection/identity/copycats.json",
-      "bytes": 31127,
-      "sha256": "47f4eebb20ae0f2b56395237fcdad0f3df1dfed42dfd597962e91ce1f5353170"
+      "bytes": 28782,
+      "sha256": "1994cc5ca2eb5f573072a596896998abc917fbd101f404f31377d54e28a89372"
     },
     {
       "file": "data/raw/collection/identity/deployer.json",
       "source": "data/collection/identity/deployer.json",
-      "bytes": 193070,
-      "sha256": "5199f7bfbddce4de94ad366367b4e988a500178764e6e85a949b0e9618ac12a5"
+      "bytes": 209368,
+      "sha256": "67835cb8476e7d381a21298cc09dc7935fb579ad61d118014bcd0e70f5d0cd46"
     },
     {
       "file": "data/raw/collection/identity/index.json",
       "source": "data/collection/identity/index.json",
-      "bytes": 5587,
-      "sha256": "96b018232494b821b86f9c3ebb4121681207ca512070d06f24f772b509af6739"
+      "bytes": 5434,
+      "sha256": "2000a76cec1339fdd3f8347f6bae7467cc7e079d0a613a0fa52e4e2c7c709591"
     },
     {
       "file": "data/raw/collection/identity/launch_timeline.json",
       "source": "data/collection/identity/launch_timeline.json",
       "bytes": 7575,
-      "sha256": "5d5b5ceaf9b3d9274bf7f7908ee0777a01c657e80a1a04899fbc4e7db4504055"
+      "sha256": "e984abe08932d0c71b9d4d46cdc9ff4c86d0f74f2879aff490416c5c299d6dc7"
     },
     {
       "file": "data/raw/collection/identity/metadata.json",
       "source": "data/collection/identity/metadata.json",
       "bytes": 8686,
-      "sha256": "4ecd0248d22d010022d1f2123acdeb1e28e404f8102dbcbf733779242dc11537"
+      "sha256": "53fe0647c5c16336eb2c05e11ccba34703ceb54933f66880994680707a9468e6"
     },
     {
       "file": "data/raw/collection/identity/pumpfun.json",
       "source": "data/collection/identity/pumpfun.json",
-      "bytes": 8420,
-      "sha256": "0e49a30eae97ee7a30123e901827f06f9c3ebcee33f4133dc8912e9d7495e350"
+      "bytes": 8422,
+      "sha256": "cc5e59de536a8652439a332533e000de426be2699d9003f540ef4276b8a307c2"
     },
     {
       "file": "data/raw/collection/identity/wallet_proof.json",
       "source": "data/collection/identity/wallet_proof.json",
-      "bytes": 4672,
-      "sha256": "4fb08f3cd511712a120064537e34143dd962a45463bbc96464710e89f02facf8"
+      "bytes": 4353,
+      "sha256": "c08ac16104ef91fea334a45daa116fb5adb6516b462bc9b9d6f0782593c9aa8e"
     },
     {
       "file": "data/raw/collection/market/ohlcv_minute.json",
       "source": "data/collection/market/ohlcv_minute.json",
-      "bytes": 759991,
-      "sha256": "ff81eef62d7477da3f4ecd26b0e553f114e32b629373cf7fae87d304bd650f7c"
+      "bytes": 818404,
+      "sha256": "3df669c9b3b54dae30867d86abece6d493335aaa5438fe67c891b04156c06e14"
     },
     {
       "file": "data/raw/collection/onchain/holders.json",
       "source": "data/collection/onchain/holders.json",
-      "bytes": 2994966,
-      "sha256": "ee6a308c49d4089341ff270f831ed9719f33d2bcba209bc2b267367f835a2316"
+      "bytes": 2990074,
+      "sha256": "a5e2a0089c4ef7176bf15a7acf6a4555c2a592b51f98a0e7af9b1dc6f8252aab"
     },
     {
       "file": "data/raw/collection/onchain/transfers.json",
       "source": "data/collection/onchain/transfers.json",
-      "bytes": 323833,
-      "sha256": "95755166e4b065baf8d21c6c8c9bb426be136512311693f64a0b6bf2dc637dd3"
+      "bytes": 403579,
+      "sha256": "97cf9c28ddf7d8800e3c0126b04f3c8d90600185c0b56fb6f2a80274e31c0b39"
     },
     {
       "file": "data/raw/collection/social/_manifest.json",
@@ -123,13 +123,13 @@
       "file": "data/raw/build/chain_getAccountInfo_campaign_ata.json",
       "source": "live JSON-RPC at build time",
       "bytes": 926,
-      "sha256": "af61ea0084750b51430ee8cda46a09bf0a6b83691192c291fb611251efb3092b"
+      "sha256": "356a666b14e25fed5274613aeefbe8c9ddd0bfd452d33f6d84c92951d68c1e8f"
     },
     {
       "file": "data/raw/build/chain_getTokenSupply_mint.json",
       "source": "live JSON-RPC at build time",
       "bytes": 222,
-      "sha256": "837e6051a96f60d948e5ad8545ce69715f36fc40944e706c965fdf68cefd411f"
+      "sha256": "bf160f63931544b4bf1dfb03cce167ee156a927f2322da2328521aa394c80ce4"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-11T17:22:41Z",
+  "collected_at": "2026-08-11T23:16:23Z",
   "wallets": {
     "FuP8dYQytaThMh9Fg2XNd1Z1eNHxMHW92kVUfWf3TnmD": {
       "role": "campaign_wallet",
@@ -11,13 +11,13 @@
         "profile_image": "https://ipfs.io/ipfs/bafkreiakgnjgmfxm57zwxfr2nqu2vuqyzbs4puu5h7iypgjahdrdiggjti",
         "last_username_update_timestamp": 1785696400783,
         "following": 43,
-        "followers": 11877,
+        "followers": 12244,
         "bio": "venture capital enthusiast",
         "x_username": null,
         "x_id": null
       },
       "username": "mdudas",
-      "followers": 11877,
+      "followers": 12244,
       "bio": "venture capital enthusiast",
       "profile_image": "https://ipfs.io/ipfs/bafkreiakgnjgmfxm57zwxfr2nqu2vuqyzbs4puu5h7iypgjahdrdiggjti",
       "x_username": {
@@ -45,13 +45,13 @@
         "profile_image": "https://ipfs.io/ipfs/bafybeieahlzeonacqyswfna7rxoonqoeloxuptgf3k6nykhlpofenici5y",
         "last_username_update_timestamp": 1782397039827,
         "following": 8,
-        "followers": 38700,
+        "followers": 39237,
         "bio": "🫵😂 // tune into streams on X or Kick ",
         "x_username": null,
         "x_id": null
       },
       "username": "slingoor",
-      "followers": 38700,
+      "followers": 39237,
       "bio": "🫵😂 // tune into streams on X or Kick ",
       "profile_image": "https://ipfs.io/ipfs/bafybeieahlzeonacqyswfna7rxoonqoeloxuptgf3k6nykhlpofenici5y",
       "x_username": {
@@ -80,7 +80,7 @@
         "profile_image": "https://ipfs.io/ipfs/bafkreiakgnjgmfxm57zwxfr2nqu2vuqyzbs4puu5h7iypgjahdrdiggjti",
         "last_username_update_timestamp": 1785696400783,
         "following": 43,
-        "followers": 11878,
+        "followers": 12244,
         "bio": "venture capital enthusiast",
         "x_username": null,
         "x_id": null
@@ -97,7 +97,7 @@
         "profile_image": "https://ipfs.io/ipfs/bafybeieahlzeonacqyswfna7rxoonqoeloxuptgf3k6nykhlpofenici5y",
         "last_username_update_timestamp": 1782397039827,
         "following": 8,
-        "followers": 38700,
+        "followers": 39237,
         "bio": "🫵😂 // tune into streams on X or Kick ",
         "x_username": null,
         "x_id": null
@@ -126,15 +126,15 @@
       "total_supply": 1000000000000000,
       "website": "https://elreinoinfantil.fandom.com/wiki/El_Sapo_Pepe",
       "show_name": true,
-      "last_trade_timestamp": 1786468959000,
-      "market_cap": 216264.6234766235,
+      "last_trade_timestamp": 1786490179000,
+      "market_cap": 191259.00168402723,
       "nsfw": false,
       "inverted": true,
       "is_banned": false,
       "pump_swap_pool": "Nx9dcwNs3iJxM5YAxshMHE4aYJHdDyyGMhVcmaSgfu8",
       "real_sol_reserves": 0,
       "real_token_reserves": 0,
-      "updated_at": 1786468962,
+      "updated_at": 1786490181,
       "livestream_ban_expiry": 0,
       "reply_count": 0,
       "is_currently_live": false,
@@ -152,13 +152,13 @@
       "multichain_family": 1,
       "protocol": "pump",
       "total_supply_str": "1000000000000000",
-      "market_cap_usd": 16206870.883338165,
+      "market_cap_usd": 14600057.126477873,
       "virtual_quote_reserves": 114544338344,
       "real_quote_reserves": 0,
-      "market_cap_quote": 216264.6234766235,
+      "market_cap_quote": 191259.00168402723,
       "boost_mode": "COMPLETED",
       "verified": false,
-      "usd_market_cap": 16209276.376749936
+      "usd_market_cap": 14566317.475388348
     },
     "creator": {
       "value": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",

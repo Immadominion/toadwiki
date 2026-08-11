@@ -43,6 +43,11 @@ DESIGN.md
 NOTES.md
 notes/
 
+# regenerated locally by `next dev` on every run; nothing here belongs in a
+# public repo about a token.
+AGENTS.md
+CLAUDE.md
+
 # os / editor
 .DS_Store
 Thumbs.db

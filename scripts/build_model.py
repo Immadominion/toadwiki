@@ -1012,7 +1012,7 @@ def main() -> None:
         "sell_detection_method": transfers_doc["classification"]["method"],
         "sell_detection_note": (
             "0 of the campaign wallet's outbound transfers went to a pool token account or "
-            "invoked a DEX program at any CPI depth. All 148 destination owners are on the "
+            f"invoked a DEX program at any CPI depth. All {len(recipients_out)} destination owners are on the "
             "ed25519 curve, and every Solana pool authority is a PDA -- which is by "
             "construction OFF the curve -- so none of them can be a liquidity pool."
         ),
@@ -1398,12 +1398,21 @@ def main() -> None:
     if stale:
         caveats.insert(0, "STALE: new on-chain activity has landed since this ledger was collected. Re-run the collectors.")
 
+    # Reads on the page, not in a debugger. The old template appended the literal
+    # field path "provenance.completeness.not_collected", which shipped an internal
+    # JSON key to the front page as though it were a sentence.
+    # Only recipients whose balance actually moved need tracing; the hardcoded 148
+    # here survived a data refresh that took the recipient set to a different size.
+    _moved = sum(
+        status_counts.get(k, 0) for k in ("partial", "zero_balance", "account_closed")
+    )
     open_questions = [
-        f"{u} -- unverified: see provenance.completeness.not_collected."
+        f"{u.split(': ', 1)[-1].strip().rstrip('.')} — we could not collect a source we trust, "
+        f"so it stays unverified rather than being stated."
         for u in ident_index.get("unverified", [])
         if not (launch_tweet is not None and "slingoor" in u and "launch" in u)
     ] + [
-        "Which recipients sold, versus moved tokens between their own wallets? Requires tracing each of the 148 recipients' outbound transactions.",
+        f"Which recipients sold, versus moved tokens between their own wallets? Requires tracing the outbound transactions of the {_moved} recipients whose balance has fallen below what they received.",
         "Is the CTO multi-sig live, and who are the signers?",
         "Can any wallet other than the wallet-proof recipient be bound to an X handle by a signature or a timing exhibit?",
     ]
@@ -1614,7 +1623,9 @@ def main() -> None:
             shutil.copy2(p, d)
             mirrored.append({
                 "file": str((dest_root / rel).relative_to(ROOT)),
-                "source": str(p.relative_to(ROOT)),
+                # p inherits --src, which may be relative ("./data/collection");
+                # relative_to(ROOT) then raises because it is not an absolute path.
+                "source": str(p.resolve().relative_to(ROOT)),
                 "bytes": d.stat().st_size,
                 "sha256": sha256_file(d),
             })

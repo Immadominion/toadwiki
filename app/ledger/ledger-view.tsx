@@ -67,24 +67,13 @@ export function LedgerView({ recipients, stats, airdropWallet }: Props) {
 
   return (
     <>
-      <div className="stat-band" style={{ marginBottom: "var(--s6)", marginTop: 0 }}>
-        <div className="stat-pill">
-          <div className="label">Recipients</div>
-          <div className="val mono">{fmtInt(stats.recipients)}</div>
-        </div>
-        <div className="stat-pill">
-          <div className="label">Transfers</div>
-          <div className="val mono">{fmtInt(stats.transfers)}</div>
-        </div>
-        <div className="stat-pill">
-          <div className="label">Total $TOAD</div>
-          <div className="val mono">{fmtAmt(stats.total_amount)}</div>
-        </div>
-        <div className="stat-pill">
-          <div className="label">USD at drop</div>
-          <div className="val mono">{fmtUsd(stats.total_usd_at_drop)}</div>
-        </div>
-      </div>
+      {/* The same four capsules the overview lost. Stacked one-per-row on a
+          phone they cost four screens of scrolling to deliver four numbers. */}
+      <p className="figures figures-dark">
+        <b>{fmtInt(stats.transfers)}</b> drops to <b>{fmtInt(stats.recipients)}</b> wallets ·{" "}
+        <b>{fmtAmt(stats.total_amount)}</b> $TOAD · worth{" "}
+        <b>{fmtUsd(stats.total_usd_at_drop)}</b> the minute they landed
+      </p>
 
       <div className="ledger-toolbar">
         <input

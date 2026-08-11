@@ -209,6 +209,11 @@ export default function Overview() {
 
           <div className="burn">
             <h3>Distribution is decelerating</h3>
+            {/* The wrapper is not decoration: .burn-table carries min-width:560px,
+                and without a scroll container it widened the whole document to
+                600px on a 390px phone — which makes mobile Safari zoom the entire
+                page out, shrinking every other element on the site. */}
+            <div className="table-wrap">
             <table className="table burn-table">
               <thead>
                 <tr>
@@ -236,6 +241,7 @@ export default function Overview() {
                 })}
               </tbody>
             </table>
+            </div>
             <p className="note">
               Drops per day rose while tokens per day halved. <strong>Tokens</strong> is the
               honest metric — counting transfers tells the opposite story.
@@ -326,21 +332,26 @@ export default function Overview() {
           </div>
           <ol className="tick-tock">
             {onchainTimeline.map((t, i) => (
+              /* When and what-kind both belong to the gutter. Keeping the kind
+                 badge on its own row under the event cost ~33px on every one of
+                 the eleven rows and bought nothing — the gutter had the space. */
               <li key={i} className={`tt-${t.kind}`}>
-                <div className="tt-when mono">{t.date}</div>
+                <div className="tt-when">
+                  <span className="mono">{t.date}</span>
+                  <span className={`badge badge-${t.kind === "onchain" ? "hold" : t.kind === "attested" ? "partial" : "closed"}`}>
+                    {t.kind}
+                  </span>
+                </div>
                 <div className="tt-what">
                   <p>{t.event}</p>
-                  <div className="tt-meta">
-                    <span className={`badge badge-${t.kind === "onchain" ? "hold" : t.kind === "attested" ? "partial" : "closed"}`}>
-                      {t.kind}
-                    </span>
-                    {t.source && (
+                  {t.caveat && <p className="tt-caveat">{t.caveat}</p>}
+                  {t.source && (
+                    <div className="tt-meta">
                       <a href={t.source} target="_blank" rel="noopener noreferrer" className="mono">
                         source ↗
                       </a>
-                    )}
-                  </div>
-                  {t.caveat && <p className="tt-caveat">{t.caveat}</p>}
+                    </div>
+                  )}
                 </div>
               </li>
             ))}

@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-11T17:22:58Z",
+  "collected_at": "2026-08-11T23:16:59Z",
   "steps": [],
   "errors": [],
   "transfer": {
@@ -45,8 +45,7 @@
     "verified": true,
     "note": "Exactly ONE signature ever, and it is the transfer tx. The account was created in that transaction, so its balance cannot have come from anywhere else. This is what makes the screenshot uncounterfeitable."
   },
-  "tweet_route": "syndication_keyless",
-  "tweet_note": "x_api unavailable (HTTP 402: {\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}); impression_count NOT available on this route",
+  "tweet_route": "x_api_v2",
   "tweet": {
     "value": {
       "id": "2086882992010440789",
@@ -55,11 +54,15 @@
       "author_handle": "mdudas",
       "author_name": "Mike Dudas",
       "author_id": "7184612",
-      "author_verified": true,
-      "in_reply_to_screen_name": "lbexplorer",
-      "in_reply_to_status_id": "2086859983287910701",
-      "favorite_count": 100,
-      "impression_count": null,
+      "public_metrics": {
+        "bookmark_count": 2,
+        "impression_count": 27967,
+        "like_count": 100,
+        "quote_count": 5,
+        "reply_count": 53,
+        "retweet_count": 6
+      },
+      "impression_count": 27967,
       "media": [
         {
           "type": "photo",
@@ -68,10 +71,9 @@
       ],
       "url": "https://x.com/mdudas/status/2086882992010440789"
     },
-    "source": "syndication_keyless",
+    "source": "x_api_v2",
     "method": "tweet lookup by id",
-    "verified": true,
-    "note": "Keyless route: impression_count is NOT available. Do not display an impressions figure."
+    "verified": true
   },
   "gap_seconds": {
     "value": 63,
@@ -92,17 +94,17 @@
         "profile_image": "https://ipfs.io/ipfs/bafkreid5cv4h7nzh5lgi5dxmom4lsamyjxpkotp3arakalne7exmdzsdcu",
         "last_username_update_timestamp": 1786377953244,
         "following": 0,
-        "followers": 253,
+        "followers": 258,
         "bio": "Running a pump position up to 8 figs",
         "x_username": null,
         "x_id": null
       },
-      "tweet_in_reply_to_screen_name": "lbexplorer",
-      "handles_match": true
+      "tweet_in_reply_to_screen_name": null,
+      "handles_match": false
     },
     "source": "pumpfun_api + x",
     "method": "recipient wallet's pump.fun username compared to the handle the tweet replies to",
-    "verified": true,
+    "verified": false,
     "note": "Two independent sources name the same person for the receiving wallet."
   },
   "exhibit_complete": true,
