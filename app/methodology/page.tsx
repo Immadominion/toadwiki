@@ -24,8 +24,16 @@ export default function MethodologyPage() {
       </section>
 
       <div className="page-body">
+        <div className="wrap">
+          <ul className="glance">
+            <li><b>Where the numbers come from</b><span>Solana mainnet + free minute candles. No paid source is required to reproduce any on-chain figure.</span></li>
+            <li><b>What makes them trustworthy</b><span>Inbound − outbound must equal the live balance to the base unit. A non-zero residual fails the build.</span></li>
+            <li><b>What we price at</b><span>The minute a transfer landed — never today. The window spans a 2.83&times; price swing.</span></li>
+            <li><b>What we refuse to guess</b><span>Unknown renders as <code>&mdash;</code>. &ldquo;Sold&rdquo; needs a pool or DEX in the transaction.</span></li>
+          </ul>
+        </div>
         <div className="wrap prose">
-          <h2>1. Transfers</h2>
+          <h2>Transfers</h2>
           <p>
             We paginate the signature history of the campaign wallet&rsquo;s{" "}
             <strong>associated token account</strong>{" "}
@@ -67,7 +75,7 @@ export default function MethodologyPage() {
             this yourself.
           </p>
 
-          <h2>2. The invariant</h2>
+          <h2>The invariant</h2>
           <p>
             The build fails if this does not hold to the exact base unit &mdash; not
             &ldquo;close&rdquo;, but a residual of zero:
@@ -83,7 +91,7 @@ export default function MethodologyPage() {
             double-counted.
           </p>
 
-          <h2>3. USD at drop</h2>
+          <h2>USD at drop</h2>
           <p>
             We value each transfer at the price of the <strong>minute it landed</strong>, not
             at today&rsquo;s price. Candles come from the PumpSwap pool{" "}
@@ -111,7 +119,7 @@ export default function MethodologyPage() {
             (&ldquo;~$281,000&rdquo;), never false precision (&ldquo;$281,311&rdquo;).
           </p>
 
-          <h2>4. Held, reduced, and sold</h2>
+          <h2>Held, reduced, and sold</h2>
           <p>
             We compare each recipient&rsquo;s current balance against what they received. The
             distinction between these states is deliberate:
@@ -139,7 +147,7 @@ export default function MethodologyPage() {
             That was wrong and it has been removed.
           </p>
 
-          <h2>5. Whose wallet is it?</h2>
+          <h2>Whose wallet is it?</h2>
           <p>
             The campaign wallet is <strong>attributed</strong> to @mdudas at high confidence.
             It is not self-disclosed &mdash; he has never posted the address, and we will not
@@ -154,7 +162,7 @@ export default function MethodologyPage() {
             render that null rather than hiding it.
           </p>
 
-          <h2>6. What this site cannot know</h2>
+          <h2>What this site cannot know</h2>
           <ul>
             <li>
               Whether the person behind the wallet has sold elsewhere. Every claim here is
@@ -174,7 +182,7 @@ export default function MethodologyPage() {
             </li>
           </ul>
 
-          <h2>7. Freshness</h2>
+          <h2>Freshness</h2>
           <p>
             The campaign is live and every number moves. Each figure carries an
             as-of timestamp, and the footer stamps three separate capture times &mdash; chain,
@@ -182,7 +190,7 @@ export default function MethodologyPage() {
             different rates. Treat every number as a snapshot, never a standing fact.
           </p>
 
-          <h2>8. Reproduce it</h2>
+          <h2>Reproduce it</h2>
           <p>
             The collectors live in <code>scripts/collect/</code> and write their raw captures
             to <code>data/raw/</code> before anything is derived. The mint is{" "}

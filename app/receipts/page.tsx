@@ -1,6 +1,6 @@
 import { loadModel } from "@/lib/model";
-import { fmtInt } from "@/lib/format";
 import { ConversationBoardView } from "@/components/conversation-board";
+import { TweetCard } from "@/components/tweet-card";
 
 export const dynamic = "force-static";
 
@@ -28,27 +28,24 @@ export default function ReceiptsPage() {
             <div className="kicker">Key moments</div>
             <h2>The story in posts</h2>
           </div>
-          <div className="tweet-grid">
+          <div className="tweet-wall">
             {model.tweets.map((t) => (
-              <a
+              <TweetCard
                 key={t.id}
-                href={t.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="tweet-card"
-              >
-                <div className="meta">
-                  <span className="who">
-                    {t.author.name} · @{t.author.handle}
-                  </span>
-                  <span className="when mono">{t.date.slice(0, 10)}</span>
-                </div>
-                <div className="body">{t.text}</div>
-                <div className="eng">
-                  <span>♥ {fmtInt(t.likes)}</span>
-                  <span>💬 {fmtInt(t.replies)}</span>
-                </div>
-              </a>
+                id={t.id}
+                url={t.url}
+                author={t.author}
+                date={t.date}
+                text={t.text}
+                label={(t as unknown as { label?: string }).label ?? null}
+                likes={t.likes}
+                replies={t.replies}
+                rts={(t as unknown as { retweets?: number }).retweets ?? null}
+                views={(t as unknown as { views?: number }).views ?? null}
+                capturedAt={(t as unknown as { metrics_captured_at?: string }).metrics_captured_at ?? null}
+                photo={t.photo}
+                highlight={t.id === "2086595256208748852" || t.id === "2086882992010440789"}
+              />
             ))}
           </div>
 

@@ -57,24 +57,15 @@ export default function Overview() {
                 Open the ledger
               </Link>
             </div>
-            <div className="stat-band rise rise-1">
-              <div className="stat-pill">
-                <div className="label">Transfers</div>
-                <div className="val mono">{fmtInt(s.transfers)}</div>
-              </div>
-              <div className="stat-pill">
-                <div className="label">Recipients</div>
-                <div className="val mono">{fmtInt(s.recipients)}</div>
-              </div>
-              <div className="stat-pill">
-                <div className="label">Distributed</div>
-                <div className="val mono">{fmtAmt(s.total_amount)}</div>
-              </div>
-              <div className="stat-pill">
-                <div className="label">USD at drop</div>
-                <div className="val mono">{fmtUsd(s.total_usd_at_drop)}</div>
-              </div>
-            </div>
+
+            {/* Figures as typography, not tiles. Four capsules in a row is the
+                single most recognisable AI-dashboard pattern, and it turns four
+                real numbers into decoration. */}
+            <p className="figures rise rise-1">
+              <b>{fmtInt(s.transfers)}</b> drops to <b>{fmtInt(s.recipients)}</b> wallets ·{" "}
+              <b>{fmtAmt(s.total_amount)}</b> $TOAD · worth{" "}
+              <b>{fmtUsd(s.total_usd_at_drop)}</b> the minute they landed
+            </p>
           </div>
           <div className="hero-mascot rise rise-2">
             <div className="mascot-glow" aria-hidden />
@@ -161,8 +152,8 @@ export default function Overview() {
           </div>
 
           <p className="note">
-            This is a statement about <strong>a wallet</strong>, not about a person. It does
-            not and cannot show whether anyone sold tokens held somewhere else.
+            A statement about <strong>a wallet</strong> — not a person. It cannot see tokens
+            held anywhere else.
           </p>
         </div>
       </section>
@@ -246,9 +237,8 @@ export default function Overview() {
               </tbody>
             </table>
             <p className="note">
-              Transfer count rose while token volume fell by more than half. Drop sizes are
-              being scaled down as the price climbs, so <strong>tokens per day</strong> is the
-              honest metric here — transfers per day tells the opposite story.
+              Drops per day rose while tokens per day halved. <strong>Tokens</strong> is the
+              honest metric — counting transfers tells the opposite story.
             </p>
           </div>
         </div>
@@ -266,9 +256,8 @@ export default function Overview() {
             <div className="evidence-claim">
               <p className="lede-dark">{proof.claim}</p>
               <p className="warn">
-                <strong>Neither party has ever posted this address.</strong> The
-                identification below is inference from public evidence, not a disclosure. We
-                label it that way everywhere on this site.
+                <strong>Nobody ever posted this address.</strong> What follows is inference
+                from public evidence — not a disclosure.
               </p>
             </div>
 
@@ -395,9 +384,8 @@ export default function Overview() {
                 platform he is invested in.
               </p>
               <p className="note">
-                Every element of that is verifiable and none of it is alleged wrongdoing. It is
-                the strongest honest critique of this campaign and a ledger that omits it is a
-                fan page.
+                All verifiable, none of it alleged wrongdoing. A ledger that omits it is a fan
+                page.
               </p>
             </div>
             <div className="crit">
@@ -408,11 +396,9 @@ export default function Overview() {
                 minutes later sent 180,963,210.66 of it onward and kept exactly 20,000,000.
               </p>
               <p className="note">
-                For the record, and against the usual assumption: that wallet has{" "}
-                <strong>{dep.sells ?? 0} sells</strong> and {fmtInt(dep.buys)} buys. Tokens it
-                sent to the pool were liquidity deposits ({fmtInt(dep.lp_deposits)} of them),
-                not sales — an LP deposit sends $TOAD <em>and</em> SOL and returns LP tokens.
-                Counting those as selling would misrepresent it.
+                Against the usual assumption: <strong>{dep.sells ?? 0} sells</strong>,{" "}
+                {fmtInt(dep.buys)} buys. Its pool transfers were liquidity deposits
+                ({fmtInt(dep.lp_deposits)}), not sales.
               </p>
             </div>
           </div>
@@ -469,10 +455,8 @@ export default function Overview() {
           )}
 
           <p className="note">
-            <strong>There is no claim portal for $TOAD.</strong> This site will never ask you to
-            connect a wallet, and neither should anything calling itself a $TOAD airdrop. Match
-            the contract address, every time.
-            {model.copycats_caveat ? ` ${model.copycats_caveat}` : ""}
+            <strong>There is no claim portal for $TOAD.</strong> Nothing calling itself one is
+            real. Match the contract address, every time.
           </p>
         </div>
       </section>
