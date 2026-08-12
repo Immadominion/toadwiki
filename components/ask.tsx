@@ -36,9 +36,31 @@ export function Ask({ variant }: { variant: "hero" | "dock" }) {
   const [state, setState] = useState<State>({ k: "idle" });
   const [sig, setSig] = useState("");
   const [open, setOpen] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const answerRef = useRef<HTMLDivElement>(null);
   const lastQuestion = useRef("");
+
+  /**
+   * Grow to fit, up to three lines, then scroll. A single-line input pushed the
+   * start of a long question off to the left where the writer could not see it,
+   * which is a bad way to treat the one thing this page asks people to do.
+   * Height is measured from scrollHeight rather than counting characters, so it
+   * is correct at any width and any font size.
+   */
+  const fit = useCallback((el: HTMLTextAreaElement | null) => {
+    if (!el) return;
+    el.style.height = "auto";
+    const cs = getComputedStyle(el);
+    // scrollHeight is content + padding, but box-sizing is border-box, so
+    // assigning it directly loses the border and leaves every multi-line
+    // message overflowing by exactly 4px with its last line clipped.
+    const border = (parseFloat(cs.borderTopWidth) || 0) + (parseFloat(cs.borderBottomWidth) || 0);
+    const max = parseFloat(cs.maxHeight);
+    const want = el.scrollHeight + border;
+    el.style.height = `${Number.isFinite(max) ? Math.min(want, max) : want}px`;
+  }, []);
+
+  useEffect(() => { fit(inputRef.current); }, [q, fit]);
 
   const send = useCallback(async (question: string, txSig?: string) => {
     if (!question.trim()) return;
@@ -89,19 +111,70 @@ export function Ask({ variant }: { variant: "hero" | "dock" }) {
     send(q);
   };
 
+  const fillHint = () => {
+    setQ(HINT);
+    requestAnimationFrame(() => {
+      const el = inputRef.current;
+      if (!el) return;
+      el.focus();
+      el.setSelectionRange(HINT.length, HINT.length);
+    });
+  };
+
+  /**
+   * Tab completes the example, the way a shell completes a path. It only fires
+   * on an EMPTY field, so the moment there is anything to keep, Tab goes back to
+   * being Tab and moves focus to the Ask button. Shift+Tab is never intercepted,
+   * so a keyboard user is never trapped. Space does the same on an empty field,
+   * which is the reachable gesture on a phone keyboard that has no Tab key.
+   */
+  const onKey = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    const empty = q.length === 0;
+    if (empty && !e.shiftKey && (e.key === "Tab" || e.key === " ")) {
+      e.preventDefault();
+      fillHint();
+      return;
+    }
+    // Enter sends, Shift+Enter makes a new line. Standard everywhere people type
+    // a message, and the reason the field can afford to be multi-line at all.
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      send(q);
+    }
+  };
+
   const form = (
     <form className="ask-form" onSubmit={submit}>
-      <input
-        ref={inputRef}
-        className="ask-input"
-        type="text"
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder={HINT}
-        aria-label="Ask anything about $TOAD"
-        maxLength={400}
-        disabled={state.k === "loading"}
-      />
+      <div className="ask-field">
+        <textarea
+          ref={inputRef}
+          className="ask-q"
+          rows={1}
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          onKeyDown={onKey}
+          placeholder={HINT}
+          aria-label="Ask anything about $TOAD"
+          aria-describedby={`ask-hint-${variant}`}
+          maxLength={400}
+          disabled={state.k === "loading"}
+          spellCheck
+        />
+        {q.length === 0 && state.k !== "loading" && (
+          <button
+            type="button"
+            className="ask-fill"
+            onClick={fillHint}
+            /* Out of the tab order on purpose: Tab is what fills the field, so
+               Tab must never land here. Pointer and touch still reach it. */
+            tabIndex={-1}
+            aria-label={`Use the example question: ${HINT}`}
+          >
+            <span className="k-fine">tab</span>
+            <span className="k-touch">tap</span>
+          </button>
+        )}
+      </div>
       {/* Disabled only while a request is in flight. Greying it out for an empty
           field made the primary action of the whole page look broken on arrival;
           submit already no-ops on empty. */}
@@ -115,8 +188,16 @@ export function Ask({ variant }: { variant: "hero" | "dock" }) {
     <>
       {form}
 
+      {/* A shortcut nobody is told about is not a shortcut. The badge shows the
+          key; this says what it does, and says the true thing on each device. */}
       {state.k === "idle" && (
-        <p className="ask-hint">It answers from the verified ledger, or says it doesn&rsquo;t know.</p>
+        <p className="ask-hint" id={`ask-hint-${variant}`}>
+          <span className="k-fine">
+            Press <kbd>Tab</kbd> to use the example, or just type.
+          </span>
+          <span className="k-touch">Tap the hint to use it, or just type.</span>{" "}
+          It answers from the verified ledger, or says it doesn&rsquo;t know.
+        </p>
       )}
 
       {state.k === "loading" && <p className="ask-status" role="status">Reading the ledger…</p>}
