@@ -3,6 +3,7 @@ import { Nunito, JetBrains_Mono, Press_Start_2P } from "next/font/google";
 import { LiveProvider } from "@/components/live";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { AskMount } from "@/components/ask-mount";
 import { loadModel } from "@/lib/model";
 import "./globals.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
           <main>{children}</main>
           <Footer model={model} />
+          <AskMount />
         </LiveProvider>
       </body>
     </html>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { loadModel } from "@/lib/model";
 import { fmtAmt, fmtInt, fmtPct, fmtTs, fmtUsd, short } from "@/lib/format";
 import { MINT, solscanAccount, solscanTx } from "@/lib/constants";
+import { Ask } from "@/components/ask";
 
 export const dynamic = "force-static";
 
@@ -52,9 +53,16 @@ export default function Overview() {
               {fmtAmt(rec.held)} $TOAD is giving it away, and every base unit of it is
               accounted for on this page.
             </p>
+            {/* The front door. The ledger button stays, one step behind it —
+                people who already know what they want still get one click. */}
+            <Ask variant="hero" />
+
             <div className="hero-cta">
               <Link href="/ledger/" className="btn btn-cta">
                 Open the ledger
+              </Link>
+              <Link href="/support/" className="btn btn-ghost">
+                Support this
               </Link>
             </div>
 

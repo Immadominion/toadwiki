@@ -141,6 +141,15 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .btn-cta:hover { box-shadow: 0 10px 0 rgba(200, 160, 20, 0.35); }
 
+/* Secondary action on the green hero, where a white button would compete with
+   the yellow one. */
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-on-green);
+  border: 2px solid rgba(18, 24, 18, 0.45);
+}
+.btn-ghost:hover { background: rgba(18, 24, 18, 0.10); }
+
 .btn-outline {
   background: var(--surface);
   color: var(--ink);
@@ -1195,6 +1204,190 @@ td.danger { color: var(--exit-text); font-weight: 700; }
 .prose h2:first-child { border-top: none; padding-top: 0; }
 .prose p { max-width: 62ch; }
 
+/* ---------- ask: the front door ----------
+   Two shapes, one set of rules. In the hero it sits on the green field, so its
+   surface is white and its text is --ink; in the dock it is already on white.
+   Everything below the input is an output region that only appears once there
+   is something to say — an empty answer box under a search field reads as
+   broken, not as ready. */
+.ask { --ask-gap: var(--s3); }
+.ask-hero { margin: var(--s5) 0 var(--s5); max-width: 46rem; }
+
+.ask-form { display: flex; gap: var(--s2); align-items: stretch; }
+.ask-input {
+  flex: 1; min-width: 0; min-height: 52px;
+  padding: var(--s3) var(--s4);
+  border-radius: var(--r-pill);
+  border: 2px solid rgba(18, 24, 18, 0.18);
+  background: var(--surface);
+  font: inherit; font-size: var(--t-body); color: var(--ink);
+}
+.ask-input::placeholder { color: var(--muted); }
+.ask-input:focus-visible { outline: 3px solid var(--cta); outline-offset: 2px; border-color: var(--pond-deep); }
+.ask-input:disabled { opacity: 0.7; }
+.ask-send {
+  min-height: 52px; padding: 0 var(--s6);
+  border-radius: var(--r-pill);
+  background: var(--cta); color: var(--cta-ink);
+  font-weight: 800; font-size: 14px; letter-spacing: 0.02em;
+  box-shadow: 0 6px 0 rgba(200, 160, 20, 0.35);
+  transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+.ask-send:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 8px 0 rgba(200, 160, 20, 0.35); }
+.ask-send:active:not(:disabled) { transform: translateY(1px); box-shadow: 0 4px 0 rgba(200, 160, 20, 0.35); }
+.ask-send:disabled { opacity: 0.7; box-shadow: none; cursor: progress; }
+
+/* Starter questions. Real questions, not "features" — they show what the thing
+   can actually answer instead of describing it. */
+.ask-chips { list-style: none; display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--ask-gap); }
+.ask-chips button {
+  padding: 7px var(--s3);
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(18, 24, 18, 0.22);
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--ink-on-green);
+  font-size: var(--t-meta); font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+.ask-chips button:hover { background: var(--surface); border-color: var(--ink); }
+
+.ask-status { margin-top: var(--ask-gap); font-size: var(--t-meta); color: var(--ink-on-green-soft); }
+.ask-out:focus-visible { outline: none; }
+.ask-out:empty { display: none; }
+
+.ask-answer {
+  margin-top: var(--ask-gap);
+  background: var(--surface);
+  border-radius: var(--r-card);
+  padding: var(--s5);
+  font-size: var(--t-body); line-height: 1.65; color: var(--ink);
+  white-space: pre-wrap;
+  box-shadow: var(--shadow-sm);
+}
+.ask-foot { margin-top: var(--s3); font-size: var(--t-chip); color: var(--ink-on-green-soft); line-height: 1.6; }
+.ask-foot a { text-decoration: underline; text-underline-offset: 3px; }
+.ask-left { opacity: 0.85; }
+.ask-again {
+  margin-top: var(--s3); font-size: var(--t-meta); font-weight: 700;
+  color: var(--ink-on-green); text-decoration: underline; text-underline-offset: 3px;
+}
+.ask-error {
+  margin-top: var(--ask-gap);
+  background: var(--surface);
+  border-left: 4px solid var(--exit);
+  border-radius: 0 var(--r-chip) var(--r-chip) 0;
+  padding: var(--s4) var(--s5);
+  font-size: var(--t-meta); color: var(--exit-text); line-height: 1.6;
+}
+
+/* The paywall. It has to read as an explanation, not a shakedown, so the reason
+   comes before the ask. */
+.ask-pay {
+  margin-top: var(--ask-gap);
+  background: var(--surface);
+  border-radius: var(--r-card);
+  padding: var(--s5);
+  box-shadow: var(--shadow-sm);
+}
+.ask-pay-lede { font-size: var(--t-body); color: var(--ink); line-height: 1.6; margin-bottom: var(--s4); }
+.ask-steps { margin: 0 0 var(--s4) var(--s5); font-size: var(--t-meta); color: var(--muted); line-height: 1.7; }
+.ask-steps li { margin-bottom: var(--s2); }
+.ask-steps b { color: var(--ink); }
+.ask-pay .ask-foot { color: var(--muted); }
+.ask-addr {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: var(--t-chip);
+  background: var(--canvas); border: 1px solid var(--hairline);
+  border-radius: var(--r-chip); padding: 4px 8px;
+  overflow-wrap: anywhere; color: var(--ink);
+}
+
+/* Dock variant: on white, so the green-field colours have to be undone. */
+.ask-dock .ask-chips button,
+.ask-dock .ask-status,
+.ask-dock .ask-foot,
+.ask-dock .ask-again { color: var(--muted); }
+.ask-dock .ask-chips button { background: var(--canvas); border-color: var(--hairline); }
+.ask-dock .ask-chips button:hover { border-color: var(--page); color: var(--ink); }
+.ask-dock .ask-again { color: var(--pond-deep); }
+.ask-dock .ask-answer, .ask-dock .ask-pay { box-shadow: none; border: 1px solid var(--hairline); }
+.ask-dock .ask-input { border-color: var(--hairline); }
+
+.ask-launch {
+  position: fixed; right: 20px; z-index: 60;
+  bottom: calc(20px + var(--bottom-nav));
+  display: inline-flex; align-items: center; gap: var(--s2);
+  min-height: 52px; padding: 0 var(--s5) 0 var(--s3);
+  border-radius: var(--r-pill);
+  background: var(--cta); color: var(--cta-ink);
+  font-weight: 800; font-size: 14px;
+  box-shadow: 0 10px 30px rgba(18, 40, 22, 0.28);
+  transition: transform 0.15s var(--ease);
+}
+.ask-launch:hover { transform: translateY(-2px); }
+.ask-launch img { width: 28px; height: 28px; border-radius: 50%; }
+.ask-launch.is-open { padding: 0; width: 52px; justify-content: center; font-size: 26px; line-height: 1; }
+
+.ask-dock {
+  position: fixed; right: 20px; z-index: 59;
+  bottom: calc(84px + var(--bottom-nav));
+  width: min(400px, calc(100vw - 40px));
+  max-height: min(600px, calc(100vh - 180px));
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-card);
+  padding: var(--s5);
+  box-shadow: 0 24px 60px rgba(18, 40, 22, 0.22);
+  animation: rise 0.25s var(--ease) both;
+}
+.ask-dock-head { margin-bottom: var(--s4); }
+.ask-dock-head b { display: block; font-family: var(--font-pixel); font-size: var(--t-chip); line-height: 1.6; }
+.ask-dock-head span { font-size: var(--t-meta); color: var(--muted); }
+
+/* ---------- support / suggestions ---------- */
+.sg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: var(--s8); align-items: start; }
+.sg-lede { font-size: var(--t-body); color: var(--muted); line-height: 1.65; margin-bottom: var(--s5); }
+.sg-addr-label { font-size: var(--t-meta); color: var(--muted); margin-bottom: var(--s3); }
+.sg-addr { font-size: var(--t-meta); padding: var(--s3) var(--s4); }
+.sg-foot { margin-top: var(--s3); font-size: var(--t-chip); color: var(--muted); line-height: 1.7; }
+.sg-foot code { font-family: var(--font-mono); overflow-wrap: anywhere; }
+.sg-off {
+  border-left: 3px solid var(--cta); background: rgba(255, 225, 74, 0.12);
+  border-radius: 0 var(--r-chip) var(--r-chip) 0;
+  padding: var(--s4) var(--s5); font-size: var(--t-meta); color: var(--ink); line-height: 1.65;
+}
+.sg { display: block; }
+.sg-steps { margin: 0 0 var(--s5) var(--s5); font-size: var(--t-meta); color: var(--muted); line-height: 1.7; }
+.sg-steps li { margin-bottom: var(--s2); }
+.sg-steps b { color: var(--ink); }
+.sg-label {
+  display: block; margin-bottom: var(--s2);
+  font-family: var(--font-mono); font-size: var(--t-chip);
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--faint);
+}
+.sg-label span { text-transform: none; letter-spacing: 0; }
+.sg-text, .sg-input {
+  width: 100%; padding: var(--s3) var(--s4);
+  border: 2px solid var(--hairline); border-radius: var(--r-btn);
+  background: var(--surface); font: inherit; font-size: var(--t-body); color: var(--ink);
+  margin-bottom: var(--s4);
+}
+.sg-input { min-height: 48px; }
+.sg-text { resize: vertical; line-height: 1.6; margin-bottom: var(--s1); }
+.sg-text:focus-visible, .sg-input:focus-visible { outline: 3px solid var(--cta); outline-offset: 2px; border-color: var(--pond-deep); }
+.sg-count { font-size: var(--t-chip); color: var(--faint); text-align: right; margin-bottom: var(--s4); font-family: var(--font-mono); }
+.sg-warn {
+  border-left: 3px solid var(--shirt); background: rgba(232, 54, 46, 0.06);
+  border-radius: 0 var(--r-chip) var(--r-chip) 0;
+  padding: var(--s4) var(--s5); margin-bottom: var(--s5);
+  font-size: var(--t-meta); color: var(--ink); line-height: 1.65;
+}
+.sg-done h3 { font-family: var(--font-pixel); font-size: var(--t-meta); margin-bottom: var(--s4); }
+.sg-done p { font-size: var(--t-body); color: var(--muted); line-height: 1.7; margin-bottom: var(--s5); }
+.sg-done a { color: var(--pond-deep); font-weight: 700; text-decoration: underline; }
+
+
 /* ---------- responsive ----------
    Most people meet this site on a phone, so mobile is the default case, not the
    degraded one. Two things here are load-bearing:
@@ -1235,6 +1428,18 @@ td.danger { color: var(--exit-text); font-weight: 700; }
 
   /* The timeline's 150px date gutter left ~14ch for the event on a phone. */
   .tick-tock li { padding: var(--s4) 0; }
+
+  /* Starter questions are the main way anyone uses this on a phone. */
+  .ask-chips button { min-height: 40px; padding: 9px var(--s3); }
+  .ask-again { min-height: 40px; display: inline-flex; align-items: center; }
+
+  /* The dock sits above the fixed tab bar, never on top of it. */
+  .ask-dock {
+    right: 12px; left: 12px; width: auto;
+    max-height: min(70vh, calc(100vh - 200px));
+  }
+  .ask-launch { right: 12px; }
+  .sg-grid { gap: var(--s7); }
   .evidence-chain li { padding-left: var(--s7); }
 }
 
@@ -1256,6 +1461,11 @@ td.danger { color: var(--exit-text); font-weight: 700; }
   .table { min-width: 640px; }
   .wrap { padding: 0 18px; }
   .nav-in { gap: 10px; }
+  /* Five tabs at 360px: the labels give up horizontal padding, not height —
+     10px text inside 12px padding measured 39.5px, just under the touch floor. */
+  .mobile-tabs { padding-inline: 6px; gap: 2px; }
+  .mobile-tabs a { padding: 13px 2px; font-size: 10px; }
+  .ask-send { padding: 0 var(--s4); }
   /* Live price is the one number worth a return visit — it stays. The mint
      button is the first thing to go when the bar runs out of room. */
   .mint-tag { padding: 8px 10px; }

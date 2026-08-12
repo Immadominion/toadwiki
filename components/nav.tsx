@@ -13,6 +13,7 @@ const LINKS = [
   { href: "/ledger/", label: "The Ledger", m: "Ledger" },
   { href: "/receipts/", label: "The Receipts", m: "Receipts" },
   { href: "/methodology/", label: "Methodology", m: "Method" },
+  { href: "/support/", label: "Support", m: "Support" },
 ];
 
 export function Nav() {
