@@ -14,12 +14,13 @@ import Link from "next/link";
  * nothing sensitive sits in the bundle.
  */
 
-const SUGGESTED = [
-  "How much $TOAD has been given away so far?",
-  "Has the campaign wallet ever sold any?",
-  "What is the real contract address?",
-  "Who is behind the campaign wallet?",
-];
+/**
+ * One hint, and it lives inside the field. A row of pill-shaped suggestion
+ * buttons is the house style of every AI product shipped since 2023, and it
+ * turned four questions into four containers under a box that already had a
+ * container. The placeholder does the same job with no chrome at all.
+ */
+const HINT = "How much $TOAD has been given away?";
 
 type Pay = { tipWallet: string | null; tipHandle: string; unlockToad: number; perUnlock: number };
 
@@ -96,7 +97,7 @@ export function Ask({ variant }: { variant: "hero" | "dock" }) {
         type="text"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        placeholder="Ask anything about $TOAD…"
+        placeholder={HINT}
         aria-label="Ask anything about $TOAD"
         maxLength={400}
         disabled={state.k === "loading"}
@@ -115,21 +116,7 @@ export function Ask({ variant }: { variant: "hero" | "dock" }) {
       {form}
 
       {state.k === "idle" && (
-        <ul className="ask-chips">
-          {SUGGESTED.slice(0, variant === "hero" ? 3 : 4).map((s) => (
-            <li key={s}>
-              <button
-                type="button"
-                onClick={() => {
-                  setQ(s);
-                  send(s);
-                }}
-              >
-                {s}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <p className="ask-hint">It answers from the verified ledger, or says it doesn&rsquo;t know.</p>
       )}
 
       {state.k === "loading" && <p className="ask-status" role="status">Reading the ledger…</p>}

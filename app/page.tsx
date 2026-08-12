@@ -53,16 +53,15 @@ export default function Overview() {
               {fmtAmt(rec.held)} $TOAD is giving it away, and every base unit of it is
               accounted for on this page.
             </p>
-            {/* The front door. The ledger button stays, one step behind it —
-                people who already know what they want still get one click. */}
+            {/* The front door, and now the only button in the hero body. Three
+                competing calls to action is none: the nav already carries "Open
+                ledger", so repeating it here bought nothing and split attention
+                away from the thing this page is actually for. */}
             <Ask variant="hero" />
 
             <div className="hero-cta">
-              <Link href="/ledger/" className="btn btn-cta">
-                Open the ledger
-              </Link>
-              <Link href="/support/" className="btn btn-ghost">
-                Support this
+              <Link href="/support/" className="text-cta">
+                Support this <span aria-hidden>⟶</span>
               </Link>
             </div>
 

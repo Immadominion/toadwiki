@@ -50,7 +50,7 @@ export async function POST(req: Request) {
   }
   if (!txSig) return bad(400, "Paste the transaction signature for your $TOAD transfer.");
 
-  if (!claimSignature(txSig)) return bad(409, "That transaction has already been used.");
+  if (!(await claimSignature(txSig))) return bad(409, "That transaction has already been used.");
   const paid = await verifyToadPayment(txSig, TIP_WALLET, SUGGEST_TOAD);
   if (!paid.ok) return bad(402, paid.reason);
 

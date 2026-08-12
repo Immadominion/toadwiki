@@ -342,6 +342,28 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   flex-wrap: wrap;
   gap: 12px;
 }
+
+/* A link, not a button. The hero has one button now and this is the quieter
+   second step, so it should read as a sentence you can click. The long arrow
+   travels on hover, which is the only motion it needs. */
+.text-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  font-weight: 700;
+  font-size: var(--t-body);
+  color: var(--ink-on-green);
+  border-bottom: 2px solid rgba(18, 24, 18, 0.28);
+  padding-bottom: 2px;
+}
+.text-cta span {
+  font-size: 1.15em;
+  line-height: 1;
+  transition: transform 0.2s var(--ease);
+}
+.text-cta:hover { border-bottom-color: var(--ink-on-green); }
+.text-cta:hover span { transform: translateX(5px); }
 .hero-mascot {
   position: relative;
   display: grid;
@@ -1237,19 +1259,15 @@ td.danger { color: var(--exit-text); font-weight: 700; }
 .ask-send:active:not(:disabled) { transform: translateY(1px); box-shadow: 0 4px 0 rgba(200, 160, 20, 0.35); }
 .ask-send:disabled { opacity: 0.7; box-shadow: none; cursor: progress; }
 
-/* Starter questions. Real questions, not "features" — they show what the thing
-   can actually answer instead of describing it. */
-.ask-chips { list-style: none; display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--ask-gap); }
-.ask-chips button {
-  padding: 7px var(--s3);
-  border-radius: var(--r-pill);
-  border: 1px solid rgba(18, 24, 18, 0.22);
-  background: rgba(255, 255, 255, 0.42);
-  color: var(--ink-on-green);
-  font-size: var(--t-meta); font-weight: 600;
-  transition: background 0.15s, border-color 0.15s;
+/* One line of guidance, no chrome. The suggestion itself lives in the field's
+   placeholder, so nothing here needs a border to be understood. */
+.ask-hint {
+  margin-top: var(--s3);
+  font-size: var(--t-meta);
+  color: var(--ink-on-green-soft);
+  line-height: 1.6;
+  max-width: 44ch;
 }
-.ask-chips button:hover { background: var(--surface); border-color: var(--ink); }
 
 .ask-status { margin-top: var(--ask-gap); font-size: var(--t-meta); color: var(--ink-on-green-soft); }
 .ask-out:focus-visible { outline: none; }
@@ -1303,12 +1321,10 @@ td.danger { color: var(--exit-text); font-weight: 700; }
 }
 
 /* Dock variant: on white, so the green-field colours have to be undone. */
-.ask-dock .ask-chips button,
+.ask-dock .ask-hint,
 .ask-dock .ask-status,
 .ask-dock .ask-foot,
 .ask-dock .ask-again { color: var(--muted); }
-.ask-dock .ask-chips button { background: var(--canvas); border-color: var(--hairline); }
-.ask-dock .ask-chips button:hover { border-color: var(--page); color: var(--ink); }
 .ask-dock .ask-again { color: var(--pond-deep); }
 .ask-dock .ask-answer, .ask-dock .ask-pay { box-shadow: none; border: 1px solid var(--hairline); }
 .ask-dock .ask-input { border-color: var(--hairline); }
@@ -1429,8 +1445,6 @@ td.danger { color: var(--exit-text); font-weight: 700; }
   /* The timeline's 150px date gutter left ~14ch for the event on a phone. */
   .tick-tock li { padding: var(--s4) 0; }
 
-  /* Starter questions are the main way anyone uses this on a phone. */
-  .ask-chips button { min-height: 40px; padding: 9px var(--s3); }
   .ask-again { min-height: 40px; display: inline-flex; align-items: center; }
 
   /* The dock sits above the fixed tab bar, never on top of it. */
