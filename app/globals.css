@@ -920,7 +920,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 /* ---------- KPI grid ---------- */
 .kpi-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+  display: grid;
+  /* Six figures were rendering as six full-width rows on a phone: 1.7 screens
+     of scrolling to read six numbers.
+     The budget is tighter than it looks. --wrap is min(1440px, 92vw), so a
+     390px phone gives 322.8px of content, not 354. Two 150px tracks plus a
+     24px gap need 324, which missed it by a pixel and put everything back in
+     one column. 132px + a 16px gap clears it at 360px too. */
+  grid-template-columns: repeat(auto-fit, minmax(min(132px, 100%), 1fr));
   gap: var(--s4);
 }
 .kpi {
@@ -1018,7 +1025,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .tt-what p { font-size: var(--t-body); line-height: 1.6; }
 .tt-meta { display: flex; gap: var(--s3); align-items: center; margin-top: var(--s2); flex-wrap: wrap; }
 .tt-meta a { color: var(--pond-deep); font-size: var(--t-chip); font-weight: 600; }
-.tt-caveat { margin-top: var(--s3); font-size: var(--t-chip); color: var(--exit-text); }
+/* .tt-what p sets 15px and outranks a bare .tt-caveat, so this footnote had
+   been rendering at body size in red and shouting louder than the event it
+   annotates. Matched on the parent so it wins. */
+.tt-what .tt-caveat {
+  margin-top: var(--s3); font-size: var(--t-chip); line-height: 1.6;
+  color: var(--exit-text);
+}
 
 /* ---------- criticism ---------- */
 .crit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: var(--s6); }

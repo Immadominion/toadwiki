@@ -1271,7 +1271,7 @@ def collect_timeline(rpc: Rpc, out: dict, campaign_scan=None):
             "verification_source": "dexscreener pairCreatedAt",
             "caveat": "Timestamp attested by DexScreener, not by an on-chain walk: "
             "reaching this pool's first signature requires paginating its entire "
-            "(very large) history. Constant-product PumpSwap pool -- this is the "
+            "(very large) history. Constant-product PumpSwap pool: this is the "
             "canonical pricing venue. Never price off the Meteora DLMM pool.",
             "error": ds_err,
         }
